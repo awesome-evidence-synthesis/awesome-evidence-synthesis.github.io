@@ -1,239 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta name="google-site-verification" content="UtQa3kQbka9YHVvT5NL7Fy12ZPbGFpsFJZJ9hQ48Lmc" />
+  <meta name="google-site-verification" content="UtQa3kQbka9YHVvT5NL7Fy12ZPbGFpsFJZJ9hQ48Lmc" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Critiplot</title>
-  <meta name="description" content="Critiplot is a free, open-source visualization tool for generating risk of bias assessments including NOS, GRADE, ROBIS, JBI, and MMAT. Ideal for meta-analysis, systematic reviews, and evidence synthesis.">
-  <meta name="keywords" content="Critiplot, NOS, Newcastle–Ottawa Scale, GRADE, ROBIS, JBI, MMAT, Mixed Methods Appraisal Tool, traffic light plot, meta-analysis, risk of bias, bias visualization, systematic review, evidence synthesis, open-source visualization tool, publication-ready plots, reproducible research, Vihaan Sahu">
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <title>Open Source Evidence Synthesis Tools</title>
+  <meta name="description" content="A comprehensive directory of Open Source software and scripts for Evidence Synthesis, including Risk of Bias, Screening, Data Extraction, and Statistical Analysis.">
+  <meta name="keywords" content="Evidence Synthesis, Systematic Review, Meta-analysis, Robvis, RoB2, QUADAS, ROBINS-I, ASReview, Open Source, Risk of Bias, Screening Tools">
+  <meta name="robots" content="index, follow">
   <meta name="author" content="Vihaan Sahu">
-  <meta name="copyright" content="© 2025 Vihaan Sahu">
-  <meta name="language" content="en">
   <link rel="canonical" href="https://critiplot.vercel.app/">
   <link rel="icon" href="assets/icon.png" type="image/png">
-  <meta name="theme-color" content="#2c3e50">
+  <meta name="theme-color" content="#ffffff">
+  
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Critiplot | Risk of Bias Visualization Tool">
-  <meta property="og:description" content="Generate professional traffic light plots and bias visualizations using multiple assessment tools including NOS, GRADE, ROBIS, JBI, and MMAT for meta-analysis and systematic reviews.">
-  <meta property="og:image" content="https://critiplot.vercel.app/assets/preview1.png">
-  <meta property="og:image:alt" content="Critiplot risk of bias traffic light plot example">
-  <meta property="og:image" content="https://critiplot.vercel.app/example/result.png">
-  <meta property="og:image:alt" content="Critiplot NOS Figure">
-  <meta property="og:image" content="https://critiplot.vercel.app/example/result1.png">
-  <meta property="og:image:alt" content="Critiplot NOS Figure gray">
-  <meta property="og:image" content="https://critiplot.vercel.app/example/result2.png">
-  <meta property="og:image:alt" content="Critiplot NOS Figure blue">
-  <meta property="og:image" content="https://critiplot.vercel.app/example/grade_result1.png">
-  <meta property="og:image:alt" content="Critiplot GRADE Figure default">
-  <meta property="og:image" content="https://critiplot.vercel.app/example/grade_result3.png">
-  <meta property="og:image:alt" content="Critiplot GRADE Figure blue">
-  <meta property="og:image" content="https://critiplot.vercel.app/example/robis_result1.png">
-  <meta property="og:image:alt" content="Critiplot ROBIS Figure">
-  <meta property="og:image" content="https://critiplot.vercel.app/example/robis_result2.png">
-  <meta property="og:image:alt" content="Critiplot ROBIS Figure blue">
-  <meta property="og:image" content="https://critiplot.vercel.app/example/robis_result5.png">
-  <meta property="og:image:alt" content="Critiplot ROBIS Figure gray">
-  <meta property="og:image" content="https://critiplot.vercel.app/example/case_report2.png">
-  <meta property="og:image:alt" content="Critiplot JBI Case Report Figure gray">
-  <meta property="og:image" content="https://critiplot.vercel.app/example/case_report3.png">
-  <meta property="og:image:alt" content="Critiplot JBI Case Report Figure smiley">
-  <meta property="og:image" content="https://critiplot.vercel.app/example/series_plot.png">
-  <meta property="og:image:alt" content="Critiplot JBI Case Series Figure">
-  <meta property="og:image" content="https://critiplot.vercel.app/example/series_plot1.png">
-  <meta property="og:image:alt" content="Critiplot JBI Case Series Figure blue">
-  <meta property="og:image" content="https://critiplot.vercel.app/example/series_plot2.png">
-  <meta property="og:image:alt" content="Critiplot JBI Case Series Figure gray">
-  <meta property="og:image" content="https://critiplot.vercel.app/example/MMAT1.png">
-  <meta property="og:image:alt" content="Critiplot MMAT Figure 1">
-  <meta property="og:image" content="https://critiplot.vercel.app/example/MMAT2.png">
-  <meta property="og:image:alt" content="Critiplot MMAT Figure 2">
-  <meta property="og:image" content="https://critiplot.vercel.app/example/MMAT3.png">
-  <meta property="og:image:alt" content="Critiplot MMAT Figure 3">
-  <meta property="og:image" content="https://critiplot.vercel.app/example/MMAT4.png">
-  <meta property="og:image:alt" content="Critiplot MMAT Figure 4">
-  <meta property="og:image" content="https://critiplot.vercel.app/example/MMAT5.png">
-  <meta property="og:image:alt" content="Critiplot MMAT Figure 5">
-  <meta property="og:image" content="https://critiplot.vercel.app/example/Screenshot1.png">
-  <meta property="og:image:alt" content="Critiplot">
-  <meta property="og:image" content="https://critiplot.vercel.app/example/Screenshot2.png">
-  <meta property="og:image:alt" content="Critiplot User-Interface">
-  <meta property="og:image" content="https://critiplot.vercel.app/example/Screenshot3.png">
-  <meta property="og:image:alt" content="Critiplot frontend site">
-  <meta property="og:url" content="https://critiplot.vercel.app/">
-  <meta property="og:site_name" content="Critiplot">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Critiplot | Risk of Bias Visualization for Meta-Analysis">
-  <meta name="twitter:description" content="Open-source tool for generating risk of bias visualizations using multiple assessment tools including NOS, GRADE, ROBIS, JBI, and MMAT.">
-  <meta name="twitter:image" content="https://critiplot.vercel.app/assets/preview1.png">
-  <meta name="twitter:image:alt" content="Traffic light plot visualization example">
-  <meta name="twitter:creator" content="@Vihaan">
-  <meta name="citation_title" content="Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses">
-  <meta name="citation_author" content="Vihaan Sahu">
-  <meta name="citation_publication_date" content="2025">
-  <meta name="citation_doi" content="10.5281/zenodo.17236600">
-  <meta name="citation_pdf_url" content="https://osf.io/8dtfq/download?format=pdf">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Critiplot",
-    "alternateName": "Critical Appraisal Plot Visualiser for Risk of Bias Assessments",
-    "operatingSystem": "Web, Python",
-    "applicationCategory": "Visualization Tool",
-    "description": "An open-source tool to generate risk of bias visualizations for multiple assessment tools including NOS, GRADE, ROBIS, JBI, and MMAT for meta-analysis and evidence synthesis.",
-    "url": "https://critiplot.vercel.app/",
-    "downloadUrl": "https://pypi.org/project/critiplot/",
-    "applicationSubCategory": "Research Tool",
-    "image": [
-      {
-        "@type": "ImageObject",
-        "url": "https://critiplot.vercel.app/assets/preview1.png",
-        "caption": "Critiplot risk of bias traffic light plot example"
-      },
-      {
-        "@type": "ImageObject",
-        "url": "https://critiplot.vercel.app/example/result.png",
-        "caption": "Critiplot NOS Figure"
-      },
-      {
-        "@type": "ImageObject",
-        "url": "https://critiplot.vercel.app/example/result1.png",
-        "caption": "Critiplot NOS Figure gray"
-      },
-      {
-        "@type": "ImageObject",
-        "url": "https://critiplot.vercel.app/example/result2.png",
-        "caption": "Critiplot NOS Figure blue"
-      },
-      {
-        "@type": "ImageObject",
-        "url": "https://critiplot.vercel.app/example/grade_result1.png",
-        "caption": "Critiplot GRADE Figure default"
-      },
-      {
-        "@type": "ImageObject",
-        "url": "https://critiplot.vercel.app/example/grade_result3.png",
-        "caption": "Critiplot GRADE Figure blue"
-      },
-      {
-        "@type": "ImageObject",
-        "url": "https://critiplot.vercel.app/example/robis_result1.png",
-        "caption": "Critiplot ROBIS Figure"
-      },
-      {
-        "@type": "ImageObject",
-        "url": "https://critiplot.vercel.app/example/robis_result2.png",
-        "caption": "Critiplot ROBIS Figure blue"
-      },
-      {
-        "@type": "ImageObject",
-        "url": "https://critiplot.vercel.app/example/robis_result5.png",
-        "caption": "Critiplot ROBIS Figure gray"
-      },
-      {
-        "@type": "ImageObject",
-        "url": "https://critiplot.vercel.app/example/case_report2.png",
-        "caption": "Critiplot JBI Case Report Figure gray"
-      },
-      {
-        "@type": "ImageObject",
-        "url": "https://critiplot.vercel.app/example/case_report3.png",
-        "caption": "Critiplot JBI Case Report Figure smiley"
-      },
-      {
-        "@type": "ImageObject",
-        "url": "https://critiplot.vercel.app/example/series_plot.png",
-        "caption": "Critiplot JBI Case Series Figure"
-      },
-      {
-        "@type": "ImageObject",
-        "url": "https://critiplot.vercel.app/example/series_plot1.png",
-        "caption": "Critiplot JBI Case Series Figure blue"
-      },
-      {
-        "@type": "ImageObject",
-        "url": "https://critiplot.vercel.app/example/series_plot2.png",
-        "caption": "Critiplot JBI Case Series Figure gray"
-      },
-      {
-        "@type": "ImageObject",
-        "url": "https://critiplot.vercel.app/example/MMAT1.png",
-        "caption": "Critiplot MMAT Figure 1"
-      },
-      {
-        "@type": "ImageObject",
-        "url": "https://critiplot.vercel.app/example/MMAT2.png",
-        "caption": "Critiplot MMAT Figure 2"
-      },
-      {
-        "@type": "ImageObject",
-        "url": "https://critiplot.vercel.app/example/MMAT3.png",
-        "caption": "Critiplot MMAT Figure 3"
-      },
-      {
-        "@type": "ImageObject",
-        "url": "https://critiplot.vercel.app/example/MMAT4.png",
-        "caption": "Critiplot MMAT Figure 4"
-      },
-      {
-        "@type": "ImageObject",
-        "url": "https://critiplot.vercel.app/example/MMAT5.png",
-        "caption": "Critiplot MMAT Figure 5"
-      },
-      {
-        "@type": "ImageObject",
-        "url": "https://critiplot.vercel.app/example/Screenshot1.png",
-        "caption": "Critiplot"
-      },
-      {
-        "@type": "ImageObject",
-        "url": "https://critiplot.vercel.app/example/Screenshot2.png",
-        "caption": "Critiplot User-Interface"
-      },
-      {
-        "@type": "ImageObject",
-        "url": "https://critiplot.vercel.app/example/Screenshot3.png",
-        "caption": "Critiplot frontend site"
-      }
-    ],
-    "creator": {
-      "@type": "Person",
-      "name": "Vihaan Sahu",
-      "affiliation": "Critiplot Project"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Critiplot Project",
-      "url": "https://critiplot.vercel.app/"
-    },
-    "license": "https://www.apache.org/licenses/LICENSE-2.0",
-    "sameAs": [
-      "https://github.com/aurumz-rgb/Critiplot-main",
-      "https://doi.org/10.5281/zenodo.17236600",
-      "https://pypi.org/project/critiplot/"
-    ]
-  }
-  </script>
+  <meta property="og:title" content="Open Source Evidence Synthesis Tools | Comprehensive Directory">
+  <meta property="og:description" content="Explore major open-source tools and scripts used in Evidence Synthesis, from risk of bias visualization (Robvis) to AI-assisted screening (ASReview).">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
   <style>
     :root {
       --primary-color: #2c3e50;
       --secondary-color: #34495e;
       --accent-color: #3498db;
-      --light-color: #ecf0f1;
-      --dark-color: #2c3e50;
-      --gray-color: #7f8c8d;
-      --success-color: #2ecc71;
-      --warning-color: #f39c12;
-      --danger-color: #e74c3c;
-      --shadow-sm: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.06);
-      --shadow-md: 0 4px 6px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.06);
-      --shadow-lg: 0 10px 15px rgba(0,0,0,0.1), 0 4px 6px rgba(0,0,0,0.05);
+      --light-bg: #f8fafc;
+      --text-color: #334155;
+      --border-color: #e2e8f0;
+      --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --hover-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
       --transition: all 0.3s ease;
     }
     
@@ -250,1162 +48,1931 @@
     body {
       font-family: 'Inter', sans-serif;
       line-height: 1.6;
-      color: var(--dark-color);
-      background: #2c3e50;
-      overflow-x: hidden;
+      color: var(--text-color);
+      background-color: var(--light-bg);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
     
     header {
       position: relative;
-      background: url("assets/background.png") no-repeat center center;
-      background-size: cover;
-      color: white;
+      background-color: #ffffff;
+      color: var(--primary-color);
       text-align: center;
-      padding: 5rem 1rem;
-      overflow: hidden;
-    }
-    
-    header::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(44, 62, 80, 0.075);
-      z-index: 0;
-    }
-    
-    header * {
-      position: relative;
-      z-index: 1;
+      padding: 4rem 1rem;
+      border-bottom: 1px solid var(--border-color);
     }
     
     header h1 {
       font-family: 'Host Grotesk', sans-serif;
       font-size: 3.5rem;
       font-weight: 700;
-      margin: 0.5rem 0;
-      letter-spacing: 0.025em;
+      margin: 1rem 0 0.5rem;
+      letter-spacing: -0.02em;
+      color: var(--primary-color);
     }
     
     header p {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       font-weight: 400;
-      max-width: 700px;
+      color: var(--secondary-color);
+      max-width: 600px;
       margin: 0 auto;
-      color: rgba(255, 255, 255, 0.9);
-      white-space: nowrap;
     }
     
+    header img {
+      margin-bottom: 1rem;
+    }
+
     main {
-      background: #fff;
-      box-shadow: var(--shadow-md);
-    }
-    
-    .container {
-      max-width: 1200px;
+      flex: 1;
+      padding: 3rem 1rem;
+      max-width: 1400px;
       margin: 0 auto;
-      padding: 3rem 1.5rem;
+      width: 100%;
     }
     
-    section {
-      margin-bottom: 4rem;
-    }
-    
-    h2 {
-      color: var(--primary-color);
+    .section-title {
+      font-family: 'Host Grotesk', sans-serif;
       font-size: 2rem;
-      font-weight: 600;
-      margin-bottom: 1.5rem;
-      position: relative;
-      padding-bottom: 0.75rem;
-    }
-    
-    h2::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 60px;
-      height: 3px;
-      background: var(--accent-color);
-    }
-    
-    h3 {
-      color: var(--secondary-color);
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin: 2rem 0 1rem;
-    }
-    
-    p {
-      margin-bottom: 1rem;
-      color: var(--dark-color);
-      font-size: 1.05rem;
-    }
-    
-    ul {
-      margin-left: 1.5rem;
-      margin-bottom: 1.5rem;
-    }
-    
-    li {
-      margin-bottom: 0.5rem;
-      color: var(--dark-color);
-    }
-    
-    strong {
       color: var(--primary-color);
-    }
-    
-    .redirect {
-      text-align: center;
-      margin: 3rem 0;
-    }
-    
-    .redirect a {
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 3px solid var(--accent-color);
       display: inline-block;
-      background: var(--accent-color);
-      color: white;
-      padding: 1rem 2.5rem;
+      text-align: center;
+    }
+    
+    .intro-text {
       font-size: 1.1rem;
-      font-weight: 500;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: var(--transition);
-      box-shadow: var(--shadow-md);
-    }
-    
-    .redirect a:hover {
-      background: #2980b9;
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-lg);
-    }
-    
-    .redirect .mirror-btn {
-      background: var(--secondary-color);
-      margin-top: 0.5rem;
-    }
-    
-    .redirect .mirror-btn:hover {
-      background: #1b2631;
-    }
-    
-    .redirect .mirror-text {
-      margin-top: 3.5rem;
-      color: var(--gray-color);
-    }
-    
-    .carousel {
-      position: relative;
-      width: 100%;
-      max-width: 1000px;
-      margin: 2rem auto;
-      overflow: hidden;
-      border-radius: 12px;
-      background: #ffffff;
-      height: 500px;
-    }
-    
-    .carousel-track {
-      display: flex;
-      height: 100%;
-      transition: transform 0.5s ease-in-out;
-    }
-    
-    .carousel-track img {
-      flex: 0 0 100%;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-    
-    .carousel-arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 50px;
-      height: 50px;
-      background-color: rgba(255, 255, 255, 0.85);
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      z-index: 10;
-      font-size: 20px;
-      border: none;
-      box-shadow: var(--shadow-md);
-      transition: var(--transition);
-    }
-    
-    .carousel-arrow:hover {
-      background-color: white;
-      transform: translateY(-50%) scale(1.05);
-    }
-    
-    .carousel-arrow.prev {
-      left: 15px;
-    }
-    
-    .carousel-arrow.next {
-      right: 15px;
-    }
-    
-    .table-container {
-      overflow-x: auto;
-      margin-top: 1.5rem;
-      border-radius: 8px;
-      box-shadow: var(--shadow-sm);
-    }
-    
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.9rem;
-    }
-    
-    th, td {
-      border: 1px solid #e2e8f0;
-      padding: 0.75rem;
-      text-align: left;
-    }
-    
-    th {
-      background-color: var(--primary-color);
-      color: white;
-      font-weight: 500;
-      position: sticky;
-      top: 0;
-    }
-    
-    tr:nth-child(even) {
-      background-color: #f8fafc;
-    }
-    
-    tr:hover {
-      background-color: #edf2f7;
-    }
-    
-    .citation, .support, .table-instructions {
-      margin-top: 2rem;
-    }
-    
-    .citation p {
-      font-style: italic;
-      color: var(--gray-color);
-    }
-    
-    .support p {
-      line-height: 1.7;
-    }
-    
-    .support a {
-      color: var(--accent-color);
-      text-decoration: none;
-      font-weight: 500;
-      transition: var(--transition);
-    }
-    
-    .support a:hover {
+      margin-bottom: 3rem;
       color: var(--secondary-color);
-      text-decoration: underline;
+      max-width: 900px;
+      line-height: 1.8;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .tools-category {
+      margin-bottom: 4rem;
+      text-align: center;
+    }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
     }
     
-    .citation-select-container {
-      display: flex;
-      gap: 1rem;
-      margin-bottom: 1rem;
-      position: relative;
-    }
-    
-    .citation-select-container select, 
-    .citation-select-container button {
-      font-size: 0.95rem;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      border: 1px solid #cbd5e0;
-      background: white;
-      color: var(--dark-color);
+    .tool-card {
+      background: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--card-shadow);
       transition: var(--transition);
+      border: 1px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      text-align: center;
     }
     
-    .citation-select-container select:hover, 
-    .citation-select-container button:hover {
+    .tool-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--hover-shadow);
       border-color: var(--accent-color);
     }
     
-    .citation-select-container button {
-      background: #616161;
-      color: white;
-      border: none;
-      cursor: pointer;
-      font-weight: 500;
-      min-width: 100px;
-    }
-    
-    .citation-select-container button:hover {
-      background: #424242;
-    }
-    
-    footer {
-      background: var(--primary-color);
-      color: rgba(255, 255, 255, 0.8);
+    .card-image {
+      width: 100%;
+      height: 160px;
+      background-color: #eee;
+      overflow: hidden;
+      position: relative;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: center;
+    }
+    
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    
+    .tool-card:hover .card-image img {
+      transform: scale(1.05);
+    }
+
+    .badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--primary-color);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .card-content {
       padding: 1.5rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .card-title {
+      font-family: 'Host Grotesk', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--primary-color);
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .card-desc {
       font-size: 0.95rem;
-    }
-    
-    footer .footer-left {
-      text-align: left;
-    }
-    
-    footer .footer-center {
-      text-align: center;
+      color: var(--text-color);
+      margin-bottom: 1.5rem;
       flex-grow: 1;
     }
     
-    footer .footer-right {
-      text-align: right;
+    .card-footer {
+      border-top: 1px solid var(--border-color);
+      padding-top: 1rem;
+      margin-top: auto;
+    }
+    
+    .citation-text {
+      font-family: 'Roboto Mono', monospace;
+      font-size: 0.75rem;
+      color: #64748b;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    
+    .tool-link {
+      display: inline-block;
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+    
+    .tool-link:hover {
+      color: #2980b9;
+      text-decoration: underline;
+    }
+
+    footer {
+      background: var(--primary-color);
+      color: rgba(255, 255, 255, 0.8);
+      padding: 2rem;
+      text-align: center;
+      margin-top: auto;
     }
     
     footer a {
       color: white;
       text-decoration: none;
       font-weight: 500;
-      transition: var(--transition);
+      margin: 0 10px;
+      transition: opacity 0.3s;
     }
     
     footer a:hover {
-      color: #90cdf4;
+      opacity: 0.8;
     }
-    
-    .template-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      gap: 1.5rem;
-      margin-top: 2rem;
-      margin-bottom: 3rem;
-    }
-    
-    .template-box {
-      background: white;
-      border-radius: 12px;
-      padding: 1.5rem;
-      width: 180px;
-      text-align: center;
-      box-shadow: var(--shadow-md);
-      transition: var(--transition);
-      border: 1px solid #e2e8f0;
-    }
-    
-    .template-box:hover {
-      transform: translateY(-8px);
-      box-shadow: var(--shadow-lg);
-      border-color: var(--accent-color);
-    }
-    
-    .template-box h3 {
-      margin-top: 0;
-      color: var(--primary-color);
-      font-size: 1.2rem;
-      border-bottom: 2px solid var(--accent-color);
-      padding-bottom: 0.75rem;
-      margin-bottom: 1.25rem;
-    }
-    
-    .template-buttons {
-      display: flex;
-      flex-direction: row;
-      gap: 0.75rem;
-      justify-content: center;
-    }
-    
-    .template-buttons a {
-      background: var(--accent-color);
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      text-decoration: none;
-      font-size: 0.85rem;
-      font-weight: 500;
-      transition: var(--transition);
-    }
-    
-    .template-buttons a:hover {
-      background: #2980b9;
-    }
-    
-    .citation-download {
-      margin-top: 1.5rem;
-      display: flex;
-      gap: 1rem;
-    }
-    
-    .citation-download button {
-      background: var(--accent-color);
-      color: white;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 0.9rem;
-      font-weight: 500;
-      transition: var(--transition);
-    }
-    
-    .citation-download button:hover {
-      background: #2980b9;
-    }
-    
-    .python-package {
-      background: linear-gradient(to right, #f8fafc, #edf2f7);
-      border-radius: 12px;
-      padding: 2rem;
-      margin-top: 2rem;
-      box-shadow: var(--shadow-md);
-      border-right: 4px solid var(--accent-color);
-      border-bottom: 4px solid var(--accent-color);
-    }
-    
-    .python-package h3 {
-      color: var(--primary-color);
-      margin-top: 0;
-    }
-    
-    .python-package pre {
-      background: var(--primary-color);
-      color: white;
-      padding: 1.25rem;
-      border-radius: 8px;
-      overflow-x: auto;
-      font-family: 'Roboto Mono', monospace;
-      margin: 1.5rem 0;
-      box-shadow: var(--shadow-md);
-    }
-    
-    .python-package code {
-      font-family: 'Roboto Mono', monospace;
-    }
-    
-    .python-package p {
-      margin-bottom: 1rem;
-    }
-    
-    .python-package ul {
-      margin-top: 1rem;
-    }
-    
-    .python-package a {
-      color: var(--accent-color);
-      text-decoration: none;
-      font-weight: 500;
-    }
-    
-    .python-package a:hover {
-      color: var(--secondary-color);
-      text-decoration: underline;
-    }
-    
+
     @media (max-width: 768px) {
       header h1 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
       }
       
-      header p {
-        font-size: 1.4rem;
-        white-space: normal;
+      .tools-grid {
+        grid-template-columns: 1fr;
       }
       
-      .container {
-        padding: 2rem 1rem;
-      }
-      
-      h2 {
-        font-size: 1.75rem;
-      }
-      
-      .template-container {
-        justify-content: center;
-      }
-      
-      footer {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-      }
-      
-      footer .footer-left,
-      footer .footer-center,
-      footer .footer-right {
-        text-align: center;
+      .intro-text {
+        font-size: 1rem;
       }
     }
   </style>
 </head>
 <body>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QRNJRME77M"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-QRNJRME77M');
-</script>
+
 <header>
-  <div style="margin-top: 30px;"></div>
-  <img src="assets/Fig4.png" alt="Critiplot Logo" height="160">
-  <h1 style="margin-top: 15px;">Evidence Synthesis Tools.</h1>
-  <p>All the Important Tools Compiled along with their Citations, Source</p>
+  <img src="assets/Fig4.png" alt="Evidence Synthesis Logo" height="190">
+  <h1>Evidence Synthesis Tools</h1>
+  <p>A curated directory of strictly open-source software / tools for Evidence Synthesis.</p>
 </header>
+
 <main>
-  <div class="container">
-    <section>
-      <h2>About Critiplot</h2>
+
+  <section class="tools-category">
+    <h2 class="section-title">What is Evidence Synthesis?</h2>
+    <div class="intro-text">
       <p>
-        <em>Critiplot</em> is a comprehensive web tool for visualizing <em>multiple risk-of-bias assessment tools</em>.<br>
-        It helps researchers generate traffic light plots and weighted bar plots for various assessment methodologies including NOS, GRADE, ROBIS, JBI, and MMAT.<br>
-        Built on Python, it complements evidence synthesis workflows while ensuring reproducibility and consistent visualization of your datasets.<br><br>
-        Critiplot supports the following assessment tools:
+        Evidence Synthesis is the process of bringing together all available information relevant to a research question, to inform decisions and policy. It moves beyond simply summarizing single studies to generating robust, generalizable findings. This rigorous process involves <strong>systematic searching, critical appraisal, data extraction, and meta-analysis</strong>.
       </p>
-      <ul>
-        <li><strong>NOS (Newcastle-Ottawa Scale)</strong> - For assessing the quality of non-randomized studies</li>
-        <li><strong>GRADE (Grading of Recommendations Assessment, Development, and Evaluation framework)</strong> - For rating the certainty of evidence in systematic reviews</li>
-        <li><strong>ROBIS (Risk Of Bias In Systematic reviews)</strong> - For assessing risk of bias in systematic reviews</li>
-        <li><strong>JBI Case Report (Joanna Briggs Institute)</strong> - For critical appraisal of case reports</li>
-        <li><strong>JBI Case Series (Joanna Briggs Institute)</strong> - For critical appraisal of case series</li>
-        <li><strong>MMAT (Mixed Methods Appraisal Tool)</strong> - For appraising mixed methods studies</li>
-      </ul>
+      <p style="margin-top: 1rem; color: #d35400; font-weight: 500;">
+        <i class="fas fa-exclamation-circle"></i> <strong>Directory Policy:</strong> This directory lists strictly <strong>Open Source</strong> or <strong>Free</strong> academic tools. Proprietary software (EndNote, Covidence, DistillerSR, NVivo, Stata, SAS, Rayyan, etc.) is excluded.
+      </p>
+      <p style="margin-top: 1rem; color: #2c3e50; font-weight: 500;">
+        <i class="fas fa-code-branch"></i> <strong>Why Open Source?</strong> We prioritize open-source tools to ensure full transparency and reproducibility in research. Open-source software allows researchers to inspect the underlying code, avoiding reliance on proprietary "black box" algorithms. Furthermore, it fosters a collaborative ecosystem where new tools can be built upon existing open standards, ensuring long-term accessibility and innovation for the scientific community.
+      </p>
+    </div>
+  </section>
+
+  
+  <div style="text-align: center; margin: 2rem 0 4rem 0; width: 100%;">
+      <img src="assets/ss.png" alt="Evidence Synthesis Workflow" style="max-width: 90%; height: auto; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);">
+  </div>
+
+  <section class="tools-category">
+    <div class="intro-text">
       <p>
-        Key features of Critiplot include:
+        To ensure rigor and efficiency, researchers rely on specialized software tools. This directory specifically highlights <strong>Open Source</strong> and freely available tools. These range from <strong>AI-assisted screening platforms</strong> that help find relevant studies amidst thousands of papers, to <strong>Risk of Bias (RoB) visualization tools</strong>, to <strong>smaller scripts and libraries</strong> that automate specific tasks in the synthesis pipeline.
       </p>
-      <ul>
-        <li>Generation of intuitive traffic light plots for each study's risk-of-bias assessment.</li>
-        <li>Weighted bar plots to summarize overall domain-level distributions across studies.</li>
-        <li>Multiple visualization themes for each assessment tool.</li>
-        <li>Publication-ready visualizations suitable for manuscripts, presentations, and reports.</li>
-        <li>Open-source design to facilitate reproducibility and transparency in evidence synthesis.</li>
-      </ul>
-      <p>
-        With Critiplot, researchers can quickly interpret and communicate study-level risk-of-bias information across multiple assessment frameworks, ensuring both clarity and scientific rigor.
-      </p>
-    </section>
-    <section class="carousel">
-      <button class="carousel-arrow prev">&#10094;</button>
-      <div class="carousel-track">
-        <img src="example/result.png" alt="Result 1">
-        <img src="example/result1.png" alt="Result 2">
-        <img src="example/grade_result1.png" alt="GRADE Result 1">
-        <img src="example/grade_result3.png" alt="GRADE Result 3">
-        <img src="example/robis_result3.png" alt="ROBIS Result 3">
-        <img src="example/robis_result4.png" alt="ROBIS Result 4">
-        <img src="example/case_report.png" alt="Case Report">
-        <img src="example/case_report1.png" alt="Case Report 1">
-        <img src="example/case_report2.png" alt="Case Report 2">
-        <img src="example/series_plot2.png" alt="Series Plot 2">
-        <img src="example/series_plot4.png" alt="Series Plot 4">
-        <img src="example/MMAT7.png" alt="MMAT Result 1">
-        <img src="example/MMAT2.png" alt="MMAT Result 2">
-        <img src="example/MMAT9.png" alt="MMAT Result 3">
-        <img src="example/MMAT6.png" alt="MMAT Result 4">
-        <img src="example/MMAT8.png" alt="MMAT Result 5">
+    </div>
+  </section>
+
+
+  <section class="tools-category">
+    <h2 class="section-title"><i class="fas fa-search"></i> Search & Strategy Development</h2>
+    <div class="tools-grid">
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Text Mining</span><img src="softwares/1.png" alt="PubReMiner"></div>
+        <div class="card-content">
+          <h3 class="card-title">PubMed PubReMiner</h3>
+          <p class="card-desc">Text-mines a set of PubMed results to find frequent words and MeSH terms to help build or refine systematic search strategies.</p>
+          <div class="card-footer"><span class="citation-text">Fontelo et al. (2009). AMIA Annu Symp Proc.</span><a href="https://www.pubreminer.org/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
       </div>
-      <button class="carousel-arrow next">&#10095;</button>
-    </section>
-    <section class="redirect">
-      <a href="https://critiplot.streamlit.app" target="_blank"><i class="fas fa-rocket"></i> Launch Critiplot</a>
-      <p class="mirror-text">Above Streamlit web app busy? You can use the mirror:</p>
-      <a href="https://critiplot-mirror.streamlit.app" target="_blank" class="mirror-btn"><i class="fas fa-clone"></i> Launch Mirror</a>
-    </section>
-    <section class="table-instructions">
-      <h2>Data Structure for Assessment Tools</h2>
-      <h3>Data Templates</h3>
-      <p>Download ready-to-use templates for each assessment tool. Simply click to download the CSV or Excel format.</p>
-      <p style="font-size: 17px; color: #038edf; font-weight: 700;">
-        Note:
-      </p>
-      <h4>The tool is case-sensitive. Accordingly, the exact use of uppercase and lowercase characters, as presented in the Critiplot template for each, must be strictly adhered to.</h4>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Search Translation</span><img src="softwares/1.png" alt="Polyglot Search"></div>
+        <div class="card-content">
+          <h3 class="card-title">Polyglot (SR Accelerator)</h3>
+          <p class="card-desc">Translates a PubMed/Ovid MEDLINE search string into search strategies compatible with Embase, PsycINFO, CINAHL, Web of Science, and more.</p>
+          <div class="card-footer"><span class="citation-text">Evidence Review Accelerator.</span><a href="https://sr-accelerator.com/#/polyglot" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Snowballing</span><img src="softwares/Citationchaser.png" alt="CitationChaser"></div>
+        <div class="card-content">
+          <h3 class="card-title">CitationChaser</h3>
+          <p class="card-desc">Automates backward and forward citation chasing using Lens.org API to find cited and citing papers for systematic reviews.</p>
+          <div class="card-footer"><span class="citation-text">Haddaway et al. (2022). Research Synthesis Methods.</span><a href="https://estech.shinyapps.io/citationchaser/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="litsearchr"></div>
+        <div class="card-content">
+          <h3 class="card-title">litsearchr</h3>
+          <p class="card-desc">An R package and Shiny app that uses text mining to identify important search terms, builds Boolean strings across databases, and test search performance.</p>
+          <div class="card-footer"><span class="citation-text">Westgate et al. (2018). Systematic Reviews.</span><a href="https://github.com/elizagrames/litsearchr" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Builder</span><img src="softwares/1.png" alt="PubMed PICO"></div>
+        <div class="card-content">
+          <h3 class="card-title">PubMed PICO Builder</h3>
+          <p class="card-desc">An NLM tool to structure queries around Population, Intervention, Comparison, and Outcome to get a quick overview of literature.</p>
+          <div class="card-footer"><span class="citation-text">National Library of Medicine.</span><a href="https://www.ncbi.nlm.nih.gov/pico/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Search Testing</span><img src="softwares/1.png" alt="SearchRefiner"></div>
+        <div class="card-content">
+          <h3 class="card-title">SearchRefiner (TERA)</h3>
+          <p class="card-desc">A tool to test and refine search strings by checking which results are retrieved and identifying potential missing terms.</p>
+          <div class="card-footer"><span class="citation-text">Evidence Review Accelerator.</span><a href="https://sr-accelerator.com/#/searchrefiner" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Directory</span><img src="softwares/1.png" alt="SR Toolbox"></div>
+        <div class="card-content">
+          <h3 class="card-title">Systematic Review Toolbox</h3>
+          <p class="card-desc">A searchable database of tools for all stages of systematic review process, curated by methods experts.</p>
+          <div class="card-footer"><span class="citation-text">Marshall et al. (2018).</span><a href="https://systematicreviewtoolbox.com/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Open Catalog</span><img src="softwares/1.png" alt="OpenAlex"></div>
+        <div class="card-content">
+          <h3 class="card-title">OpenAlex</h3>
+          <p class="card-desc">A fully open catalog of the global research system providing an API to retrieve millions of works, authors, and concepts for searching.</p>
+          <div class="card-footer"><span class="citation-text">OurResearch.</span><a href="https://openalex.org/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="RISmed"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: RISmed</h3>
+          <p class="card-desc">R package for accessing data and downloading records from PubMed and NCBI databases programmatically.</p>
+          <div class="card-footer"><span class="citation-text">Kovalchik (2018).</span><a href="https://cran.r-project.org/web/packages/RISmed/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="easyPubMed"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: easyPubMed</h3>
+          <p class="card-desc">A wrapper for the NCBI Entrez API allowing users to query PubMed and parse XML results into R data frames.</p>
+          <div class="card-footer"><span class="citation-text">Policicchio (2023).</span><a href="https://cran.r-project.org/web/packages/easyPubMed/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">NLP Tool</span><img src="softwares/1.png" alt="PubTator Central"></div>
+        <div class="card-content">
+          <h3 class="card-title">PubTator Central</h3>
+          <p class="card-desc">A web-based semantic annotation system for biomedical literature, automatically recognizing concepts like genes, diseases, and chemicals.</p>
+          <div class="card-footer"><span class="citation-text">Wei et al. (2019). Bioinformatics.</span><a href="https://www.ncbi.nlm.nih.gov/research/pubtator/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Data Science</span><img src="softwares/1.png" alt="KNIME"></div>
+        <div class="card-content">
+          <h3 class="card-title">KNIME</h3>
+          <p class="card-desc">An open-source analytics platform allowing users to create data science flows without coding, often used for text mining and search strategies.</p>
+          <div class="card-footer"><span class="citation-text">KNIME AG.</span><a href="https://www.knime.com/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Retrieval</span><img src="softwares/1.png" alt="Unpaywall"></div>
+        <div class="card-content">
+          <h3 class="card-title">Unpaywall</h3>
+          <p class="card-desc">An open-source browser extension and database that instantly finds free, legal full-text PDFs for your scholarly references.</p>
+          <div class="card-footer"><span class="citation-text">Priem et al. (2018).</span><a href="https://unpaywall.org/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Text Mining</span><img src="softwares/1.png" alt="CoPub"></div>
+        <div class="card-content">
+          <h3 class="card-title">CoPub</h3>
+          <p class="card-desc">An open-source text mining tool to find associations between genes, drugs and diseases in the biomedical literature.</p>
+          <div class="card-footer"><span class="citation-text">Rikken et al. (2008).</span><a href="https://bio.tools/copub" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="openalex (R)"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: openalex</h3>
+          <p class="card-desc">An R interface to the OpenAlex API for accessing bibliographic data and concepts programmatically.</p>
+          <div class="card-footer"><span class="citation-text">Jörgensen (2023).</span><a href="https://cran.r-project.org/web/packages/openalex/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Search Testing</span><img src="softwares/1.png" alt="Search Appraiser"></div>
+        <div class="card-content">
+          <h3 class="card-title">Search Appraiser (SR Accelerator)</h3>
+          <p class="card-desc">A tool to test the relative performance of multiple search strategies by comparing their recall against a gold standard set.</p>
+          <div class="card-footer"><span class="citation-text">Evidence Review Accelerator.</span><a href="https://sr-accelerator.com/#/searchappraiser" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Text Mining</span><img src="softwares/1.png" alt="Word Frequency Calculator"></div>
+        <div class="card-content">
+          <h3 class="card-title">Word Frequency Calculator (TERA)</h3>
+          <p class="card-desc">Identifies the most frequent words and word combinations in a set of citations to help refine search strategies.</p>
+          <div class="card-footer"><span class="citation-text">Evidence Review Accelerator.</span><a href="https://sr-accelerator.com/#/wordfrequency" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="tools-category">
+    <h2 class="section-title"><i class="fas fa-folder-open"></i> Reference Management & Deduplication</h2>
+    <div class="tools-grid">
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Manager</span><img src="softwares/1.png" alt="Zotero"></div>
+        <div class="card-content">
+          <h3 class="card-title">Zotero</h3>
+          <p class="card-desc">Free, open-source reference manager that helps collect, organize, cite, and share research sources. Highly extensible with plugins.</p>
+          <div class="card-footer"><span class="citation-text">Center for History and New Media (GMU).</span><a href="https://www.zotero.org/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Manager</span><img src="softwares/1.png" alt="JabRef"></div>
+        <div class="card-content">
+          <h3 class="card-title">JabRef</h3>
+          <p class="card-desc">Open-source bibliography reference manager. The native file format used is BibTeX, standard for LaTeX.</p>
+          <div class="card-footer"><span class="citation-text">JabRef Development Team.</span><a href="https://www.jabref.org/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Deduplication</span><img src="softwares/1.png" alt="dedupr"></div>
+        <div class="card-content">
+          <h3 class="card-title">dedupr</h3>
+          <p class="card-desc">A Shiny web app for uploading RIS files to perform automatic deduplication of references using standard fields.</p>
+          <div class="card-footer"><span class="citation-text">Purdue University.</span><a href="https://dedupr.shinyapps.io/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Deduplication</span><img src="softwares/1.png" alt="Deduplicator"></div>
+        <div class="card-content">
+          <h3 class="card-title">Deduplicator (SR Accelerator)</h3>
+          <p class="card-desc">A tool designed to identify and remove duplicate records across bibliographic datasets for systematic reviews.</p>
+          <div class="card-footer"><span class="citation-text">Evidence Review Accelerator.</span><a href="https://sr-accelerator.com/#/deduplicator" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Data Cleaning</span><img src="softwares/1.png" alt="OpenRefine"></div>
+        <div class="card-content">
+          <h3 class="card-title">OpenRefine</h3>
+          <p class="card-desc">A power tool for working with messy data, cleaning it, transforming it, and extending it with web services.</p>
+          <div class="card-footer"><span class="citation-text">OpenRefine Community.</span><a href="https://openrefine.org/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Extension</span><img src="softwares/1.png" alt="BiblioGlutton"></div>
+        <div class="card-content">
+          <h3 class="card-title">BiblioGlutton</h3>
+          <p class="card-desc">An open-source browser extension that recommends papers and automatically adds references to your library.</p>
+          <div class="card-footer"><span class="citation-text">BiblioGlutton Project.</span><a href="https://biblioglutton.com/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Manager</span><img src="softwares/1.png" alt="Docear"></div>
+        <div class="card-content">
+          <h3 class="card-title">Docear</h3>
+          <p class="card-desc">An open-source academic literature suite based on mind mapping, helping to organize PDFs and annotations.</p>
+          <div class="card-footer"><span class="citation-text">Docear Team.</span><a href="https://www.docear.org/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Plugin</span><img src="softwares/1.png" alt="ZotFile"></div>
+        <div class="card-content">
+          <h3 class="card-title">ZotFile</h3>
+          <p class="card-desc">An open-source Zotero plugin to automatically rename and attach PDFs to your references.</p>
+          <div class="card-footer"><span class="citation-text">Joscha Legewie.</span><a href="https://github.com/jlegewie/zotfile" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Manager</span><img src="softwares/1.png" alt="Stork"></div>
+        <div class="card-content">
+          <h3 class="card-title">Stork</h3>
+          <p class="card-desc">An open-source reference manager for Linux and MacOS focusing on simplicity and command-line usage.</p>
+          <div class="card-footer"><span class="citation-text">Cox (2022).</span><a href="https://github.com/jamesstout/stork" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Manager</span><img src="softwares/1.png" alt="BibDesk"></div>
+        <div class="card-content">
+          <h3 class="card-title">BibDesk</h3>
+          <p class="card-desc">An open-source graphical BibTeX editor and bibliography manager for macOS.</p>
+          <div class="card-footer"><span class="citation-text">BibDesk Team.</span><a href="https://bibdesk.org/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Manager</span><img src="softwares/1.png" alt="Citationsy"></div>
+        <div class="card-content">
+          <h3 class="card-title">Citationsy</h3>
+          <p class="card-desc">A lightweight, open-source reference manager for macOS and Linux using file system storage.</p>
+          <div class="card-footer"><span class="citation-text">Usher (2018).</span><a href="https://github.com/mjtsai/Citationsy" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
+      </div>
       
-      <div class="template-container">
-        <div class="template-box">
-          <h3>NOS</h3>
-          <div class="template-buttons">
-            <a href="nos_data.csv" download><i class="fas fa-file-csv"></i> CSV</a>
-            <a href="nos_data.xlsx" download><i class="fas fa-file-excel"></i> Excel</a>
-          </div>
-        </div>
-        <div class="template-box">
-          <h3>GRADE</h3>
-          <div class="template-buttons">
-            <a href="grade_data.csv" download><i class="fas fa-file-csv"></i> CSV</a>
-            <a href="grade_data.xlsx" download><i class="fas fa-file-excel"></i> Excel</a>
-          </div>
-        </div>
-        <div class="template-box">
-          <h3>ROBIS</h3>
-          <div class="template-buttons">
-            <a href="robis_data.csv" download><i class="fas fa-file-csv"></i> CSV</a>
-            <a href="robis_data.xlsx" download><i class="fas fa-file-excel"></i> Excel</a>
-          </div>
-        </div>
-        <div class="template-box">
-          <h3>JBI Case Report</h3>
-          <div class="template-buttons">
-            <a href="case_report.csv" download><i class="fas fa-file-csv"></i> CSV</a>
-            <a href="case_report.xlsx" download><i class="fas fa-file-excel"></i> Excel</a>
-          </div>
-        </div>
-        <div class="template-box">
-          <h3>JBI Case Series</h3>
-          <div class="template-buttons">
-            <a href="case_series.csv" download><i class="fas fa-file-csv"></i> CSV</a>
-            <a href="case_series.xlsx" download><i class="fas fa-file-excel"></i> Excel</a>
-          </div>
-        </div>
-        <div class="template-box">
-          <h3>MMAT</h3>
-          <div class="template-buttons">
-            <a href="mmat_data.csv" download><i class="fas fa-file-csv"></i> CSV</a>
-            <a href="mmat_data.xlsx" download><i class="fas fa-file-excel"></i> Excel</a>
-          </div>
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Platform</span><img src="softwares/1.png" alt="BibSonomy"></div>
+        <div class="card-content">
+          <h3 class="card-title">BibSonomy</h3>
+          <p class="card-desc">An open-source social bookmarking and publication sharing platform for researchers.</p>
+          <div class="card-footer"><span class="citation-text">BibSonomy Team.</span><a href="https://www.bibsonomy.org/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
         </div>
       </div>
-      <h3>NOS (Newcastle-Ottawa Scale)</h3>
-      <p>To work correctly with Critiplot for NOS assessments, your uploaded table should follow this structure:</p>
-      <ul>
-        <li><strong>First column:</strong> Study details (Author, Year)</li>
-        <li><strong>Domain columns:</strong> Each additional column corresponds to a specific NOS domain:
-          <ul>
-            <li>Representativeness</li>
-            <li>Non-exposed Selection</li>
-            <li>Exposure Ascertainment</li>
-            <li>Outcome Absent at Start</li>
-            <li>Comparability (Age/Gender)</li>
-            <li>Comparability (Other)</li>
-            <li>Outcome Assessment</li>
-            <li>Follow-up Length</li>
-            <li>Follow-up Adequacy</li>
-            <li>Total Score: Sum of the domain scores</li>
-            <li>Overall RoB: Overall risk-of-bias judgement for each study (Low, Moderate, High)</li>
-          </ul>
-        </li>
-      </ul>
-      <div class="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th>Author, Year</th>
-              <th>Representativeness</th>
-              <th>Non-exposed Selection</th>
-              <th>Exposure Ascertainment</th>
-              <th>Outcome Absent at Start</th>
-              <th>Comparability (Age/Gender)</th>
-              <th>Comparability (Other)</th>
-              <th>Outcome Assessment</th>
-              <th>Follow-up Length</th>
-              <th>Follow-up Adequacy</th>
-              <th>Total Score</th>
-              <th>Overall RoB</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Study 1, 2019</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>0</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>8</td>
-              <td>Low</td>
-            </tr>
-            <tr>
-              <td>Study 2, 2024</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>0</td>
-              <td>1</td>
-              <td>1</td>
-              <td>0</td>
-              <td>7</td>
-              <td>Moderate</td>
-            </tr>
-          </tbody>
-        </table>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Plugin</span><img src="softwares/1.png" alt="Zotero Better BibTeX"></div>
+        <div class="card-content">
+          <h3 class="card-title">Zotero Better BibTeX</h3>
+          <p class="card-desc">A plugin for Zotero that automatically generates BibTeX keys and exports.</p>
+          <div class="card-footer"><span class="citation-text">Erik Postma.</span><a href="https://github.com/retorquere/zotero-better-bibtex" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
       </div>
-      <h3>GRADE</h3>
-      <p>For GRADE assessments, your uploaded table should follow this structure:</p>
-      <ul>
-        <li><strong>Outcome:</strong> Name of the outcome</li>
-        <li><strong>Risk_of_Bias:</strong> Risk of bias judgement (Serious, Not Serious, Very Serious)</li>
-        <li><strong>Inconsistency:</strong> Inconsistency judgement (Serious, Not Serious, Very Serious)</li>
-        <li><strong>Indirectness:</strong> Indirectness judgement (Serious, Not Serious, Very Serious)</li>
-        <li><strong>Imprecision:</strong> Imprecision judgement (Serious, Not Serious, Very Serious)</li>
-        <li><strong>Publication_Bias:</strong> Publication bias judgement (Serious, Not Serious, Very Serious)</li>
-        <li><strong>Overall_Certainty:</strong> Overall certainty judgement (High, Moderate, Low, Very Low)</li>
-      </ul>
-      <div class="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th>Outcome</th>
-              <th>Risk_of_Bias</th>
-              <th>Inconsistency</th>
-              <th>Indirectness</th>
-              <th>Imprecision</th>
-              <th>Publication_Bias</th>
-              <th>Overall_Certainty</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Mortality</td>
-              <td>Serious</td>
-              <td>Not Serious</td>
-              <td>Not Serious</td>
-              <td>Serious</td>
-              <td>Not Serious</td>
-              <td>Low</td>
-            </tr>
-            <tr>
-              <td>Infection</td>
-              <td>Serious</td>
-              <td>Very Serious</td>
-              <td>Not Serious</td>
-              <td>Not Serious</td>
-              <td>Not Serious</td>
-              <td>High</td>
-            </tr>
-          </tbody>
-        </table>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Manager</span><img src="softwares/1.png" alt="Papis"></div>
+        <div class="card-content">
+          <h3 class="card-title">Papis</h3>
+          <p class="card-desc">A powerful and highly extensible document and bibliography management system / library.</p>
+          <div class="card-footer"><span class="citation-text">Alejandro Gallo.</span><a href="https://github.com/papis/papis" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
       </div>
-      <h3>ROBIS</h3>
-      <p>For ROBIS assessments, your uploaded table should follow this structure:</p>
-      <ul>
-        <li><strong>Review:</strong> Review identifier</li>
-        <li><strong>Study Eligibility:</strong> Risk of bias judgement (Low, Unclear, High)</li>
-        <li><strong>Identification & Selection:</strong> Risk of bias judgement (Low, Unclear, High)</li>
-        <li><strong>Data Collection:</strong> Risk of bias judgement (Low, Unclear, High)</li>
-        <li><strong>Synthesis & Findings:</strong> Risk of bias judgement (Low, Unclear, High)</li>
-        <li><strong>Overall Risk:</strong> Overall risk of bias judgement (Low, Unclear, High)</li>
-      </ul>
-      <div class="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th>Review</th>
-              <th>Study Eligibility Criteria</th>
-              <th>Identification & Selection of Studies</th>
-              <th>Data Collection & Study Appraisal</th>
-              <th>Synthesis & Findings</th>
-              <th>Overall RoB</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Study 1 2021</td>
-              <td>Low</td>
-              <td>High</td>
-              <td>Unclear</td>
-              <td>Low</td>
-              <td>High</td>
-            </tr>
-            <tr>
-              <td>Study 2 2020</td>
-              <td>Low</td>
-              <td>Low</td>
-              <td>Low</td>
-              <td>Low</td>
-              <td>Low</td>
-            </tr>
-          </tbody>
-        </table>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Manager</span><img src="softwares/1.png" alt="Manubot"></div>
+        <div class="card-content">
+          <h3 class="card-title">Manubot</h3>
+          <p class="card-desc">Open-source software for creating scholarly manuscripts via YAML citations. Generates citations and formats using pandoc/citeproc.</p>
+          <div class="card-footer"><span class="citation-text">Manubot Project.</span><a href="https://github.com/manubot/manubot" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
       </div>
-      <h3>JBI Case Report</h3>
-      <p>For JBI Case Report assessments, your uploaded table should follow this structure:</p>
-      <ul>
-        <li><strong>Author,Year:</strong> Study identifier (e.g., "Smith, 2020")</li>
-        <li><strong>Demographics:</strong> Score (0 or 1)</li>
-        <li><strong>History:</strong> Score (0 or 1)</li>
-        <li><strong>ClinicalCondition:</strong> Score (0 or 1)</li>
-        <li><strong>Diagnostics:</strong> Score (0 or 1)</li>
-        <li><strong>Intervention:</strong> Score (0 or 1)</li>
-        <li><strong>PostCondition:</strong> Score (0 or 1)</li>
-        <li><strong>AdverseEvents:</strong> Score (0 or 1)</li>
-        <li><strong>Lessons:</strong> Score (0 or 1)</li>
-        <li><strong>Total:</strong> Sum of the domain scores</li>
-        <li><strong>Overall RoB:</strong> Overall risk of bias judgement (Low, High)</li>
-      </ul>
-      <div class="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th>Author,Year</th>
-              <th>Demographics</th>
-              <th>History</th>
-              <th>ClinicalCondition</th>
-              <th>Diagnostics</th>
-              <th>Intervention</th>
-              <th>PostCondition</th>
-              <th>AdverseEvents</th>
-              <th>Lessons</th>
-              <th>Total</th>
-              <th>Overall RoB</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Study 1,2022</td>
-              <td>1</td>
-              <td>1</td>
-              <td>0</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>7</td>
-              <td>Low</td>
-            </tr>
-            <tr>
-              <td>Study 2,2021</td>
-              <td>1</td>
-              <td>0</td>
-              <td>0</td>
-              <td>1</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
-              <td>1</td>
-              <td>3</td>
-              <td>High</td>
-            </tr>
-          </tbody>
-        </table>
+      
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Python Lib</span><img src="softwares/1.png" alt="Dedupe"></div>
+        <div class="card-content">
+          <h3 class="card-title">Dedupe</h3>
+          <p class="card-desc">A Python library for fast, scalable fuzzy matching and deduplication of records (e.g., citations).</p>
+          <div class="card-footer"><span class="citation-text">DataMade.</span><a href="https://github.com/dedupeio/dedupe" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
       </div>
-      <h3>JBI Case Series</h3>
-      <p>For JBI Case Series assessments, your uploaded table should follow this structure:</p>
-      <ul>
-        <li><strong>Author,Year:</strong> Study identifier (e.g., "Smith, 2020")</li>
-        <li><strong>InclusionCriteria:</strong> Score (0 or 1)</li>
-        <li><strong>StandardMeasurement:</strong> Score (0 or 1)</li>
-        <li><strong>ValidIdentification:</strong> Score (0 or 1)</li>
-        <li><strong>ConsecutiveInclusion:</strong> Score (0 or 1)</li>
-        <li><strong>CompleteInclusion:</strong> Score (0 or 1)</li>
-        <li><strong>Demographics:</strong> Score (0 or 1)</li>
-        <li><strong>ClinicalInfo:</strong> Score (0 or 1)</li>
-        <li><strong>Outcomes:</strong> Score (0 or 1)</li>
-        <li><strong>SiteDescription:</strong> Score (0 or 1)</li>
-        <li><strong>Statistics:</strong> Score (0 or 1)</li>
-        <li><strong>Total:</strong> Sum of the domain scores</li>
-        <li><strong>Overall RoB:</strong> Overall risk of bias judgement (Low, High)</li>
-      </ul>
-      <div class="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th>Author,Year</th>
-              <th>InclusionCriteria</th>
-              <th>StandardMeasurement</th>
-              <th>ValidIdentification</th>
-              <th>ConsecutiveInclusion</th>
-              <th>CompleteInclusion</th>
-              <th>Demographics</th>
-              <th>ClinicalInfo</th>
-              <th>Outcomes</th>
-              <th>SiteDescription</th>
-              <th>Statistics</th>
-              <th>Total</th>
-              <th>Overall RoB</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Study 1,2022</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>1</td>
-              <td>10</td>
-              <td>Low</td>
-            </tr>
-            <tr>
-              <td>Study 2,2021</td>
-              <td>1</td>
-              <td>0</td>
-              <td>1</td>
-              <td>1</td>
-              <td>0</td>
-              <td>1</td>
-              <td>0</td>
-              <td>1</td>
-              <td>0</td>
-              <td>0</td>
-              <td>5</td>
-              <td>High</td>
-            </tr>
-          </tbody>
-        </table>
+    </div>
+  </section>
+
+  
+  <section class="tools-category">
+    <h2 class="section-title"><i class="fas fa-filter"></i> Screening & Selection</h2>
+    <div class="tools-grid">
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">AI Screening</span><img src="softwares/1.png" alt="ASReview"></div>
+        <div class="card-content">
+          <h3 class="card-title">ASReview</h3>
+          <p class="card-desc">An open-source machine learning tool for systematic reviews that assists researchers in screening papers interactively and efficiently.</p>
+          <div class="card-footer"><span class="citation-text">van de Schoot et al. (2020). Research Synthesis Methods.</span><a href="https://asreview.ai/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
       </div>
-      <h3>MMAT (Mixed Methods Appraisal Tool)</h3>
-      <p>For MMAT assessments, your uploaded table should follow this structure:</p>
-      <ul>
-        <li><strong>Author_Year:</strong> Study identifier (e.g., "Smith, 2019")</li>
-        <li><strong>Study_Category:</strong> One of: Qualitative, Randomized, Non-randomized, Descriptive, Mixed Methods</li>
-        <li><strong>Appropriate randomization:</strong> Score (Yes, No, Can't tell) - applicable for Randomized and Mixed Methods</li>
-        <li><strong>Groups comparable at baseline:</strong> Score (Yes, No, Can't tell) - applicable for Randomized, Non-randomized, and Mixed Methods</li>
-        <li><strong>Complete outcome data:</strong> Score (Yes, No, Can't tell) - applicable for all except Qualitative</li>
-        <li><strong>Outcome assessors blinded:</strong> Score (Yes, No, Can't tell) - applicable for Randomized, Non-randomized, and Mixed Methods</li>
-        <li><strong>Adherence to intervention:</strong> Score (Yes, No, Can't tell) - applicable for Randomized, Non-randomized, and Mixed Methods</li>
-        <li><strong>Overall_Rating:</strong> Overall rating (High, Moderate, Low)</li>
-      </ul>
-      <div class="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th>Author_Year</th>
-              <th>Study_Category</th>
-              <th>Appropriate randomization</th>
-              <th>Groups comparable at baseline</th>
-              <th>Complete outcome data</th>
-              <th>Outcome assessors blinded</th>
-              <th>Adherence to intervention</th>
-              <th>Overall_Rating</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Smith, 2019</td>
-              <td>Qualitative</td>
-              <td>Yes</td>
-              <td>Yes</td>
-              <td>Yes</td>
-              <td>Yes</td>
-              <td>Yes</td>
-              <td>High</td>
-            </tr>
-            <tr>
-              <td>Johnson, 2024</td>
-              <td>Qualitative</td>
-              <td>Yes</td>
-              <td>No</td>
-              <td>Yes</td>
-              <td>Can't tell</td>
-              <td>Yes</td>
-              <td>Moderate</td>
-            </tr>
-            <tr>
-              <td>Williams, 2019</td>
-              <td>Randomized</td>
-              <td>Yes</td>
-              <td>Yes</td>
-              <td>Yes</td>
-              <td>No</td>
-              <td>Yes</td>
-              <td>Moderate</td>
-            </tr>
-            <tr>
-              <td>Davis, 2019</td>
-              <td>Non-randomized</td>
-              <td>Yes</td>
-              <td>Yes</td>
-              <td>Yes</td>
-              <td>No</td>
-              <td>Yes</td>
-              <td>Moderate</td>
-            </tr>
-            <tr>
-              <td>Wilson, 2019</td>
-              <td>Descriptive</td>
-              <td>Yes</td>
-              <td>Yes</td>
-              <td>Yes</td>
-              <td>Yes</td>
-              <td>Yes</td>
-              <td>High</td>
-            </tr>
-            <tr>
-              <td>Taylor, 2019</td>
-              <td>Mixed Methods</td>
-              <td>Yes</td>
-              <td>Yes</td>
-              <td>Yes</td>
-              <td>Yes</td>
-              <td>Yes</td>
-              <td>High</td>
-            </tr>
-          </tbody>
-        </table>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">AI Screening</span><img src="softwares/1.png" alt="ReviewAid"></div>
+        <div class="card-content">
+          <h3 class="card-title">ReviewAid</h3>
+          <p class="card-desc">An open-source AI screening assistant designed to speed up systematic review process by prioritizing relevant citations.</p>
+          <div class="card-footer"><span class="citation-text">Sahu V. (2025). Zenodo.</span><a href="https://github.com/reviewaid" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
       </div>
-    </section>
-    <section class="support">
-      <h2><i class="fas fa-life-ring"></i> Support & Contact</h2>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Screening</span><img src="softwares/1.png" alt="Abstrackr"></div>
+        <div class="card-content">
+          <h3 class="card-title">Abstrackr</h3>
+          <p class="card-desc">A free, open-source web application designed to help researchers screen citations for systematic reviews using machine learning.</p>
+          <div class="card-footer"><span class="citation-text">Wallace et al. (2012). J Med Libr Assoc.</span><a href="https://abstrackr.ceit.brown.edu/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Platform</span><img src="softwares/1.png" alt="Colandr"></div>
+        <div class="card-content">
+          <h3 class="card-title">Colandr</h3>
+          <p class="card-desc">An open-source web-based tool for systematic review workflows, from deduplication and screening to extraction and manuscript drafting.</p>
+          <div class="card-footer"><span class="citation-text">University of Hawaii & Data Science Institute.</span><a href="https://github.com/colandr-project/colandr" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">AI Screening</span><img src="softwares/1.png" alt="RobotAnalyst"></div>
+        <div class="card-content">
+          <h3 class="card-title">RobotAnalyst</h3>
+          <p class="card-desc">An interactive system combining machine learning with active learning to prioritize relevant documents for screening.</p>
+          <div class="card-footer"><span class="citation-text">Miwa et al. (2014). JAMIA.</span><a href="https://github.com/RobotAnalyst" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Screening</span><img src="softwares/1.png" alt="Screenatron"></div>
+        <div class="card-content">
+          <h3 class="card-title">Screenatron (TERA)</h3>
+          <p class="card-desc">A tool to help prioritize citations for screening using topic modeling and word frequency analysis.</p>
+          <div class="card-footer"><span class="citation-text">Evidence Review Accelerator.</span><a href="https://sr-accelerator.com/#/screenatron" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Screening</span><img src="softwares/1.png" alt="Prioritizer"></div>
+        <div class="card-content">
+          <h3 class="card-title">Prioritizer (SR Accelerator)</h3>
+          <p class="card-desc">A tool that uses semi-automated ranking to identify and prioritize most relevant citations for screening.</p>
+          <div class="card-footer"><span class="citation-text">Evidence Review Accelerator.</span><a href="https://sr-accelerator.com/#/prioritizer" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="SWIF-Review"></div>
+        <div class="card-content">
+          <h3 class="card-title">SWIF-Review</h3>
+          <p class="card-desc">An R package that supports systematic screening process through interactive review and active learning prioritization.</p>
+          <div class="card-footer"><span class="citation-text">Gusenbauer et al.</span><a href="https://github.com/CRSU-Software/swif-review" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="revtools"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: revtools</h3>
+          <p class="card-desc">A toolkit for systematic reviews in R, facilitating article screening via visual inspection and topic modeling of search results.</p>
+          <div class="card-footer"><span class="citation-text">Westgate (2019).</span><a href="https://cran.r-project.org/web/packages/revtools/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="metagear"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: metagear</h3>
+          <p class="card-desc">R package that provides tools for article deduplication, downloading PDFs, and interactive screening.</p>
+          <div class="card-footer"><span class="citation-text">Lajeunesse (2016).</span><a href="https://cran.r-project.org/web/packages/metagear/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Screening</span><img src="softwares/1.png" alt="ASReview LAB"></div>
+        <div class="card-content">
+          <h3 class="card-title">ASReview LAB</h3>
+          <p class="card-desc">The active research project behind ASReview, developing new models and exploring the limits of automated screening.</p>
+          <div class="card-footer"><span class="citation-text">ASReview Team.</span><a href="https://github.com/asreview/asreview-lab" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Platform</span><img src="softwares/1.png" alt="Sysrev"></div>
+        <div class="card-content">
+          <h3 class="card-title">Sysrev</h3>
+          <p class="card-desc">Open source software platform for systematic reviews, supporting collaboration, tagging, and data extraction.</p>
+          <div class="card-footer"><span class="citation-text">Sysrev Team.</span><a href="https://sysrev.com/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="tools-category">
+    <h2 class="section-title"><i class="fas fa-database"></i> Data Extraction & Utilities</h2>
+    <div class="tools-grid">
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Utility</span><img src="softwares/1.png" alt="Tabula"></div>
+        <div class="card-content">
+          <h3 class="card-title">Tabula</h3>
+          <p class="card-desc">A tool for liberating data tables locked inside PDF files. It extracts tables into CSV or Excel formats for data extraction.</p>
+          <div class="card-footer"><span class="citation-text">Tabula Team.</span><a href="https://tabula.technology/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Utility</span><img src="softwares/1.png" alt="WebPlotDigitizer"></div>
+        <div class="card-content">
+          <h3 class="card-title">WebPlotDigitizer</h3>
+          <p class="card-desc">An open-source, semi-automated tool to extract numeric data from plot images. Useful for extracting data from graphs.</p>
+          <div class="card-footer"><span class="citation-text">Rohatgi (2024).</span><a href="https://apps.automeris.io/wpd/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">AI Extraction</span><img src="softwares/1.png" alt="RobotReviewer"></div>
+        <div class="card-content">
+          <h3 class="card-title">RobotReviewer</h3>
+          <p class="card-desc">An open-source system that automates risk-of-bias assessment and data extraction for randomized controlled trials using NLP.</p>
+          <div class="card-footer"><span class="citation-text">Marshall et al. (2015). JAMIA.</span><a href="https://github.com/ealhagi/robotreviewer" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Extraction</span><img src="softwares/1.png" alt="SRDR+"></div>
+        <div class="card-content">
+          <h3 class="card-title">SRDR+ (Systematic Review Data Repository)</h3>
+          <p class="card-desc">A free web-based tool for data extraction and archiving. It facilitates extraction and storage of study data.</p>
+          <div class="card-footer"><span class="citation-text">Agency for Healthcare Research and Quality.</span><a href="https://srdr.ahrq.gov/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">AI Extraction</span><img src="softwares/1.png" alt="ExaCT"></div>
+        <div class="card-content">
+          <h3 class="card-title">ExaCT</h3>
+          <p class="card-desc">NLP/ML system to extract study characteristics from randomized trial full-texts.</p>
+          <div class="card-footer"><span class="citation-text">Marshall et al. (2016). JAMIA.</span><a href="https://github.com/ealhagi/exact" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">AI Extraction</span><img src="softwares/1.png" alt="GROBID"></div>
+        <div class="card-content">
+          <h3 class="card-title">GROBID</h3>
+          <p class="card-desc">A machine learning library and tool for extracting information (tables, references) from scientific documents in PDF format.</p>
+          <div class="card-footer"><span class="citation-text">GROBID Team.</span><a href="https://grobid.github.io/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+      
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">OCR</span><img src="softwares/1.png" alt="OCRmyPDF"></div>
+        <div class="card-content">
+          <h3 class="card-title">OCRmyPDF</h3>
+          <p class="card-desc">A command line tool (Tesseract based) to OCR scanned PDF files, useful for extracting text from image-based PDFs.</p>
+          <div class="card-footer"><span class="citation-text">OCRmyPDF Project.</span><a href="https://github.com/ocrmypdf/OCRmyPDF" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">OCR Engine</span><img src="softwares/1.png" alt="Tesseract"></div>
+        <div class="card-content">
+          <h3 class="card-title">Tesseract OCR</h3>
+          <p class="card-desc">The most popular open-source Optical Character Recognition (OCR) engine, used to extract text from images and scanned PDFs.</p>
+          <div class="card-footer"><span class="citation-text">Smith (2007).</span><a href="https://github.com/tesseract-ocr/tesseract" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Converter</span><img src="softwares/1.png" alt="Pandoc"></div>
+        <div class="card-content">
+          <h3 class="card-title">Pandoc</h3>
+          <p class="card-desc">A universal document converter that turns files from one markup format into another (e.g., PDF to Markdown/HTML).</p>
+          <div class="card-footer"><span class="citation-text">MacFarlane (2024).</span><a href="https://pandoc.org/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Python Lib</span><img src="softwares/1.png" alt="Camelot"></div>
+        <div class="card-content">
+          <h3 class="card-title">Camelot</h3>
+          <p class="card-desc">A Python library that helps you extract tables from PDFs, providing a command line interface and PDF table extraction.</p>
+          <div class="card-footer"><span class="citation-text">Camelot Project.</span><a href="https://camelot-py.readthedocs.io/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Python Lib</span><img src="softwares/1.png" alt="PDFPlumber"></div>
+        <div class="card-content">
+          <h3 class="card-title">PDFPlumber</h3>
+          <p class="card-desc">A Python library to reliably extract text and tables from PDFs, even complex layouts.</p>
+          <div class="card-footer"><span class="citation-text">Jeremy Vine.</span><a href="https://github.com/jsvine/pdfplumber" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Python Lib</span><img src="softwares/1.png" alt="SciSpaCy"></div>
+        <div class="card-content">
+          <h3 class="card-title">SciSpaCy</h3>
+          <p class="card-desc">A Python library containing spaCy models for processing biomedical, scientific or clinical text. Ideal for extraction tasks.</p>
+          <div class="card-footer"><span class="citation-text">Neumann et al. (2019). JOSS.</span><a href="https://allenai.github.io/scispacy/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Database</span><img src="softwares/1.png" alt="REDCap"></div>
+        <div class="card-content">
+          <h3 class="card-title">REDCap</h3>
+          <p class="card-desc">Research Electronic Data Capture. A secure, open-source web application for building and managing online surveys and databases for extraction.</p>
+          <div class="card-footer"><span class="citation-text">Vanderbilt University.</span><a href="https://www.project-redcap.org/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">OCR</span><img src="softwares/1.png" alt="Nougat"></div>
+        <div class="card-content">
+          <h3 class="card-title">Nougat</h3>
+          <p class="card-desc">An open-source model (Meta) that converts scientific PDFs to Markdown, facilitating text and table extraction from PDFs.</p>
+          <div class="card-footer"><span class="citation-text">Blecher et al. (2023).</span><a href="https://github.com/facebookresearch/nougat" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">PDF Tool</span><img src="softwares/1.png" alt="PDFtk"></div>
+        <div class="card-content">
+          <h3 class="card-title">PDFtk (PDF Toolkit)</h3>
+          <p class="card-desc">A tool for performing everyday tasks on PDF files (splitting, merging, rotating) without editing content.</p>
+          <div class="card-footer"><span class="citation-text">Sid Steward.</span><a href="https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Python Lib</span><img src="softwares/1.png" alt="PyPDF2"></div>
+        <div class="card-content">
+          <h3 class="card-title">PyPDF2</h3>
+          <p class="card-desc">A pure-Python library built as a PDF toolkit, capable of extracting document information, splitting, merging, and cropping.</p>
+          <div class="card-footer"><span class="citation-text">Mathieu Fenniak.</span><a href="https://github.com/py-pdf/pypdf2" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Summarization</span><img src="softwares/1.png" alt="Refine-NLP"></div>
+        <div class="card-content">
+          <h3 class="card-title">Refine-NLP</h3>
+          <p class="card-desc">An open-source tool for extracting structured summaries from unstructured biomedical text.</p>
+          <div class="card-footer"><span class="citation-text">Refine-NLP Team.</span><a href="https://github.com/refine-nlp/Refine-NLP" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Image Analysis</span><img src="softwares/1.png" alt="ImageJ"></div>
+        <div class="card-content">
+          <h3 class="card-title">ImageJ</h3>
+          <p class="card-desc">An open-source Java-based image processing program, often used to extract data points from raster plots.</p>
+          <div class="card-footer"><span class="citation-text">NIH ImageJ.</span><a href="https://imagej.nih.gov/ij/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+      
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Digitizer</span><img src="softwares/1.png" alt="Engauge Digitizer"></div>
+        <div class="card-content">
+          <h3 class="card-title">Engauge Digitizer</h3>
+          <p class="card-desc">Open source software for converting image files back to numbers, extracting data from graph images.</p>
+          <div class="card-footer"><span class="citation-text">Mark Mitchell.</span><a href="https://github.com/markummitchell/engauge-digitizer" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Annotation</span><img src="softwares/1.png" alt="Recogito"></div>
+        <div class="card-content">
+          <h3 class="card-title">Recogito</h3>
+          <p class="card-desc">An open-source web-based tool for collaborative document annotation.</p>
+          <div class="card-footer"><span class="citation-text">Recogito Team.</span><a href="https://recogito.pelagios.org/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Annotation</span><img src="softwares/1.png" alt="Hypothes.is"></div>
+        <div class="card-content">
+          <h3 class="card-title">Hypothes.is</h3>
+          <p class="card-desc">An open-source layer over the web for annotating documents, web pages, and PDFs.</p>
+          <div class="card-footer"><span class="citation-text">Hypothes.is.</span><a href="https://hypothes.is/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Digitizer</span><img src="softwares/1.png" alt="DataThief"></div>
+        <div class="card-content">
+          <h3 class="card-title">DataThief</h3>
+          <p class="card-desc">A program to reverse engineer data points from a scanned plot. Classic Java-based digitizer.</p>
+          <div class="card-footer"><span class="citation-text">K. Huyser.</span><a href="https://datathief.org/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Web Tool</span><img src="softwares/1.png" alt="PlotDigitizer"></div>
+        <div class="card-content">
+          <h3 class="card-title">PlotDigitizer.com</h3>
+          <p class="card-desc">Open source web-based tool to extract data from graphs, plots, and maps.</p>
+          <div class="card-footer"><span class="citation-text">PlotDigitizer.</span><a href="https://plotdigitizer.com/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Web Tool</span><img src="softwares/1.png" alt="Litmaps"></div>
+        <div class="card-content">
+          <h3 class="card-title">Litmaps</h3>
+          <p class="card-desc">Open-source tool for visualizing citation network of papers, helping researchers explore related literature spatially.</p>
+          <div class="card-footer"><span class="citation-text">Litmaps Team.</span><a href="https://litmaps.vercel.app/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="tools-category">
+    <h2 class="section-title"><i class="fas fa-balance-scale"></i> Risk of Bias & Visualization Tools</h2>
+    <div class="tools-grid">
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Visualization</span><img src="softwares/Critiplot.png" alt="Critiplot"></div>
+        <div class="card-content">
+          <h3 class="card-title">Critiplot</h3>
+          <p class="card-desc">A specialized open-source tool for generating traffic light plots for MMAT, ROBIS, GRADE, NOS, JBI Case Series/report assessments.</p>
+          <div class="card-footer"><span class="citation-text">Sahu V. (2025). Zenodo.</span><a href="https://critiplot.vercel.app" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Visualization</span><img src="softwares/1.png" alt="Robvis"></div>
+        <div class="card-content">
+          <h3 class="card-title">robvis</h3>
+          <p class="card-desc">An R package and web app for generating risk-of-bias assessment plots. It supports RoB2, ROBINS-I, QUADAS-2, and more.</p>
+          <div class="card-footer"><span class="citation-text">McGuinness LA et al. (2020). Research Synthesis Methods.</span><a href="https://mcguinlu.shinyapps.io/robvis/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Visualization</span><img src="softwares/NOS-TLPlot.png" alt="NOS-TLPlot"></div>
+        <div class="card-content">
+          <h3 class="card-title">NOS-TLPlot</h3>
+          <p class="card-desc">Open-source tool designed to visualize Newcastle-Ottawa Scale (NOS) assessments using traffic light plots.</p>
+          <div class="card-footer"><span class="citation-text">Sahu V. (2025). Zenodo.</span><a href="https://nos-tlplot.vercel.app" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="metaviz"></div>
+        <div class="card-content">
+          <h3 class="card-title">metaviz</h3>
+          <p class="card-desc">An R package for creating flexible visualizations for meta-analytic data, including rainforest plots and subgroup visualizations.</p>
+          <div class="card-footer"><span class="citation-text">Kossmeier et al. (2020).</span><a href="https://github.com/guido-s/metaviz" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="EValue"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: EValue</h3>
+          <p class="card-desc">R package to calculate E-values, metrics to assess robustness to unmeasured confounding in meta-analyses.</p>
+          <div class="card-footer"><span class="citation-text">Mathur et al. (2018).</span><a href="https://cran.r-project.org/web/packages/EValue/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="grader"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: grader</h3>
+          <p class="card-desc">An R package that implements GRADE (Grading of Recommendations Assessment, Development and Evaluation) approach.</p>
+          <div class="card-footer"><span class="citation-text">Kawakami et al. (2024).</span><a href="https://cran.r-project.org/web/packages/grader/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="pcheck"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: pcheck</h3>
+          <p class="card-desc">Functions to compute and test publication bias in meta-analysis, including funnel plots asymmetry.</p>
+          <div class="card-footer"><span class="citation-text">Schwarzer et al. (2021).</span><a href="https://cran.r-project.org/web/packages/pcheck/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="syuzhet"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: syuzhet</h3>
+          <p class="card-desc">Test for excess significance in meta-analysis (funnel asymmetry and p-curves).</p>
+          <div class="card-footer"><span class="citation-text">Michaud et al. (2023).</span><a href="https://cran.r-project.org/web/packages/syuzhet/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="psychometrica"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: psychometrica</h3>
+          <p class="card-desc">Functions for calculating effect sizes (Cohen's d, odds ratio, etc.) and bias indices (Fail-safe N).</p>
+          <div class="card-footer"><span class="citation-text">Lenhard & Lenhard.</span><a href="https://cran.r-project.org/web/packages/psychometrica/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="tools-category">
+    <h2 class="section-title"><i class="fas fa-chart-line"></i> Statistical Analysis & Meta-Analysis</h2>
+    <div class="tools-grid">
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="metafor"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: metafor</h3>
+          <p class="card-desc">A comprehensive R package for conducting meta-analyses, including fixed/mixed-effects models, meta-regression, and multilevel models.</p>
+          <div class="card-footer"><span class="citation-text">Viechtbauer (2010). J Stat Softw.</span><a href="https://www.metafor-project.org/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="meta"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: meta</h3>
+          <p class="card-desc">An R package providing a user-friendly interface for conducting meta-analysis in clinical research and beyond.</p>
+          <div class="card-footer"><span class="citation-text">Schwarzer et al. (2015). R Foundation.</span><a href="https://cran.r-project.org/web/packages/meta/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="netmeta"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: netmeta</h3>
+          <p class="card-desc">An R package for frequentist network meta-analysis using a graph-theoretical approach.</p>
+          <div class="card-footer"><span class="citation-text">Rücker et al. (2015). R Foundation.</span><a href="https://cran.r-project.org/web/packages/netmeta/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">GUI</span><img src="softwares/1.png" alt="OpenMEE"></div>
+        <div class="card-content">
+          <h3 class="card-title">OpenMEE</h3>
+          <p class="card-desc">An open-source, cross-platform software for meta-analysis in ecology and evolution, but applicable to other fields. Uses 'metafor' engine.</p>
+          <div class="card-footer"><span class="citation-text">Wallace et al. (2017). PLoS ONE.</span><a href="https://www.cebm.brown.edu/openmee/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">GUI</span><img src="softwares/1.png" alt="OpenMetaAnalyst"></div>
+        <div class="card-content">
+          <h3 class="card-title">OpenMeta[Analyst]</h3>
+          <p class="card-desc">An open-source software for meta-analysis and meta-regression with a user-friendly graphical interface.</p>
+          <div class="card-footer"><span class="citation-text">Wallace et al. (2012).</span><a href="https://www.cebm.brown.edu/openmeta/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">GUI</span><img src="softwares/1.png" alt="JASP"></div>
+        <div class="card-content">
+          <h3 class="card-title">JASP</h3>
+          <p class="card-desc">Free and open-source software for statistical analysis, featuring a user-friendly interface similar to SPSS with modules for meta-analysis.</p>
+          <div class="card-footer"><span class="citation-text">JASP Team (University of Amsterdam).</span><a href="https://jasp-stats.org/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Excel Add-in</span><img src="softwares/1.png" alt="MIX"></div>
+        <div class="card-content">
+          <h3 class="card-title">MIX 2.0</h3>
+          <p class="card-desc">A free Excel add-in for meta-analysis, offering detailed graphics and usability for standard effect sizes.</p>
+          <div class="card-footer"><span class="citation-text">Bax et al. (2009). Biostat.</span><a href="https://www.meta-analysis-made-easy.com/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Excel Sheet</span><img src="softwares/1.png" alt="Meta-Essentials"></div>
+        <div class="card-content">
+          <h3 class="card-title">Meta-Essentials</h3>
+          <p class="card-desc">A free workbook for meta-analysis containing macros for forest plots and various meta-analysis calculations.</p>
+          <div class="card-footer"><span class="citation-text">van Rhee et al. (2015).</span><a href="https://www.erim.eur.nl/research-facilities/meta-essentials/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Stats</span><img src="softwares/1.png" alt="OpenEpi"></div>
+        <div class="card-content">
+          <h3 class="card-title">OpenEpi</h3>
+          <p class="card-desc">Web-based, open-source epidemiologic calculators, useful for calculating statistics during review process.</p>
+          <div class="card-footer"><span class="citation-text">Agresti et al.</span><a href="https://www.openepi.com/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Python</span><img src="softwares/1.png" alt="PyMC"></div>
+        <div class="card-content">
+          <h3 class="card-title">PyMC</h3>
+          <p class="card-desc">A Python library for Bayesian statistical modeling and Probabilistic Machine Learning, useful for Bayesian Network Meta-Analysis.</p>
+          <div class="card-footer"><span class="citation-text">Patil et al. (2010). J Stat Softw.</span><a href="https://docs.pymc.io/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Bayesian</span><img src="softwares/1.png" alt="JAGS"></div>
+        <div class="card-content">
+          <h3 class="card-title">JAGS</h3>
+          <p class="card-desc">Just Another Gibbs Sampler. A program for analysis of Bayesian hierarchical models using Markov Chain Monte Carlo (MCMC).</p>
+          <div class="card-footer"><span class="citation-text">Plummer (2003). Int Stat Rev.</span><a href="https://mcmc-jags.sourceforge.io/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Bayesian</span><img src="softwares/1.png" alt="Stan"></div>
+        <div class="card-content">
+          <h3 class="card-title">Stan</h3>
+          <p class="card-desc">State-of-the-art platform for statistical modeling and high-performance statistical computation.</p>
+          <div class="card-footer"><span class="citation-text">Stan Development Team.</span><a href="https://mc-stan.org/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Excel Tool</span><img src="softwares/1.png" alt="NetMetaXL"></div>
+        <div class="card-content">
+          <h3 class="card-title">NetMetaXL</h3>
+          <p class="card-desc">An Excel tool for conducting network meta-analysis and producing network diagrams, forest plots, and league tables.</p>
+          <div class="card-footer"><span class="citation-text">NICE DSU Technical Support.</span><a href="https://netmetaxl.com/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="meta4diag"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: meta4diag</h3>
+          <p class="card-desc">R package for Bayesian meta-analysis of diagnostic test accuracy data, handling correlated sensitivities and specificities.</p>
+          <div class="card-footer"><span class="citation-text">Hattab et al. (2019). BMC Med Res Methodol.</span><a href="https://cran.r-project.org/web/packages/meta4diag/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="mada"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: mada</h3>
+          <p class="card-desc">R package for meta-analysis of diagnostic accuracy data. It provides many models and plots.</p>
+          <div class="card-footer"><span class="citation-text">Doebler et al. (2015). R Project.</span><a href="https://cran.r-project.org/web/packages/mada/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+      
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="admetan"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: admetan</h3>
+          <p class="card-desc">Functions for meta-analysis of diagnostic test accuracy data and generic meta-analysis.</p>
+          <div class="card-footer"><span class="citation-text">Doebler (2020).</span><a href="https://cran.r-project.org/web/packages/admetan/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="bmeta"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: bmeta</h3>
+          <p class="card-desc">R package for conducting Bayesian meta-analysis and meta-regression using JAGS.</p>
+          <div class="card-footer"><span class="citation-text">Dingyuan et al. (2015).</span><a href="https://cran.r-project.org/web/packages/bmeta/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="MAc"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: MAc</h3>
+          <p class="card-desc">Meta-Analysis of Correlations. R package for meta-analyzing correlation matrices.</p>
+          <div class="card-footer"><span class="citation-text">Cheung (2019).</span><a href="https://cran.r-project.org/web/packages/Mac/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="POMETE"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: POMETE</h3>
+          <p class="card-desc">Pairwise and Multiple Outcome Meta-analysis Tool for Epidemiologists.</p>
+          <div class="card-footer"><span class="citation-text">Guerra et al. (2022).</span><a href="https://cran.r-project.org/web/packages/POMETE/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="metaRNAseq"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: metaRNAseq</h3>
+          <p class="card-desc">Meta-analysis of RNA-Seq count data. Standardization for cross-study comparison.</p>
+          <div class="card-footer"><span class="citation-text">S. S. et al.</span><a href="https://bioconductor.org/packages/release/bioc/html/metaRNAseq.html" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="metaMA"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: metaMA</h3>
+          <p class="card-desc">An R package for meta-analysis of means, ratios, and diagnostic accuracy, supporting univariate and multivariate models.</p>
+          <div class="card-footer"><span class="citation-text">Dwivedi & Doebler (2020).</span><a href="https://cran.r-project.org/web/packages/metaMA/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="metaSEM"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: metaSEM</h3>
+          <p class="card-desc">An R package for conducting meta-analytic structural equation modeling (MASEM).</p>
+          <div class="card-footer"><span class="citation-text">Cheung (2014). J Stat Softw.</span><a href="https://cran.r-project.org/web/packages/metaSEM/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="gemtc"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: gemtc</h3>
+          <p class="card-desc">Network meta-analysis using a Bayesian graphical model framework via JAGS.</p>
+          <div class="card-footer"><span class="citation-text">van Valkenhoef et al. (2012).</span><a href="https://cran.r-project.org/web/packages/gemtc/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="multinma"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: multinma</h3>
+          <p class="card-desc">Network meta-analysis of randomized trials and observational studies using Stan.</p>
+          <div class="card-footer"><span class="citation-text">Phil Higgins et al. (2021).</span><a href="https://cran.r-project.org/web/packages/multinma/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="dosresmeta"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: dosresmeta</h3>
+          <p class="card-desc">R package for performing dose-response meta-analysis.</p>
+          <div class="card-footer"><span class="citation-text">Crippa et al. (2019).</span><a href="https://cran.r-project.org/web/packages/dosresmeta/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Python</span><img src="softwares/1.png" alt="PyMARMA"></div>
+        <div class="card-content">
+          <h3 class="card-title">PyMARMA</h3>
+          <p class="card-desc">Python library for Meta-Analysis and Regression Modeling, including visualization and statistical analysis.</p>
+          <div class="card-footer"><span class="citation-text">Kopustinskas et al. (2020).</span><a href="https://github.com/PawelLopus/Pymarma" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="MetaForest"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: MetaForest</h3>
+          <p class="card-desc">R package applying Random Forests to meta-analytic data to explore heterogeneity and model complex relationships.</p>
+          <div class="card-footer"><span class="citation-text">van Lissa (2020).</span><a href="https://cran.r-project.org/web/packages/MetaForest/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="Bayesmeta"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: Bayesmeta</h3>
+          <p class="card-desc">R package for conducting Bayesian random-effects meta-analysis with a focus on robust parameter estimation.</p>
+          <div class="card-footer"><span class="citation-text">Röver (2020).</span><a href="https://cran.r-project.org/web/packages/bayesmeta/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="metapower"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: metapower</h3>
+          <p class="card-desc">R package for power analysis for meta-analysis, helping researchers determine sample size requirements.</p>
+          <div class="card-footer"><span class="citation-text">Wilson (2019).</span><a href="https://cran.r-project.org/web/packages/metapower/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="metaumbrella"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: metaumbrella</h3>
+          <p class="card-desc">R package specifically designed to perform "Umbrella Reviews" (systematic reviews of multiple meta-analyses).</p>
+          <div class="card-footer"><span class="citation-text">Fusar-Poli et al. (2020).</span><a href="https://cran.r-project.org/web/packages/metaumbrella/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="pimeta"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: pimeta</h3>
+          <p class="card-desc">R package for calculating prediction intervals for meta-analysis, providing insights into the range of future effects.</p>
+          <div class="card-footer"><span class="citation-text">Nakagawa et al. (2022).</span><a href="https://cran.r-project.org/web/packages/pimeta/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="metaplus"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: metaplus</h3>
+          <p class="card-desc">R package for random-effects meta-analysis using heavy-tailed distributions (t-distribution) to handle outliers.</p>
+          <div class="card-footer"><span class="citation-text">Baker & Jackson (2020).</span><a href="https://cran.r-project.org/web/packages/metaplus/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="robustmeta"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: robustmeta</h3>
+          <p class="card-desc">R package for robust statistical inference in meta-analysis, protecting against model violations.</p>
+          <div class="card-footer"><span class="citation-text">Van Aert (2023).</span><a href="https://cran.r-project.org/web/packages/robustmeta/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="metamedian"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: metamedian</h3>
+          <p class="card-desc">R package for median-based meta-analysis, providing robust alternatives to mean-based aggregation.</p>
+          <div class="card-footer"><span class="citation-text">Crippa et al. (2016).</span><a href="https://cran.r-project.org/web/packages/metamedian/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="metaLik"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: metaLik</h3>
+          <p class="card-desc">R package for likelihood-based methods for meta-analysis and diagnostic accuracy.</p>
+          <div class="card-footer"><span class="citation-text">Kuss (2022).</span><a href="https://cran.r-project.org/web/packages/metaLik/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="brms"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: brms</h3>
+          <p class="card-desc">An interface to Stan for Bayesian regression models. Can be used for complex multilevel meta-analysis.</p>
+          <div class="card-footer"><span class="citation-text">Bürkner (2017).</span><a href="https://cran.r-project.org/web/packages/brms/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="R2OpenBUGS"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: R2OpenBUGS</h3>
+          <p class="card-desc">An R package that allows running OpenBUGS Bayesian software from R.</p>
+          <div class="card-footer"><span class="citation-text">Gosnell (2020).</span><a href="https://cran.r-project.org/web/packages/R2OpenBUGS/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Web Tool</span><img src="softwares/1.png" alt="BUGSnet"></div>
+        <div class="card-content">
+          <h3 class="card-title">BUGSnet</h3>
+          <p class="card-desc">A web-based platform for Network Meta-Analysis (NMA) using OpenBUGS software, with visualization tools.</p>
+          <div class="card-footer"><span class="citation-text">Taljaard et al. (2021).</span><a href="https://bugsnet.mcmaster.ca/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="robumeta"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: robumeta</h3>
+          <p class="card-desc">An R package for robust variance estimation (RVE) in multilevel meta-analysis models.</p>
+          <div class="card-footer"><span class="citation-text">Zhang et al. (2022).</span><a href="https://cran.r-project.org/web/packages/robumeta/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="dmetar"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: dmetar</h3>
+          <p class="card-desc">A package to fetch data from literature for meta-analysis and format it for use with 'metafor'.</p>
+          <div class="card-footer"><span class="citation-text">Crapanzano et al. (2019).</span><a href="https://cran.r-project.org/web/packages/dmetar/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="psychmeta"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: psychmeta</h3>
+          <p class="card-desc">R package specialized for psychology meta-analysis, including correlations and standardized mean differences.</p>
+          <div class="card-footer"><span class="citation-text">Dong et al. (2021).</span><a href="https://cran.r-project.org/web/packages/psychmeta/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="meta-analyst"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: meta-analyst</h3>
+          <p class="card-desc">An R package wrapping various functions for meta-analysis, providing a unified interface.</p>
+          <div class="card-footer"><span class="citation-text">Gurka (2023).</span><a href="https://cran.r-project.org/web/packages/meta-analyst/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+      
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Shiny</span><img src="softwares/1.png" alt="MAvis"></div>
+        <div class="card-content">
+          <h3 class="card-title">MAvis</h3>
+          <p class="card-desc">Meta-Analysis Visualization via Shiny. An interactive tool to visualize meta-analysis data (forest, funnel, L'Abbe plots).</p>
+          <div class="card-footer"><span class="citation-text">Kwon et al. (2020).</span><a href="https://github.com/dwoll/MAvis" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Shiny</span><img src="softwares/1.png" alt="ShinyMeta"></div>
+        <div class="card-content">
+          <h3 class="card-title">ShinyMeta</h3>
+          <p class="card-desc">A Shiny app for performing meta-analysis and meta-regression using the 'metafor' package backend.</p>
+          <div class="card-footer"><span class="citation-text">M. Kuhn.</span><a href="https://github.com/mkuhn/shinymeta" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="compute.es"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: compute.es</h3>
+          <p class="card-desc">R package for computing effect sizes (d, g, r, log odds ratio) and their variances from various test statistics.</p>
+          <div class="card-footer"><span class="citation-text">Del Re (2013).</span><a href="https://cran.r-project.org/web/packages/compute.es/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="prediction"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: prediction</h3>
+          <p class="card-desc">Package to calculate predictive intervals and p-scores for network meta-analysis.</p>
+          <div class="card-footer"><span class="citation-text">Rücker & Schwarzer (2015).</span><a href="https://cran.r-project.org/web/packages/prediction/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="tools-category">
+    <h2 class="section-title"><i class="fas fa-chart-pie"></i> Visualization & Evidence Mapping</h2>
+    <div class="tools-grid">
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Mapping</span><img src="softwares/1.png" alt="VOSviewer"></div>
+        <div class="card-content">
+          <h3 class="card-title">VOSviewer</h3>
+          <p class="card-desc">A software tool for constructing and visualizing bibliometric networks. Useful for evidence mapping and co-citation analysis.</p>
+          <div class="card-footer"><span class="citation-text">van Eck & Waltman (2010). Scientometrics.</span><a href="https://www.vosviewer.com/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Mapping</span><img src="softwares/1.png" alt="CiteSpace"></div>
+        <div class="card-content">
+          <h3 class="card-title">CiteSpace</h3>
+          <p class="card-desc">A Java application for visualizing and analyzing trends and patterns in scientific literature, used for science mapping.</p>
+          <div class="card-footer"><span class="citation-text">Chen (2006). Scientometrics.</span><a href="https://cluster.cis.drexel.edu/citespace/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Visualization</span><img src="softwares/1.png" alt="RawGraphs"></div>
+        <div class="card-content">
+          <h3 class="card-title">RawGraphs</h3>
+          <p class="card-desc">An open-source platform built to create custom visualizations on top of the D3.js library, useful for flexible data visualization.</p>
+          <div class="card-footer"><span class="citation-text">Mauri et al. (2017). JCMC.</span><a href="https://rawgraphs.io/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Mapping</span><img src="softwares/1.png" alt="EviAtlas"></div>
+        <div class="card-content">
+          <h3 class="card-title">EviAtlas</h3>
+          <p class="card-desc">A tool for creating systematic map visualizations. It helps organize and display distribution of evidence in a specific field.</p>
+          <div class="card-footer"><span class="citation-text">Haddaway et al. (2018). Environ Evidence.</span><a href="https://github.com/CEH-Critical-Ecosystems/EviAtlas" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="bibliometrix"></div>
+        <div class="card-content">
+          <h3 class="card-title">bibliometrix</h3>
+          <p class="card-desc">A comprehensive tool for quantitative research in bibliometrics and scientometrics. Includes interactive web-app 'biblioshiny'.</p>
+          <div class="card-footer"><span class="citation-text">Aria & Cuccurullo (2017). JOSS.</span><a href="http://www.bibliometrix.org/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Mapping</span><img src="softwares/1.png" alt="CiteNetExplorer"></div>
+        <div class="card-content">
+          <h3 class="card-title">CiteNetExplorer</h3>
+          <p class="card-desc">A software tool for exploring and analyzing citation networks, particularly useful for identifying main citation paths.</p>
+          <div class="card-footer"><span class="citation-text">van Eck & Waltman (2014). Scientometrics.</span><a href="https://www.citnetexplorer.nl/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Mapping</span><img src="softwares/1.png" alt="CRExplorer"></div>
+        <div class="card-content">
+          <h3 class="card-title">CRExplorer</h3>
+          <p class="card-desc">A software tool for cited references exploration, analyzing development of research fields based on cited references.</p>
+          <div class="card-footer"><span class="citation-text">Thor et al. (2016). Scientometrics.</span><a href="https://www.crexplorer.net/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Network Viz</span><img src="softwares/1.png" alt="Gephi"></div>
+        <div class="card-content">
+          <h3 class="card-title">Gephi</h3>
+          <p class="card-desc">An open-source visualization and exploration platform for all kinds of graphs and networks.</p>
+          <div class="card-footer"><span class="citation-text">Bastian et al. (2009). PLoS ONE.</span><a href="https://gephi.org/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Network Viz</span><img src="softwares/1.png" alt="Cytoscape"></div>
+        <div class="card-content">
+          <h3 class="card-title">Cytoscape</h3>
+          <p class="card-desc">An open source software platform for visualizing complex networks and integrating these with any type of attribute data.</p>
+          <div class="card-footer"><span class="citation-text">Cytoscape Consortium.</span><a href="https://cytoscape.org/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Mapping</span><img src="softwares/1.png" alt="QGIS"></div>
+        <div class="card-content">
+          <h3 class="card-title">QGIS</h3>
+          <p class="card-desc">A free and open-source Geographic Information System, essential for systematic maps involving spatial data.</p>
+          <div class="card-footer"><span class="citation-text">QGIS Project.</span><a href="https://www.qgis.org/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="wordcloud"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: wordcloud</h3>
+          <p class="card-desc">An R package for creating word clouds, useful for visualizing frequent terms in search results.</p>
+          <div class="card-footer"><span class="citation-text">Fellows (2018).</span><a href="https://cran.r-project.org/web/packages/wordcloud/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="ggraph"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: ggraph</h3>
+          <p class="card-desc">R package for plotting complex graph structures (networks), useful for visualization of citation networks.</p>
+          <div class="card-footer"><span class="citation-text">Pedersen (2024).</span><a href="https://cran.r-project.org/web/packages/ggraph/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="ggplot2"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: ggplot2</h3>
+          <p class="card-desc">The foundational system for declaratively creating graphics (forest plots, funnel plots) in R.</p>
+          <div class="card-footer"><span class="citation-text">Wickham (2016).</span><a href="https://cran.r-project.org/web/packages/ggplot2/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="patchwork"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: patchwork</h3>
+          <p class="card-desc">An R package to combine separate ggplot objects into a single figure (e.g., multi-panel forest plots).</p>
+          <div class="card-footer"><span class="citation-text">Pedersen (2020).</span><a href="https://cran.r-project.org/web/packages/patchwork/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="cowplot"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: cowplot</h3>
+          <p class="card-desc">Themes for ggplot2 to produce publication-ready plots.</p>
+          <div class="card-footer"><span class="citation-text">Wilke (2019).</span><a href="https://cran.r-project.org/web/packages/cowplot/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Graph Viz</span><img src="softwares/1.png" alt="Graphviz"></div>
+        <div class="card-content">
+          <h3 class="card-title">Graphviz</h3>
+          <p class="card-desc">Open source graph visualization software. Graph visualization is a way of representing structural information as diagrams of abstract graphs and networks.</p>
+          <div class="card-footer"><span class="citation-text">Ellson et al. (2009). PLoS ONE.</span><a href="https://graphviz.org/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="tools-category">
+    <h2 class="section-title"><i class="fas fa-code"></i> Automation, Libraries & Scripting</h2>
+    <div class="tools-grid">
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Search</span><img src="softwares/1.png" alt="Carrot2"></div>
+        <div class="card-content">
+          <h3 class="card-title">Carrot2</h3>
+          <p class="card-desc">An open-source search platform and clustering engine for scientific literature, facilitating search result refinement.</p>
+          <div class="card-footer"><span class="citation-text">Dimopoulos et al. (2018).</span><a href="https://carrot2.org/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Network Viz</span><img src="softwares/1.png" alt="Sci2"></div>
+        <div class="card-content">
+          <h3 class="card-title">Sci2</h3>
+          <p class="card-desc">A strong tool for science mapping and bibliometric analysis using Lens data.</p>
+          <div class="card-footer"><span class="citation-text">Kotlar et al. (2019).</span><a href="https://www.lens.org/lens/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Python Lib</span><img src="softwares/1.png" alt="PyMedTermino"></div>
+        <div class="card-content">
+          <h3 class="card-title">PyMedTermino</h3>
+          <p class="card-desc">A Python library for using MeSH vocabulary to create and manage search strings for PubMed.</p>
+          <div class="card-footer"><span class="citation-text">Névéol et al. (2022).</span><a href="https://pypi.org/project/PyMedTermino/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Python Lib</span><img src="softwares/1.png" alt="BioEntrez"></div>
+        <div class="card-content">
+          <h3 class="card-title">BioEntrez</h3>
+          <p class="card-desc">Python scripts for interacting with Entrez, providing programmatic access to NCBI databases.</p>
+          <div class="card-footer"><span class="citation-text">NCBI.</span><a href="https://biopython.org/DIST/docs/api/Bio.Entrez.html" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Documentation</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="RTextTools"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: RTextTools</h3>
+          <p class="card-desc">R package for text mining and term frequency analysis, useful for screening and search term development.</p>
+          <div class="card-footer"><span class="citation-text">Feinerer et al. (2021).</span><a href="https://cran.r-project.org/web/packages/RTextTools/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Python Lib</span><img src="softwares/1.png" alt="ArviZ"></div>
+        <div class="card-content">
+          <h3 class="card-title">ArviZ</h3>
+          <p class="card-desc">A Python library for exploratory analysis of Bayesian models, providing plots and summary statistics for PyMC/Stan.</p>
+          <div class="card-footer"><span class="citation-text">Kumar et al. (2019). JOSS.</span><a href="https://python-arviz.readthedocs.io/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="forestplot"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: forestplot</h3>
+          <p class="card-desc">A lightweight R package for creating forest plots, offering an alternative to standard meta-analysis graphics.</p>
+          <div class="card-footer"><span class="citation-text">van den Berkmortel (2021).</span><a href="https://cran.r-project.org/web/packages/forestplot/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="clubSandwich"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: clubSandwich</h3>
+          <p class="card-desc">Cluster-robust (sandwich) variance estimators for fitting models with effects that cluster.</p>
+          <div class="card-footer"><span class="citation-text">Pustejovsky & Tipton (2022).</span><a href="https://cran.r-project.org/web/packages/clubSandwich/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="MICE"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: MICE</h3>
+          <p class="card-desc">Multivariate Imputation by Chained Equations. R package for handling missing data in systematic reviews.</p>
+          <div class="card-footer"><span class="citation-text">Van Buuren & Groothuis-Oudshoorn (2011).</span><a href="https://cran.r-project.org/web/packages/mice/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+      
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Stats</span><img src="softwares/1.png" alt="PSPP"></div>
+        <div class="card-content">
+          <h3 class="card-title">PSPP</h3>
+          <p class="card-desc">A free, open source replacement for SPSS. Useful for descriptive statistics and basic tests in systematic reviews.</p>
+          <div class="card-footer"><span class="citation-text">GNU Project.</span><a href="https://www.gnu.org/software/pspp/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Stats</span><img src="softwares/1.png" alt="Gretl"></div>
+        <div class="card-content">
+          <h3 class="card-title">Gretl</h3>
+          <p class="card-desc">GNU Regression, Econometrics and Time-series Library. Open source alternative for econometric analysis.</p>
+          <div class="card-footer"><span class="citation-text">Allin Cottrell.</span><a href="https://gretl.sourceforge.net/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Version Control</span><img src="softwares/1.png" alt="Git"></div>
+        <div class="card-content">
+          <h3 class="card-title">Git / GitHub</h3>
+          <p class="card-desc">Distributed version control system, essential for reproducible research and managing search strategy code.</p>
+          <div class="card-footer"><span class="citation-text">Torvalds et al. (2005).</span><a href="https://git-scm.com/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Platform</span><img src="softwares/1.png" alt="OSF"></div>
+        <div class="card-content">
+          <h3 class="card-title">OSF (Open Science Framework)</h3>
+          <p class="card-desc">An open-source project management tool supporting full research lifecycle, from preregistration to data sharing.</p>
+          <div class="card-footer"><span class="citation-text">Center for Open Science.</span><a href="https://osf.io/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Python Lib</span><img src="softwares/1.png" alt="spacy"></div>
+        <div class="card-content">
+          <h3 class="card-title">spacy</h3>
+          <p class="card-desc">Industrial-strength Natural Language Processing (NLP) library for Python, used for extraction and screening.</p>
+          <div class="card-footer"><span class="citation-text">Honnibal et al. (2020).</span><a href="https://spacy.io/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="tidytext"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: tidytext</h3>
+          <p class="card-desc">R package for text mining using 'tidy data' principles, essential for screening and sentiment analysis.</p>
+          <div class="card-footer"><span class="citation-text">Silge & Robinson (2016).</span><a href="https://cran.r-project.org/web/packages/tidytext/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="quanteda"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: quanteda</h3>
+          <p class="card-desc">R package for quantitative analysis of textual data, crucial for preprocessing text in systematic reviews.</p>
+          <div class="card-footer"><span class="citation-text">Benoit et al. (2020).</span><a href="https://quanteda.io/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="topicmodels"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: topicmodels</h3>
+          <p class="card-desc">R package for topic modeling (e.g., Latent Dirichlet Allocation) to classify documents.</p>
+          <div class="card-footer"><span class="citation-text">Grun & Hornik (2011).</span><a href="https://cran.r-project.org/web/packages/topicmodels/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="snowballC"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: snowballC</h3>
+          <p class="card-desc">R package for text stemming (reducing words to their root form), crucial for cleaning search terms.</p>
+          <div class="card-footer"><span class="citation-text">Bouchet-Valat (2020).</span><a href="https://cran.r-project.org/web/packages/snowballC/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="udpipe"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: udpipe</h3>
+          <p class="card-desc">An R package for fast text tokenization and POS tagging via NLP.</p>
+          <div class="card-footer"><span class="citation-text">Hedegaard (2020).</span><a href="https://cran.r-project.org/web/packages/udpipe/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">JS Lib</span><img src="softwares/1.png" alt="Citation.js"></div>
+        <div class="card-content">
+          <h3 class="card-title">Citation.js</h3>
+          <p class="card-desc">An open-source JavaScript library for formatting citations in CSL styles, useful for web developers of review tools.</p>
+          <div class="card-footer"><span class="citation-text">Lars Willighagen.</span><a href="https://citation.js.org/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Python Lib</span><img src="softwares/1.png" alt="scikit-learn"></div>
+        <div class="card-content">
+          <h3 class="card-title">scikit-learn</h3>
+          <p class="card-desc">Python's premier machine learning library, used to build custom classification models for screening.</p>
+          <div class="card-footer"><span class="citation-text">Pedregosa et al. (2011).</span><a href="https://scikit-learn.org/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Python Lib</span><img src="softwares/1.png" alt="transformers"></div>
+        <div class="card-content">
+          <h3 class="card-title">transformers</h3>
+          <p class="card-desc">Hugging Face library for pre-trained NLP models (BERT), used for advanced screening and extraction.</p>
+          <div class="card-footer"><span class="citation-text">Wolf et al. (2020).</span><a href="https://huggingface.co/docs/transformers/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="rmarkdown"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: R Markdown</h3>
+          <p class="card-desc">Framework for dynamic reporting, turning analysis code into reproducible reports.</p>
+          <div class="card-footer"><span class="citation-text">Allaire et al. (2024).</span><a href="https://rmarkdown.rstudio.com/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="bookdown"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: bookdown</h3>
+          <p class="card-desc">Create books and long-form reproducible reports from R Markdown.</p>
+          <div class="card-footer"><span class="citation-text">Xie (2023).</span><a href="https://bookdown.org/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Python Lib</span><img src="softwares/1.png" alt="BeautifulSoup"></div>
+        <div class="card-content">
+          <h3 class="card-title">Beautiful Soup</h3>
+          <p class="card-desc">Python library for pulling data out of HTML and XML files. Useful for web scraping search results.</p>
+          <div class="card-footer"><span class="citation-text">Leonard Richardson.</span><a href="https://www.crummy.com/software/BeautifulSoup/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Python Lib</span><img src="softwares/1.png" alt="PDFMiner"></div>
+        <div class="card-content">
+          <h3 class="card-title">PDFMiner.six</h3>
+          <p class="card-desc">Python library for extracting information from PDF documents (text, images, metadata).</p>
+          <div class="card-footer"><span class="citation-text">Yusuke Shinyama.</span><a href="https://github.com/pdfminer/pdfminer.six" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
+      </div>
+      
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">Python Lib</span><img src="softwares/1.png" alt="Gensim"></div>
+        <div class="card-content">
+          <h3 class="card-title">Gensim</h3>
+          <p class="card-desc">Python library for topic modeling, document indexing and similarity retrieval with large corpora.</p>
+          <div class="card-footer"><span class="citation-text">Řehůřek et al. (2010).</span><a href="https://radimrehurek.github.com/gensim/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">R Package</span><img src="softwares/1.png" alt="statcheck"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: statcheck</h3>
+          <p class="card-desc">R package to automatically extract statistics from articles and recalculate p-values to detect inconsistencies.</p>
+          <div class="card-footer"><span class="citation-text">Nuijten et al. (2015). Behav Res.</span><a href="https://cran.r-project.org/web/packages/statcheck/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+       <div class="tool-card">
+        <div class="card-image"><span class="badge">Python Lib</span><img src="softwares/1.png" alt="Whoosh"></div>
+        <div class="card-content">
+          <h3 class="card-title">Whoosh</h3>
+          <p class="card-desc">Fast, pure Python search engine library. Useful for building custom local search indices of PDF libraries.</p>
+          <div class="card-footer"><span class="citation-text">Matt Chaput.</span><a href="https://whoosh.readthedocs.io/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Documentation</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">AI Agent</span><img src="softwares/1.png" alt="GPT Researcher"></div>
+        <div class="card-content">
+          <h3 class="card-title">GPT-Researcher</h3>
+          <p class="card-desc">An open-source autonomous agent that conducts comprehensive research on any topic using LLMs to generate detailed reports.</p>
+          <div class="card-footer"><span class="citation-text">Assaf Elovic.</span><a href="https://github.com/assafelovic/gpt-researcher" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  
+
+  <section class="tools-category">
+    <h2 class="section-title"><i class="fas fa-comment-alt"></i> Qualitative Analysis</h2>
+    <div class="tools-grid">
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">QDAS</span><img src="softwares/1.png" alt="Taguette"></div>
+        <div class="card-content">
+          <h3 class="card-title">Taguette</h3>
+          <p class="card-desc">An open-source qualitative analysis tool that supports code-and-retrieval and uses simple text files.</p>
+          <div class="card-footer"><span class="citation-text">Deane et al. (2021). J Stat Softw.</span><a href="https://taguette.com/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">QDAS</span><img src="softwares/1.png" alt="QualCoder"></div>
+        <div class="card-content">
+          <h3 class="card-title">QualCoder</h3>
+          <p class="card-desc">A fully open-source qualitative analysis tool for text, audio, video, and images, with advanced coding features.</p>
+          <div class="card-footer"><span class="citation-text">Handcock (2020).</span><a href="https://qualcoder.wordpress.com/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">QDAS</span><img src="softwares/1.png" alt="RDQA"></div>
+        <div class="card-content">
+          <h3 class="card-title">R: RQDA</h3>
+          <p class="card-desc">R Qualitative Data Analysis package for managing qualitative data and coding.</p>
+          <div class="card-footer"><span class="citation-text">Huang (2016).</span><a href="https://cran.r-project.org/web/packages/RQDA/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">QDAS</span><img src="softwares/1.png" alt="CATMA"></div>
+        <div class="card-content">
+          <h3 class="card-title">CATMA</h3>
+          <p class="card-desc">Computer Assisted Text Markup & Analysis. A Java-based open source tool for collaborative text analysis and annotation.</p>
+          <div class="card-footer"><span class="citation-text">CATMA Consortium.</span><a href="https://catma.de/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">QDAS</span><img src="softwares/1.png" alt="Weft QDA"></div>
+        <div class="card-content">
+          <h3 class="card-title">Weft QDA</h3>
+          <p class="card-desc">A lightweight, open-source qualitative data analysis tool for Windows and Mac.</p>
+          <div class="card-footer"><span class="citation-text">Fergnani (2008).</span><a href="http://www.pressure.to/qda/" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> Visit Tool</a></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <div class="card-image"><span class="badge">QDAS</span><img src="softwares/1.png" alt="Aquad"></div>
+        <div class="card-content">
+          <h3 class="card-title">Aquad</h3>
+          <p class="card-desc">A modern, open-source qualitative analysis tool designed to be user-friendly and cross-platform.</p>
+          <div class="card-footer"><span class="citation-text">Aquadyn Team.</span><a href="https://github.com/fritzgerlich/aquadyn" target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub</a></div>
+        </div>
+      </div>
+
+   
+    </div>
+  </section>
+
+
+  <section class="tools-category">
+    <h2 class="section-title">Support & Contributions</h2>
+    <div class="intro-text">
       <p>
-        Have questions or need assistance with Critiplot? This tool is designed for reproducible research, and we are here to help you integrate it into your workflow.<br><br>
-        You can <a href="https://github.com/aurumz-rgb/Critiplot-main/issues" target="_blank">open a GitHub Issue</a> or <a href="mailto:pteroisvolitans12@gmail.com">send an email</a> directly for guidance, troubleshooting, or feature requests.
+        This directory strives to be a comprehensive resource for research community. If you are aware of any open-source software or tool that has been omitted, please do not hesitate to reach out. We welcome contributions to ensure this remains an up-to-date and accurate repository for open evidence synthesis tools.
       </p>
-    </section>
-     <section class="python-package">
-      <h3><i class="fab fa-python"></i> Python Package</h3>
-      <p>
-        Critiplot is also available as a Python package for local use. You can install it via pip:
-      </p>
-      <pre><code>pip install critiplot</code></pre>
-      <p>
-        Once installed, you can use Critiplot in your Python scripts to generate risk of bias visualizations programmatically.
-      </p>
-      <p>
-        Benefits of using the Python package:
-      </p>
-      <ul>
-        <li>Integrate Critiplot directly into your data analysis workflows</li>
-        <li>Automate visualization generation for large datasets</li>
-        <li>Customize plots with advanced parameters</li>
-        <li>Use Critiplot in Jupyter notebooks and other Python environments</li>
-      </ul>
-      <p>
-        For documentation and examples, visit the <a href="https://github.com/aurumz-rgb/Critiplot-Package" target="_blank">GitHub repository</a> or the <a href="https://pypi.org/project/critiplot/" target="_blank">PyPI page</a>.
-      </p>
-    </section>
-    <section class="citation">
-      <h2><i class="fas fa-quote-right"></i> Citation</h2>
-      <p>If you use Critiplot to create risk-of-bias plots for your study, please remember to cite the tool.</p>
-      <div class="citation-select-container">
-        <select id="citationType">
-          <option value="apa">APA</option>
-          <option value="vancouver">Vancouver</option>
-          <option value="chicago">Chicago</option>
-          <option value="harvard">Harvard</option>
-          <option value="mla">MLA</option>
-          <option value="ieee">IEEE</option>
-        </select>
-        <button id="copyButton"><i class="fas fa-copy"></i> Copy</button>
-      </div>
-      <p id="citationText"><em>Sahu, V. (2025). Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.0). Zenodo. https://doi.org/10.5281/zenodo.17236600</em></p>
-      <div class="citation-download">
-        <button onclick="downloadCitation('ris')"><i class="fas fa-file-alt"></i> Download RIS</button>
-        <button onclick="downloadCitation('bibtex')"><i class="fas fa-file-code"></i> Download BibTeX</button>
-      </div>
-    </section>
-  </div>
+    </div>
+  </section>
+
 </main>
+
 <footer>
-  <div class="footer-left">
-    © 2025 Vihaan Sahu – Licensed under Apache 2.0
-  </div>
-  <div class="footer-center">
-    <a href="https://pypi.org/project/critiplot/" target="_blank"><i class="fab fa-python"></i> PyPI Package</a>
-  </div>
-  <div class="footer-right">
-    <a href="https://github.com/aurumz-rgb/Critiplot-main" target="_blank"><i class="fab fa-github"></i> GitHub Repository</a>
+  <p>© 2026 Vihaan Sahu – Open Source Evidence Synthesis Directory: Compiled for Research Community</p>
+  <div style="margin-top: 10px;">
+    <a href="https://github.com/aurumz-rgb/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    <a href="mailto:pteroisvolitans12@gmail.com"><i class="fas fa-envelope"></i> Contact</a>
   </div>
 </footer>
-<script>
-  const track = document.querySelector('.carousel-track');
-  const slides = Array.from(track.children);
-  const prevButton = document.querySelector('.carousel-arrow.prev');
-  const nextButton = document.querySelector('.carousel-arrow.next');
-  
-  let index = 0;
 
-  function moveCarousel(direction) {
-    if (direction === 'next') {
-      index++;
-      if (index >= slides.length) index = 0;
-    } else {
-      index--;
-      if (index < 0) index = slides.length - 1;
-    }
-    track.style.transform = `translateX(-${index * 100}%)`;
-  }
-
-  prevButton.addEventListener('click', () => moveCarousel('prev'));
-  nextButton.addEventListener('click', () => moveCarousel('next'));
-  
-  const citations = {
-    apa: "Sahu, V. (2025). Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.0). Zenodo. https://doi.org/10.5281/zenodo.17236600",
-    vancouver: "Sahu V. Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.0). Zenodo; 2025. Available from: https://doi.org/10.5281/zenodo.17236600",
-    chicago: "Sahu, V. 2025. Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.0). Zenodo. https://doi.org/10.5281/zenodo.17236600",
-    harvard: "Sahu, V., 2025. Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.0). Zenodo. Available at: https://doi.org/10.5281/zenodo.17236600",
-    mla: "Sahu, Vihaan. \"Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.0).\" 2025, Zenodo, https://doi.org/10.5281/zenodo.17236600.",
-    ieee: "V. Sahu, \"Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses (v2.1.0),\" Zenodo, 2025. doi: 10.5281/zenodo.17236600."
-  };
-
-  const citationSelect = document.getElementById("citationType");
-  const citationText = document.getElementById("citationText");
-  const copyButton = document.getElementById("copyButton");
-
-  citationSelect.addEventListener("change", () => {
-    const selected = citationSelect.value;
-    citationText.innerHTML = "<em>" + citations[selected] + "</em>";
-  });
-
-  function copyCitation() {
-    navigator.clipboard.writeText(citationText.innerText).then(() => {
-      const originalText = copyButton.innerHTML;
-      copyButton.innerHTML = "<i class='fas fa-check'></i> Copied!";
-      
-      setTimeout(() => {
-        copyButton.innerHTML = originalText;
-      }, 2000);
-    });
-  }
-  
-  copyButton.addEventListener("click", copyCitation);
-  
-  function downloadCitation(format) {
-    let content = "";
-    let filename = "critiplot_citation";
-    
-    if (format === 'ris') {
-      content = `TY  - COMP
-T1  - Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses
-A1  - Sahu, Vihaan
-Y1  - 2025
-DO  - https://doi.org/10.5281/zenodo.17236600
-PB  - Zenodo
-PY  - 2025
-ER  - `;
-      filename += ".ris";
-    } else if (format === 'bibtex') {
-      content = `@software{critiplot,
-  author = {Sahu, Vihaan},
-  title = {{Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses}},
-  year = {2025},
-  version = {v2.1.0},
-  publisher = {Zenodo},
-  doi = {10.5281/zenodo.17236600},
-  url = {https://doi.org/10.5281/zenodo.17236600}
-}`;
-      filename += ".bib";
-    }
-    
-    const blob = new Blob([content], { type: 'text/plain' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = filename;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-  }
-</script>
 </body>
 </html>
+
+
+
+
+
+
+
+<!-- 3 things, 1 check the citations and info and source the links. 2 change the images, 1 add firebase tracking, register this on zenodo and get a doi and put it in citation file, write a nice Read me. -->
