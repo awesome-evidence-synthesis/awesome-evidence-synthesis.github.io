@@ -8,12 +8,7 @@
             "orcid": "0009-0008-5790-1818"
         }
     ],
-    "contributors": [
-        {
-            "name": "Open Research Community",
-            "type": "Other"
-        }
-    ],
+
     "upload_type": "software",
     "publication_type": "software",
     "license": "Apache-2.0",
