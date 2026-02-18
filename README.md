@@ -5,7 +5,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained-Active-success)]()
 [![Platform](https://img.shields.io/badge/Platform-Pure%20HTML-lightgrey)]()
 [![Open Science](https://img.shields.io/badge/Open%20Science-Compliant-green)]()
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.MY_DOI.svg)](https://doi.org/10.5281/zenodo.MY_DOI)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10.5281/zenodo.18681868.svg)](https://doi.org/10.5281/zenodo.18681868)
 
 ---
 
@@ -225,7 +225,7 @@ This directory aims to be a comprehensive community resource.
 If you use this directory or related tools, please cite:
 
 Sahu, V. (2026). *Evidence Synthesis Tools: A curated directory of strictly open-source software / tools for Evidence Synthesis.* (Version 1.0). Zenodo.
-[https://doi.org/DOI](https://doi.org/DOI)
+[https://doi.org/10.5281/zenodo.18681868](https://doi.org/10.5281/zenodo.18681868)
 
 Individual tools retain their original citations.
 
