@@ -20,7 +20,7 @@ This resource is intended for:
 * Open science advocates
 * Research software developers 
 
-The directory includes tools available **up to 2026**, covering all stages of the evidence synthesis pipeline.
+The directory includes **140** open source non properietary tools / softwares available **up to 2026**, covering all stages of the evidence synthesis pipeline.
 
 ---
 

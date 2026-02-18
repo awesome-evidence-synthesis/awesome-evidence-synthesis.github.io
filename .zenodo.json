@@ -1,0 +1,69 @@
+{
+    "title": "Evidence Synthesis Tools: A curated directory of strictly open-source software / tools for Evidence Synthesis.",
+    "description": "Evidence Synthesis Tools is a curated directory of strictly open-source, non-proprietary software supporting the complete evidence synthesis workflow. Evidence synthesis is the systematic process of identifying, evaluating, and integrating all available evidence relevant to a research question to inform scientific conclusions, policy, and practice. The directory covers major stages including search strategy development, citation retrieval, deduplication, AI-assisted screening, data extraction, risk-of-bias assessment, visualization, statistical synthesis, evidence mapping, bibliometrics, qualitative synthesis, and research workflow automation. Only tools with publicly available source code and recognized open-source licenses are included. Proprietary, closed-source, freemium, or institution-restricted software is strictly excluded. Version 1.0 includes 140 verified open-source tools compiled up to 2026 to support transparency, reproducibility, Open Science, and long-term research software sustainability.",
+    "creators": [
+        {
+            "name": "Sahu, Vihaan",
+            "affiliation": "Georgian National University SEU",
+            "orcid": "0009-0008-5790-1818"
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Open Research Community",
+            "type": "Other"
+        }
+    ],
+    "upload_type": "software",
+    "publication_type": "software",
+    "license": "Apache-2.0",
+    "version": "1.0",
+    "language": "eng",
+    "access_right": "open",
+    "keywords": [
+        "evidence synthesis",
+        "systematic review",
+        "meta-analysis",
+        "open source",
+        "open science",
+        "research software",
+        "reproducible research",
+        "evidence-based medicine",
+        "risk of bias",
+        "screening tools",
+        "literature review",
+        "research transparency",
+        "FAIR principles",
+        "bibliometrics",
+        "automation",
+        "machine learning",
+        "qualitative synthesis"
+    ],
+    "notes": "This directory includes only tools that meet strict inclusion criteria: (1) released under a recognized open-source license (MIT, GPL, Apache, etc.), (2) public source code repository (GitHub, GitLab, Bitbucket, or similar), (3) no closed-source components or mandatory commercial dependencies, (4) reusable and adequately documented for extension and community development, and (5) relevance to evidence synthesis, systematic reviews, meta-analysis, or related research workflows. Free but closed-source, freemium, or institution-restricted tools are excluded. Contributions are welcome via GitHub issues or pull requests.",
+    "related_identifiers": [
+        {
+            "identifier": "https://github.com/evidencesynthesis-tools/evidencesynthesis-tools.github.io",
+            "relation": "isSupplementTo",
+            "scheme": "url"
+        },
+        {
+            "identifier": "https://evidencesynthesis-tools.github.io",
+            "relation": "isDocumentedBy",
+            "scheme": "url"
+        }
+    ],
+    "subjects": [
+        {
+            "term": "Evidence-Based Medicine"
+        },
+        {
+            "term": "Medical Informatics"
+        },
+        {
+            "term": "Research Methods"
+        },
+        {
+            "term": "Open Science"
+        }
+    ]
+}

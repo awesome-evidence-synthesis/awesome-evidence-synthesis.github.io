@@ -663,7 +663,7 @@
       <section class="tools-category">
         <div class="intro-text">
           <p>
-            This directory specifically highlights <strong class="highlight-strong">140</strong> tools / softwares
+            This directory specifically highlights <strong class="highlight-strong">140</strong> open source non properietary tools / softwares
             till the year <strong class="highlight-strong">2026</strong>.
           </p>
         </div>
@@ -3430,6 +3430,12 @@
           </div>
         </section>
 
+        <section class="tools-category">
+        <h2 class="section-title">🌟 Global Stats</h2>
+        <div class="intro-text">
+          <p id="visits" style="font-family: 'Roboto Mono', monospace; font-size: 1.2rem; font-weight: 500; color: var(--text-color);">Total Visits: Loading...</p>
+        </div>
+      </section>
 
         <section class="tools-category">
           <h2 class="section-title">Support & Contributions</h2>
@@ -3478,7 +3484,16 @@
             </p>
 
 
+
+
+
+
+
+
+
         </section>
+
+
 
 
         <section class="tools-category citation-section">
@@ -3505,6 +3520,7 @@
           </div>
         </section>
 
+
     </main>
 
     <footer>
@@ -3514,11 +3530,11 @@
         </div>
         <div class="footer-center">
           <a href="https://github.com/evidencesynthesis-tools/evidencesynthesis-tools.github.io" target="_blank"><i
-              class="fab fa-github"></i> GitHub</a>
+              class="fab fa-github"></i>  GitHub Repository</a>
           <a href="mailto:pteroisvolitans12@gmail.com"><i class="fas fa-envelope"></i> Contact</a>
         </div>
         <div class="footer-right">
-          Compiled for Research Community.
+          Version 1.0; Compiled for Research Community.
         </div>
       </div>
     </footer>
@@ -3684,7 +3700,7 @@
 
 
     const ease = 0.1;
-    const scrollSpeed = 0.4; // scroll speed
+    const scrollSpeed = 0.6; // scroll speed
 
 
     document.addEventListener('wheel', (e) => {
@@ -3815,8 +3831,56 @@ ER  - `;
     }
   </script>
 
+
+  <script type="module">
+  
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-analytics.js";
+
+    import { getFirestore, doc, getDoc, setDoc, updateDoc, increment } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyAgh9xg3nH48FF8jgnZa1JIqBakhBNZh28",
+      authDomain: "evidencesynthesistools.firebaseapp.com",
+      projectId: "evidencesynthesistools",
+      storageBucket: "evidencesynthesistools.firebasestorage.app",
+      messagingSenderId: "904366106522",
+      appId: "1:904366106522:web:eeb147c44871a5ccab7c23",
+      measurementId: "G-HGV9X2SCBZ"
+    };
+
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
+ 
+    const db = getFirestore(app);
+    const counterRef = doc(db, "stats", "total_visits");
+
+    try {
+      const snap = await getDoc(counterRef);
+      let count = 0;
+      
+      if (snap.exists()) {
+        count = snap.data().total_visits || 0;
+    
+        await updateDoc(counterRef, { total_visits: increment(1) });
+      } else {
+
+        await setDoc(counterRef, { total_visits: 1 });
+        count = 0; 
+      }
+      
+  
+      document.getElementById("visits").innerText = "Total Visits: " + (count + 1);
+    } catch (error) {
+      console.error("Error fetching stats: ", error);
+      document.getElementById("visits").innerText = "Stats unavailable";
+    }
+  </script>
+
+
 </body>
 
 </html>
 
-<!-- 3 things, 1 check the citations and info and source the links. 2 change the images, 1 add firebase tracking, register this on zenodo and get a doi and put it in citation file, write a nice Read me. -->
