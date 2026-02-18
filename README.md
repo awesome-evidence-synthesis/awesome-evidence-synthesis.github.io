@@ -1,4 +1,4 @@
-![Preview](assets/banner.png)
+![Preview](assets/banner2.png)
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Open Source Only](https://img.shields.io/badge/Open%20Source-100%25-brightgreen)]()
@@ -189,6 +189,8 @@ This repository helps developers:
 ![Interface2](screenshots/2.png)
 
 
+![Interface3](screenshots/3.png)
+
 ---
 
 ## ⭐ Contributions
@@ -239,10 +241,10 @@ Licensed under the **Apache License 2.0**
 ##  Contact
 
 * GitHub: Issues / Pull Requests
-* Email: pteroisvolitans12@gmail.com
+* Email: [pteroisvolitans12@gmail.com](mailto:pteroisvolitans12@gmail.com)
 ---
 
 
-![Interface3](screenshots/3.png)
+![Preview2](assets/banner1.png)
 
 *Built for the research community to advance open, transparent, and reproducible evidence synthesis 🌐*
