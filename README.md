@@ -222,8 +222,8 @@ This directory aims to be a comprehensive community resource.
 
 If you use this directory or related tools, please cite:
 
-Sahu, V. (2025). *Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses* (Version 2.1.0). Zenodo.
-[https://doi.org/10.5281/zenodo.17236600](https://doi.org/10.5281/zenodo.17236600)
+Sahu, V. (2026). *Evidence Synthesis Tools: A curated directory of strictly open-source software / tools for Evidence Synthesis.* (Version 1.0). Zenodo.
+[https://doi.org/DOI](https://doi.org/DOI)
 
 Individual tools retain their original citations.
 

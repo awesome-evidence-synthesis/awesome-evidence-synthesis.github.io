@@ -352,7 +352,7 @@
     }
 
     .citation-text {
-      font-family: 'Roboto Mono', monospace;
+      
       font-size: 0.75rem;
       color: #64748b;
       margin-bottom: 0.5rem;
@@ -397,9 +397,8 @@
     }
 
     .citation-text-block {
-      font-family: 'Roboto Mono', monospace;
-      font-size: 0.9rem;
-      color: #333;
+      font-size: 1rem;
+      color: #343434;
       margin-bottom: 1rem;
       word-break: break-all;
     }
@@ -3433,7 +3432,8 @@
         <section class="tools-category">
         <h2 class="section-title">🌟 Global Stats</h2>
         <div class="intro-text">
-          <p id="visits" style="font-family: 'Roboto Mono', monospace; font-size: 1.2rem; font-weight: 500; color: var(--text-color);">Total Visits: Loading...</p>
+          <p id="visits" style=" font-size: 1rem; font-weight: 500; color: var(--text-color);">Total Visits (All Time): Loading...</p>
+          <p  style=" font-size: 1rem; font-weight: 500; color: var(--text-color);">Last Updated: 18 February, 2026.</p>
         </div>
       </section>
 
@@ -3501,23 +3501,25 @@
 
 
           <div class="citation-content">
-            <div class="citation-text-block" id="apaCitation">
-              Sahu, V. (2025). Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews
-              and Meta-Analyses (v2.1.0). Zenodo. https://doi.org/10.5281/zenodo.17236600
-            </div>
+  <div class="citation-text-block" id="apaCitation">
+    Sahu, V. (2026). Evidence Synthesis Tools: A curated directory of strictly open-source software / tools for Evidence Synthesis. (v1.0). Zenodo. https://doi.org/
+    <br><br>
+    <strong>Note:</strong> The complete source code, along with the full software list and detailed metadata, is archived on Zenodo.
+  </div>
 
-            <div class="citation-actions">
-              <button class="btn-copy" onclick="copyCitation()">
-                <i class="fas fa-copy"></i> Copy
-              </button>
-              <a href="#" class="btn-download" onclick="downloadDummy(event, 'ris')">
-                <i class="fas fa-file-alt"></i> Download RIS
-              </a>
-              <a href="#" class="btn-download" onclick="downloadDummy(event, 'bib')">
-                <i class="fas fa-book"></i> Download BibTeX
-              </a>
-            </div>
-          </div>
+  <div class="citation-actions">
+    <button class="btn-copy" onclick="copyCitation()">
+      <i class="fas fa-copy"></i> Copy
+    </button>
+    <a href="#" class="btn-download" onclick="downloadDummy(event, 'ris')">
+      <i class="fas fa-file-alt"></i> Download RIS
+    </a>
+    <a href="#" class="btn-download" onclick="downloadDummy(event, 'bib')">
+      <i class="fas fa-book"></i> Download BibTeX
+    </a>
+  </div>
+</div>
+
         </section>
 
 
@@ -3800,21 +3802,21 @@
       if (type === 'ris') {
         content = `TY  - JOUR
 AU  - Sahu, V.
-PY  - 2025
-TI  - Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses
+PY  - 2026
+TI  - Evidence Synthesis Tools: A curated directory of strictly open-source software / tools for Evidence Synthesis.
 JO  - Zenodo
-VL  - v2.1.0
-DO  - 10.5281/zenodo.17236600
+VL  - v1.0
+DO  - DOI
 ER  - `;
         extension = ".ris";
       } else if (type === 'bib') {
-        content = `@misc{sahu_critiplot_2025,
-  title={Critiplot: A Critical Appraisal Plot Visualiser for Risk of Bias in Systematic Reviews and Meta-Analyses},
+        content = `@misc{sahu_evidencesynthesis-tools_2026,
+  title={Evidence Synthesis Tools: A curated directory of strictly open-source software / tools for Evidence Synthesis.},
   author={Sahu, V.},
-  year={2025},
+  year={2026},
   publisher={Zenodo},
-  version={v2.1.0},
-  doi={10.5281/zenodo.17236600}
+  version={v1.0},
+  doi={DOI}
 }`;
         extension = ".bib";
       }
