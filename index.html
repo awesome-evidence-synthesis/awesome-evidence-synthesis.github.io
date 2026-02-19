@@ -3919,7 +3919,7 @@
     document.addEventListener('touchmove', (e) => {
       const touchY = e.touches[0].clientY;
       const deltaY = touchStartY - touchY;
-      window.targetScroll += deltaY * scrollSpeed;
+      window.targetScroll += deltaY * 3.0;
       touchStartY = touchY;
 
       const maxScroll = document.body.scrollHeight - window.innerHeight;
