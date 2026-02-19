@@ -654,7 +654,7 @@
 
 <body>
 
-<div id="security-screen" style="
+  <div id="security-screen" style="
   position: fixed;
   top: 0;
   left: 0;
@@ -668,7 +668,7 @@
   justify-content: center;
 ">
 
-  <div style="
+    <div style="
     background: #ffffff;
     border-radius: 12px;
     box-shadow: 0 15px 50px rgba(0,0,0,0.12);
@@ -678,20 +678,21 @@
   ">
 
 
-    <img src="assets/icon.png" alt="Site Icon" style="width:96px;height:96px;margin-bottom:24px;">
+      <img src="assets/icon.png" alt="Site Icon" style="width:96px;height:96px;margin-bottom:24px;">
 
 
-    <h2 style="margin:0 0 8px 0;font-weight:700;color:#1a1a1a;font-size: 32px;letter-spacing: -0.5px;">
-      Security Verification
-    </h2>
+      <h2 style="margin:0 0 8px 0;font-weight:700;color:#1a1a1a;font-size: 32px;letter-spacing: -0.5px;">
+        Security Verification
+      </h2>
 
 
-    <div style="font-size: 18px;color:#555;margin-bottom:30px;font-family: 'Roboto Mono', monospace; letter-spacing: 0.5px;">
-      https://evidencesynthesis-tools.github.io
-    </div>
+      <div
+        style="font-size: 18px;color:#555;margin-bottom:30px;font-family: 'Roboto Mono', monospace; letter-spacing: 0.5px;">
+        https://evidencesynthesis-tools.github.io
+      </div>
 
- 
-    <div style="
+
+      <div style="
       border: 4px solid #e6e6e6;
       border-top: 5px solid #2d6cdf;
       border-radius: 50%;
@@ -702,27 +703,29 @@
     "></div>
 
 
-    <div id="progress-text" style="font-size:19px;color:#333;margin-top:10px;font-weight: 500;">
-      Initializing security checks...
+      <div id="progress-text" style="font-size:19px;color:#333;margin-top:10px;font-weight: 500;">
+        Initializing security checks...
+      </div>
+
+      <hr style="margin:30px 0;border:none;border-top:1px solid #eee;">
+
+
+      <div style="font-size:15px;color:#666;line-height:1.8;font-weight: 400;">
+        Connection secured via HTTPS<br>
+        Automated traffic protection enabled<br>
+        Global edge delivery network active
+      </div>
+
     </div>
-
-    <hr style="margin:30px 0;border:none;border-top:1px solid #eee;">
-
-  
-    <div style="font-size:15px;color:#666;line-height:1.8;font-weight: 400;">
-      Connection secured via HTTPS<br>
-      Automated traffic protection enabled<br>
-      Global edge delivery network active
-    </div>
-
   </div>
-</div>
 
-<style>
-  @keyframes spin {
-    100% { transform: rotate(360deg); }
-  }
-</style>
+  <style>
+    @keyframes spin {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
 
   <div class="search-container">
     <div class="search-box">
@@ -3615,6 +3618,205 @@
             </div>
 
 
+            <div class="tool-card">
+              <div class="card-image"> <span class="badge">Visualization</span> <img src="softwares/rosesflowchart.png"
+                  alt="ROSESflowchart"> </div>
+              <div class="card-content">
+                <h3 class="card-title">ROSES flowchart</h3>
+                <p class="card-desc">An R package and Shiny app for creating flow diagrams compliant with the ROSES
+                  (Reporting Standards for Systematic Evidence Syntheses) guidelines. It supports the visualization of
+                  systematic review and map processes.</p>
+                <div class="card-footer"> <span class="citation-text">Haddaway, N. R. (2020). Zenodo.</span> <a href="https://estech.shinyapps.io/roses_flowchart/"
+                    target="_blank" class="tool-link"> <i class="fas fa-external-link-alt"></i> Visit Tool </a> </div>
+                <div class="card-footer"><a href="https://github.com/nealhaddaway/ROSES_flowchart"
+                    target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub Repository</a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="tool-card">
+              <div class="card-image"> <span class="badge">Screening</span> <img src="softwares/ESHacklathon.jpg"
+                  alt="RefRandomiser"> </div>
+              <div class="card-content">
+                <h3 class="card-title">RefRandomiser</h3>
+                <p class="card-desc">A Python-based data splitting tool developed to support double-screening processes
+                  in evidence synthesis. It helps randomize references for screening to improve reliability and
+                  validation.</p>
+                <div class="card-footer"> <span class="citation-text">Schmidt et al. (2025). OSF.</span> <a
+                    href="https://refrandomiser.streamlit.app" target="_blank" class="tool-link"> <i
+                      class="fas fa-external-link-alt"></i> Visit Tool </a> </div>
+                <div class="card-footer"><a href="https://github.com/ESHackathon/RefRandomiser" target="_blank"
+                    class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub Repository</a></div>
+              </div>
+            </div>
+
+
+
+
+            <div class="tool-card">
+              <div class="card-image"> <span class="badge">Automation</span> <img src="softwares/bibfix.png"
+                  alt="bibfix"> </div>
+              <div class="card-content">
+                <h3 class="card-title">bibfix</h3>
+                <p class="card-desc">An R package and Shiny app that assists users in repairing and enriching
+                  bibliographic data using the OpenAlex API. It fixes common formatting errors in reference lists to
+                  prepare data for synthesis.</p>
+                <div class="card-footer"> <span class="citation-text">M. J. Westgate et al., 2023, Research Synthesis
+                    Methods.</span> <a href="https://docs.ropensci.org/bibfix/" target="_blank" class="tool-link"> <i
+                      class="fas fa-external-link-alt"></i> Visit Tool </a> </div>
+                <div class="card-footer"><a href="https://github.com/ropensci/bibfix" target="_blank"
+                    class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub Repository</a></div>
+              </div>
+            </div>
+            <div class="tool-card">
+              <div class="card-image"> <span class="badge">Search</span> <img src="softwares/citationchaser.png"
+                  alt="citationchaser"> </div>
+              <div class="card-content">
+                <h3 class="card-title">citationchaser</h3>
+                <p class="card-desc">An R package and Shiny app for performing forward and backward citation chasing to
+                  supplement academic searches. It retrieves references from studies and articles citing specific
+                  studies.</p>
+                <div class="card-footer"> <span class="citation-text">M. J. Westgate et al., 2023, Journal of Open
+                    Source Software.</span> <a href="https://docs.ropensci.org/citationchaser/" target="_blank"
+                    class="tool-link"> <i class="fas fa-external-link-alt"></i> Visit Tool </a> </div>
+                <div class="card-footer"><a href="https://github.com/ropensci/citationchaser" target="_blank"
+                    class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub Repository</a></div>
+              </div>
+            </div>
+            <div class="tool-card">
+              <div class="card-image"> <span class="badge">Visualization</span> <img src="softwares/eviatlas.png"
+                  alt="EviAtlas"> </div>
+              <div class="card-content">
+                <h3 class="card-title">EviAtlas</h3>
+                <p class="card-desc">An R Shiny webapp that automates parts of creating systematic maps for
+                  environmental research. It allows users to categorize and visualize documents geographically.</p>
+                <div class="card-footer"> <span class="citation-text">N. R. Haddaway et al., 2020, Environmental
+                    Evidence.</span> <a href="https://github.com/Environmental-Evidence/EviAtlas" target="_blank"
+                    class="tool-link"> <i class="fas fa-external-link-alt"></i> Visit Tool </a> </div>
+                <div class="card-footer"><a href="https://github.com/Environmental-Evidence/EviAtlas" target="_blank"
+                    class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub Repository</a></div>
+              </div>
+            </div>
+            <div class="tool-card">
+              <div class="card-image"> <span class="badge">Search</span> <img src="softwares/greyliteraturereporter.png"
+                  alt="Grey Literature Reporter"> </div>
+              <div class="card-content">
+                <h3 class="card-title">Grey Literature Reporter</h3>
+                <p class="card-desc">A Chrome plugin for systematic searching and recording of grey literature. It helps
+                  users be systematic in finding and recording grey literature sources during the review process.</p>
+                <div class="card-footer"> <span class="citation-text">Evidence Synthesis Hackathon.</span> <a
+                    href="https://github.com/ESHackathon/Grey-Literature-Reporter" target="_blank" class="tool-link"> <i
+                      class="fas fa-external-link-alt"></i> Visit Tool </a> </div>
+                <div class="card-footer"><a href="https://github.com/ESHackathon/Grey-Literature-Reporter"
+                    target="_blank" class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub Repository</a>
+                </div>
+              </div>
+            </div>
+            <div class="tool-card">
+              <div class="card-image"> <span class="badge">Search</span> <img src="softwares/greylitsearcher.png"
+                  alt="greylitsearcher"> </div>
+              <div class="card-content">
+                <h3 class="card-title">greylitsearcher</h3>
+                <p class="card-desc">An R package and Shiny app for performing systematic and transparent searches of
+                  organizational websites using Google's site search functionality. It facilitates structured searches
+                  across website pages.</p>
+                <div class="card-footer"> <span class="citation-text">M. J. Westgate, 2020, Journal of Open Source
+                    Software.</span> <a href="https://docs.ropensci.org/greylitsearcher/" target="_blank"
+                    class="tool-link"> <i class="fas fa-external-link-alt"></i> Visit Tool </a> </div>
+                <div class="card-footer"><a href="https://github.com/ropensci/greylitsearcher" target="_blank"
+                    class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub Repository</a></div>
+              </div>
+            </div>
+            <div class="tool-card">
+              <div class="card-image"> <span class="badge">Meta-analysis</span> <img src="softwares/metadat.png"
+                  alt="metadat"> </div>
+              <div class="card-content">
+                <h3 class="card-title">metadat</h3>
+                <p class="card-desc">An R package containing a large collection of meta-analysis datasets useful for
+                  teaching and testing methods. It provides standardized data for validating meta-analytic analyses.</p>
+                <div class="card-footer"> <span class="citation-text">W. Viechtbauer, 2023.</span> <a
+                    href="https://wviechtb.github.io/metadat/" target="_blank" class="tool-link"> <i
+                      class="fas fa-external-link-alt"></i> Visit Tool </a> </div>
+                <div class="card-footer"><a href="https://github.com/wviechtb/metadat" target="_blank"
+                    class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub Repository</a></div>
+              </div>
+            </div>
+            <div class="tool-card">
+              <div class="card-image"> <span class="badge">Meta-analysis</span> <img src="softwares/metafor.png"
+                  alt="metafor"> </div>
+              <div class="card-content">
+                <h3 class="card-title">metafor</h3>
+                <p class="card-desc">A comprehensive R package for conducting meta-analyses, including functions to
+                  generate automated reports summarizing model outputs, heterogeneity, and bias. It is a standard tool
+                  for meta-analysis in R.</p>
+                <div class="card-footer"> <span class="citation-text">W. Viechtbauer, 2010, Journal of Statistical
+                    Software.</span> <a href="https://www.metafor-project.org/" target="_blank" class="tool-link"> <i
+                      class="fas fa-external-link-alt"></i> Visit Tool </a> </div>
+                <div class="card-footer"><a href="https://github.com/wviechtb/metafor" target="_blank"
+                    class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub Repository</a></div>
+              </div>
+            </div>
+            <div class="tool-card">
+              <div class="card-image"> <span class="badge">Manager</span> <img src="softwares/predicter.png"
+                  alt="PredicTER"> </div>
+              <div class="card-content">
+                <h3 class="card-title">PredicTER</h3>
+                <p class="card-desc">A Shiny app that predicts the time required to conduct systematic reviews and maps.
+                  It helps researchers plan their projects by estimating the hours needed for various stages.</p>
+                <div class="card-footer"> <span class="citation-text">N. R. Haddaway et al., 2019, Environmental
+                    Evidence.</span> <a href="https://environmentalevidence.org/predicter/" target="_blank"
+                    class="tool-link"> <i class="fas fa-external-link-alt"></i> Visit Tool </a> </div>
+                <div class="card-footer"><a href="https://github.com/Environmental-Evidence/PredicTER" target="_blank"
+                    class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub Repository</a></div>
+              </div>
+            </div>
+            <div class="tool-card">
+              <div class="card-image"> <span class="badge">Risk of Bias</span> <img src="softwares/robvis.png"
+                  alt="robvis"> </div>
+              <div class="card-content">
+                <h3 class="card-title">robvis</h3>
+                <p class="card-desc">An R package and Shiny app for quickly visualizing risk-of-bias assessments with
+                  traffic light plots and weighted bar-plots. It supports common tools like ROB-2, ROBINS-I, and
+                  QUADAS-2.</p>
+                <div class="card-footer"> <span class="citation-text">M. McAllister et al., 2020, Research Synthesis
+                    Methods.</span> <a href="https://robvis.shinyapps.io/robvis/" target="_blank" class="tool-link"> <i
+                      class="fas fa-external-link-alt"></i> Visit Tool </a> </div>
+                <div class="card-footer"><a href="https://github.com/mathewmcallister/robvis" target="_blank"
+                    class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub Repository</a></div>
+              </div>
+            </div>
+            <div class="tool-card">
+              <div class="card-image"> <span class="badge">Data Extraction</span> <img src="softwares/sysrevdata.png"
+                  alt="sysrevdata"> </div>
+              <div class="card-content">
+                <h3 class="card-title">sysrevdata</h3>
+                <p class="card-desc">An R package designed to convert systematic review and map databases into human-
+                  and machine-readable formats. It aids in the translation of complex data structures for visualization
+                  and analysis.</p>
+                <div class="card-footer"> <span class="citation-text">N. R. Haddaway et al., 2022, Environmental
+                    Evidence.</span> <a href="https://environmentalevidence.org/sysrevdata/" target="_blank"
+                    class="tool-link"> <i class="fas fa-external-link-alt"></i> Visit Tool </a> </div>
+                <div class="card-footer"><a href="https://github.com/Environmental-Evidence/sysrevdata" target="_blank"
+                    class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub Repository</a></div>
+              </div>
+            </div>
+            <div class="tool-card">
+              <div class="card-image"> <span class="badge">Visualization</span> <img src="softwares/thallo.png"
+                  alt="Thallo Evidence Mapping"> </div>
+              <div class="card-content">
+                <h3 class="card-title">Thallo Evidence Mapping</h3>
+                <p class="card-desc">A Jekyll theme and framework providing map components for the web visualization of
+                  environmental evidence maps. It features visual clustering, filtering, and slicing of data dimensions.
+                </p>
+                <div class="card-footer"> <span class="citation-text">N. R. Haddaway et al.</span> <a
+                    href="https://github.com/Environmental-Evidence/Thallo" target="_blank" class="tool-link"> <i
+                      class="fas fa-external-link-alt"></i> Visit Tool </a> </div>
+                <div class="card-footer"><a href="https://github.com/Environmental-Evidence/Thallo" target="_blank"
+                    class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub Repository</a></div>
+              </div>
+            </div>
+
 
 
           </div>
@@ -3731,7 +3933,7 @@
           <a href="mailto:pteroisvolitans12@gmail.com"><i class="fas fa-envelope"></i> Contact</a>
         </div>
         <div class="footer-right">
-          Version 1.0; Compiled for Research Community.
+          Version 1.0. Compiled for Research Community.
         </div>
       </div>
     </footer>
@@ -3919,7 +4121,7 @@
     document.addEventListener('touchmove', (e) => {
       const touchY = e.touches[0].clientY;
       const deltaY = touchStartY - touchY;
-      window.targetScroll += deltaY *8.0; // mobile scroll speed
+      window.targetScroll += deltaY * 6.0; // mobile scroll speed
       touchStartY = touchY;
 
       const maxScroll = document.body.scrollHeight - window.innerHeight;
@@ -4076,38 +4278,38 @@ ER  - `;
     }
   </script>
 
-<script>
+  <script>
 
-  if (!localStorage.getItem("security_verified")) {
-    localStorage.setItem("security_verified", "true");
+    if (!localStorage.getItem("security_verified")) {
+      localStorage.setItem("security_verified", "true");
 
-    const messages = [
-      "Initializing security checks...",
-      "Verifying connection integrity...",
-      "Checking browser environment...",
-      "Finalizing secure session..."
-    ];
+      const messages = [
+        "Initializing security checks...",
+        "Verifying connection integrity...",
+        "Checking browser environment...",
+        "Finalizing secure session..."
+      ];
 
-    let index = 0;
-    const textElement = document.getElementById("progress-text");
+      let index = 0;
+      const textElement = document.getElementById("progress-text");
 
-    const interval = setInterval(() => {
-      index++;
-      if (index < messages.length) {
-        textElement.innerText = messages[index];
-      }
-    }, 600); //  text change 
+      const interval = setInterval(() => {
+        index++;
+        if (index < messages.length) {
+          textElement.innerText = messages[index];
+        }
+      }, 600); //  text change 
 
 
-    setTimeout(() => {
-      clearInterval(interval);
+      setTimeout(() => {
+        clearInterval(interval);
+        document.getElementById("security-screen").style.display = "none";
+      }, 3000); // Timer
+
+    } else {
       document.getElementById("security-screen").style.display = "none";
-    }, 3000); // Timer
-
-  } else {
-    document.getElementById("security-screen").style.display = "none";
-  }
-</script>
+    }
+  </script>
 </body>
 
 </html>
