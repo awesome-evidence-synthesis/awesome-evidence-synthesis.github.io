@@ -199,9 +199,10 @@ This directory aims to be a comprehensive community resource.
 
 ### Submit a tool via:
 
-* Pull Request (preferred)
-* GitHub Issue
-* Email to the maintainer
+* Pull Request (preferred) [evidencesynthesis-tools.github.io/pulls](https://github.com/evidencesynthesis-tools/evidencesynthesis-tools.github.io/pulls)
+* GitHub Issue [evidencesynthesis-tools.github.io/issues](https://github.com/evidencesynthesis-tools/evidencesynthesis-tools.github.io/issues)
+* GitHub Discussions [evidencesynthesis-tools/discussions](https://github.com/orgs/evidencesynthesis-tools/discussions)
+* Email to the maintainer [V.S.](mailto:pteroisvolitans12@gmail.com)
 
 ### Requirements
 
@@ -240,7 +241,7 @@ Licensed under the **Apache License 2.0**
 
 ##  Contact
 
-* GitHub: Issues / Pull Requests
+* GitHub: Issues / Pull Requests / Discussions
 * Email: [pteroisvolitans12@gmail.com](mailto:pteroisvolitans12@gmail.com)
 ---
 
