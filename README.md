@@ -20,7 +20,7 @@ This resource is intended for:
 * Open science advocates
 * Research software developers 
 
-The directory includes **140** open source non properietary tools / softwares available **up to 2026**, covering all stages of the evidence synthesis pipeline.
+The directory includes **277** open source non properietary tools / softwares available **up to early 2026**, covering all stages of the evidence synthesis pipeline.
 
 ---
 
@@ -96,7 +96,7 @@ Released under a recognized license (MIT, GPL, Apache, etc.)
 
 ### 2. Public Code Repository
 
-Source code must be publicly available (GitHub, GitLab, Bitbucket)
+Source code must be publicly available (GitHub, GitLab, Bitbucke, SourceForge)
 
 ### 3. Non-Proprietary
 
