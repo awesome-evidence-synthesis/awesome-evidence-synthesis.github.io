@@ -7032,7 +7032,7 @@
     document.addEventListener('touchmove', (e) => {
       const touchY = e.touches[0].clientY;
       const deltaY = touchStartY - touchY;
-      window.targetScroll += deltaY * 5; // mobile scroll speed
+      window.targetScroll += deltaY * 4; // mobile scroll speed
       touchStartY = touchY;
 
       const maxScroll = document.body.scrollHeight - window.innerHeight;
