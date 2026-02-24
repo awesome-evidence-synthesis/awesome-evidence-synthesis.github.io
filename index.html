@@ -7021,7 +7021,7 @@ const categories = [
 ];
 let activeCategoryFilter = null;
 
-// Define DOM elements for the new features
+
 const toggleFiltersBtn = document.getElementById('toggleFiltersBtn');
 const filtersPanel = document.getElementById('filtersPanel');
 const yearFiltersContainer = document.getElementById('yearFilters');
@@ -7053,14 +7053,14 @@ document.getElementById('searchBtn').addEventListener('click', () => {
     prevBtn.addEventListener('click', () => navigateMatch(-1));
 
 
-// 2. Allow "Enter" key to trigger search as well
+
 searchInput.addEventListener('keypress', (e) => {
   if (e.key === 'Enter') {
     document.getElementById('searchBtn').click();
   }
 });
 
-// Keep your existing next/prev buttons here
+
 nextBtn.addEventListener('click', () => navigateMatch(1));
 prevBtn.addEventListener('click', () => navigateMatch(-1));
 
@@ -7215,7 +7215,7 @@ function performSearch(term) {
     document.addEventListener('touchmove', (e) => {
       const touchY = e.touches[0].clientY;
       const deltaY = touchStartY - touchY;
-      window.targetScroll += deltaY * 4; // mobile scroll speed
+      window.targetScroll += deltaY * 2; // mobile scroll speed
       touchStartY = touchY;
 
       const maxScroll = document.body.scrollHeight - window.innerHeight;
@@ -7401,7 +7401,7 @@ function createFilterButton(container, text, count, type) {
   container.appendChild(btn);
 }
 
-// Helper to count occurrences
+
 function countMatches(keyword) {
   let count = 0;
   const lowerKeyword = keyword.toLowerCase();
@@ -7413,9 +7413,9 @@ function countMatches(keyword) {
   return count;
 }
 
-// 3. Category Filtering Logic
+
 function filterByCategory(category) {
-  clearHighlights(); // Remove any yellow highlights
+  clearHighlights(); 
   let visibleCount = 0;
   const lowerCat = category.toLowerCase();
 
