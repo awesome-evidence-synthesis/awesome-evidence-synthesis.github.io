@@ -433,6 +433,7 @@
 
  
     @media (max-width: 768px) {
+
       .overview-container {
         flex-direction: column;
       }
@@ -449,6 +450,37 @@
       
       .content-block {
         padding: 1.5rem;
+      }
+
+      /* --- ADD THESE NEW FIXES --- */
+
+      /* 1. Fix Overlap: Increase top padding so content isn't hidden behind fixed tabs */
+      main {
+        padding-top: 5rem;
+        margin-top: 0;
+      }
+
+      /* 2. Fix Overlap: Adjust Tab positioning */
+      .tabs-container {
+        top: 10px;
+        left: 10px;
+        gap: 10px;
+      }
+
+      .tab-link {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+      }
+
+      /* 3. Remove Smooth Scroll: Enable native scrolling on mobile */
+      html, body {
+        overflow: auto !important;
+        height: auto !important;
+      }
+
+      #scroll-container {
+        transform: none !important;
+        height: auto !important;
       }
     }
   </style>
@@ -778,15 +810,23 @@
       if (window.targetScroll > maxScroll) window.targetScroll = maxScroll;
     }, { passive: true });
 
-    function animateScroll() {
+        function animateScroll() {
+      
+  
+      if (window.innerWidth <= 768) {
+        requestAnimationFrame(animateScroll);
+        return;
+      }
+
+
       currentScroll += (window.targetScroll - currentScroll) * ease;
+      
       if(scrollContainer) {
         scrollContainer.style.transform = `translateY(${-currentScroll}px)`;
       }
+      
       requestAnimationFrame(animateScroll);
     }
-    animateScroll();
-
 
 
     const scrollBtn = document.getElementById('scrollToTopBtn');
