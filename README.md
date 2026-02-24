@@ -224,6 +224,22 @@ This directory aims to be a comprehensive community resource.
 
 ---
 
+Here is a more formal and professional version:
+
+---
+
+## Acknowledgements
+
+This project was conducted independently by the author.
+
+Artificial intelligence tools were used to support aspects of interface refinement and presentation. Specifically, **GLM-4.5V-Flash (open access)** was utilized to improve layout structure and enhance visual clarity. All conceptual development, inclusion criteria, verification of repositories and licenses, tool selection, curation decisions, and overall project design were performed **manually** solely by the author. *Please check out **Archive** for more info:* [https://doi.org/10.5281/zenodo.18692063](https://doi.org/10.5281/zenodo.18692063), [evidencesynthesis-tools/backwork](https://github.com/evidencesynthesis-tools/backwork).
+
+The initial systematic search for eligible tools and software was conducted in **October 2025**, followed by continued independent searches and verification to ensure coverage of tools available up to **February 2026**.
+
+The author welcomes future contributors and collaborators to support the long-term maintenance and development of this directory. In the absence of external contributions, the author intends to perform an updated search for newly eligible tools **at least once annually** to maintain accuracy, completeness, and relevance.
+
+---
+
 ## ⭐ Citation
 
 If you use this directory or related tools, please cite:
