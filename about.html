@@ -56,22 +56,24 @@
       line-height: 1.6;
       color: var(--text-color);
       background-color: var(--light-bg);
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+     
+      height: 100vh;
       width: 100%;
       overflow: hidden;
+      position: relative; 
     }
 
 
     #scroll-container {
+    
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: auto;
-      min-height: 100vh;
       will-change: transform;
       padding-top: 20px;
-      padding-bottom: 0;
-      flex: 1;
+     
       background-color: var(--light-bg);
     }
 
@@ -122,7 +124,6 @@
 
 
     main {
-      flex: 1;
       padding: 3rem 1rem;
       max-width: 1100px;
       margin: 0 auto;
@@ -278,7 +279,7 @@
       color: #334155;
       white-space: pre-wrap;
       margin-bottom: 1rem;
-      border-left: 4px solid var(--accent-color);
+      border-left: 2px solid var(--accent-color);
     }
 
     .citation-note {
@@ -333,8 +334,6 @@
       background: var(--primary-color);
       color: rgba(255, 255, 255, 0.8);
       padding: 2rem;
-      margin-top: auto;
-      flex-shrink: 0;
       width: 100%;
     }
 
@@ -459,15 +458,12 @@
         padding: 1.5rem;
       }
 
-      /* --- ADD THESE NEW FIXES --- */
-
-      /* 1. Fix Overlap: Increase top padding so content isn't hidden behind fixed tabs */
+  
       main {
         padding-top: 5rem;
         margin-top: 0;
       }
 
-      /* 2. Fix Overlap: Adjust Tab positioning */
       .tabs-container {
         top: 10px;
         left: 10px;
@@ -479,7 +475,7 @@
         font-size: 0.9rem;
       }
 
-      /* 3. Remove Smooth Scroll: Enable native scrolling on mobile */
+
       html,
       body {
         overflow: auto !important;
@@ -489,6 +485,7 @@
       #scroll-container {
         transform: none !important;
         height: auto !important;
+        position: static !important;
       }
     }
   </style>
@@ -601,7 +598,7 @@
             <ul>
               <li>A strict open-source-only directory</li>
               <li>Verified repositories and licenses</li>
-              <li>Software-only inclusion (no mixed content)</li>
+              <li>Software-only inclusion (no mixed content). Checklists and Frameworks are excluded.</li>
               <li>A discovery platform for reusable research software</li>
               <li>Support for Open Science and FAIR principles</li>
             </ul>
@@ -822,11 +819,13 @@
     const scrollContainer = document.getElementById('scroll-container');
 
     const ease = 0.1;
-    const scrollSpeed = 0.6;
+    const scrollSpeed = 0.6; 
 
+  
     document.addEventListener('wheel', (e) => {
       window.targetScroll += e.deltaY * scrollSpeed;
-      const maxScroll = document.body.scrollHeight - window.innerHeight;
+    
+      const maxScroll = scrollContainer.scrollHeight - window.innerHeight;
       if (window.targetScroll < 0) window.targetScroll = 0;
       if (window.targetScroll > maxScroll) window.targetScroll = maxScroll;
     }, { passive: true });
@@ -841,21 +840,26 @@
       const deltaY = touchStartY - touchY;
       window.targetScroll += deltaY * 5.5;
       touchStartY = touchY;
-      const maxScroll = document.body.scrollHeight - window.innerHeight;
+      
+
+      const maxScroll = scrollContainer.scrollHeight - window.innerHeight;
       if (window.targetScroll < 0) window.targetScroll = 0;
       if (window.targetScroll > maxScroll) window.targetScroll = maxScroll;
     }, { passive: true });
 
     function animateScroll() {
 
-
       if (window.innerWidth <= 768) {
         requestAnimationFrame(animateScroll);
         return;
       }
 
-
       currentScroll += (window.targetScroll - currentScroll) * ease;
+
+
+      const maxScroll = scrollContainer.scrollHeight - window.innerHeight;
+      if (currentScroll > maxScroll) currentScroll = maxScroll;
+      if (currentScroll < 0) currentScroll = 0;
 
       if (scrollContainer) {
         scrollContainer.style.transform = `translateY(${-currentScroll}px)`;
@@ -863,6 +867,8 @@
 
       requestAnimationFrame(animateScroll);
     }
+    
+    animateScroll();
 
 
     const scrollBtn = document.getElementById('scrollToTopBtn');
@@ -879,6 +885,8 @@
       originalAnimate();
       updateScrollBtnVisibility();
     }
+    animateScroll();
+
 
     scrollBtn.addEventListener('click', () => {
       window.targetScroll = 0;

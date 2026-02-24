@@ -225,7 +225,7 @@ This directory aims to be a comprehensive community resource.
 
 If you use this directory or related tools, please cite:
 
-Sahu, V. (2026). *Evidence Synthesis Tools: A curated directory of strictly open-source software / tools for Evidence Synthesis.* (Version 1.0). Zenodo.
+Sahu, V. (2026). *Evidence Synthesis Tools: A curated directory of strictly open-source software / tools for Evidence Synthesis.* (Version 2.1). Zenodo.
 [https://doi.org/10.5281/zenodo.18681868](https://doi.org/10.5281/zenodo.18681868)
 
 Individual tools retain their original citations.
