@@ -7110,9 +7110,6 @@
     });
 
 
-    nextBtn.addEventListener('click', () => navigateMatch(1));
-    prevBtn.addEventListener('click', () => navigateMatch(-1));
-
 
 
     function performSearch(term) {
@@ -7215,25 +7212,25 @@
       matchCountEl.textContent = `${currentMatchIndex + 1}/${matches.length}`;
     }
 
-    function scrollToMatch(index) {
+      function scrollToMatch(index) {
       const targetEl = matches[index];
       if (!targetEl) return;
 
 
+      if (window.innerWidth <= 768) {
+        targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+
       const elementTop = targetEl.offsetTop;
-
-
       let targetScroll = elementTop - (window.innerHeight / 2) + (targetEl.offsetHeight / 2);
-
 
       const maxScroll = document.body.scrollHeight - window.innerHeight;
       if (targetScroll < 0) targetScroll = 0;
       if (targetScroll > maxScroll) targetScroll = maxScroll;
 
-
       window.targetScroll = targetScroll;
     }
-
 
 
     let currentScroll = 0;
