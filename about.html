@@ -22,7 +22,7 @@
     href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
+
 
   <style>
     :root {
@@ -63,14 +63,14 @@
       overflow: hidden;
     }
 
-    
+
     #scroll-container {
       width: 100%;
       height: auto;
       min-height: 100vh;
       will-change: transform;
       padding-top: 20px;
-      padding-bottom: 0; 
+      padding-bottom: 0;
       flex: 1;
       background-color: var(--light-bg);
     }
@@ -158,7 +158,8 @@
       font-size: 1.05rem;
     }
 
-    .content-block ul, .content-block ol {
+    .content-block ul,
+    .content-block ol {
       margin-left: 1.5rem;
       margin-bottom: 1.5rem;
     }
@@ -174,7 +175,7 @@
     }
 
 
-    
+
     .overview-container {
       display: flex;
       flex-direction: row;
@@ -182,13 +183,13 @@
       align-items: flex-start;
       margin-bottom: 3rem;
     }
-    
+
     .overview-text {
       flex: 1;
     }
 
     .overview-image {
-      flex: 0 0 520px; 
+      flex: 0 0 520px;
       display: flex;
       justify-content: center;
       align-items: flex-start;
@@ -207,13 +208,13 @@
       gap: 2rem;
       margin-bottom: 3rem;
     }
-    
+
     .grid-row .content-block {
       margin-bottom: 0;
       height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start; 
+      justify-content: flex-start;
     }
 
 
@@ -260,7 +261,7 @@
       box-shadow: 0 4px 12px rgba(174, 68, 90, 0.3);
     }
 
-    
+
     .citation-wrapper {
       background: #fff;
       padding: 2rem;
@@ -281,10 +282,10 @@
     }
 
     .citation-note {
-        text-align: center;
-        font-size: 0.95rem;
-        color: #64748b;
-        margin-bottom: 1.5rem;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #64748b;
+      margin-bottom: 1.5rem;
     }
 
     .citation-actions {
@@ -305,21 +306,27 @@
       gap: 8px;
       border: none;
       font-family: 'Inter', sans-serif;
-      font-size: 0.9rem; 
+      font-size: 0.9rem;
     }
 
     .btn-primary {
       background-color: var(--accent-color);
       color: white;
     }
-    .btn-primary:hover { background-color: var(--accent-hover); }
+
+    .btn-primary:hover {
+      background-color: var(--accent-hover);
+    }
 
     .btn-secondary {
       background-color: white;
       border: 1px solid var(--accent-color);
       color: var(--accent-color);
     }
-    .btn-secondary:hover { background-color: #fff0f0; }
+
+    .btn-secondary:hover {
+      background-color: #fff0f0;
+    }
 
 
     footer {
@@ -389,7 +396,7 @@
       visibility: visible;
       transform: translateY(0);
     }
-    
+
 
     .stats-wrapper {
       text-align: center;
@@ -398,10 +405,10 @@
     }
 
     .stats-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
     }
 
     .stat-item {
@@ -414,40 +421,40 @@
       color: var(--primary-color);
       font-size: 1rem;
     }
-    
+
     .stat-date {
-        color: #64748b;
-        font-size: 0.8rem;
-        font-weight: 400;
+      color: #64748b;
+      font-size: 0.8rem;
+      font-weight: 400;
     }
 
-   
+
     .grid-row .section-header-center {
-        margin-bottom: 1rem; 
+      margin-bottom: 1rem;
     }
 
- 
-    main > section:nth-of-type(3) .section-header-center {
-        margin-bottom: 1rem;
+
+    main>section:nth-of-type(3) .section-header-center {
+      margin-bottom: 1rem;
     }
 
- 
+
     @media (max-width: 768px) {
 
       .overview-container {
         flex-direction: column;
       }
-      
+
       .overview-image {
         flex: 0 0 auto;
         width: 100%;
         margin-top: 1rem;
       }
-      
+
       .grid-row {
         grid-template-columns: 1fr;
       }
-      
+
       .content-block {
         padding: 1.5rem;
       }
@@ -473,7 +480,8 @@
       }
 
       /* 3. Remove Smooth Scroll: Enable native scrolling on mobile */
-      html, body {
+      html,
+      body {
         overflow: auto !important;
         height: auto !important;
       }
@@ -494,7 +502,7 @@
     <a href="about.html" class="tab-link active">About</a>
   </div>
 
-  
+
   <div id="security-screen" style="
   position: fixed;
   top: 0;
@@ -507,202 +515,223 @@
   display: flex;
   align-items: center;
   justify-content: center;">
-    <div style="background: #ffffff; border-radius: 12px; box-shadow: 0 15px 50px rgba(0,0,0,0.12); padding: 60px; width: 600px; text-align: center;">
+    <div
+      style="background: #ffffff; border-radius: 12px; box-shadow: 0 15px 50px rgba(0,0,0,0.12); padding: 60px; width: 600px; text-align: center;">
       <img src="assets/icon.png" alt="Site Icon" style="width:116px;height:116px;margin-bottom:24px;">
-      <div style="font-size: 20px;color:#555;margin-bottom:30px;font-family: 'Roboto Mono', monospace; letter-spacing: 0.5px;">https://evidencesynthesis-tools.github.io</div>
-      <div style="border: 4px solid #e6e6e6; border-top: 5px solid #2d6cdf; border-radius: 50%; width: 44px; height: 44px; margin: 0 auto 30px auto; animation: spin 1s linear infinite;"></div>
+      <div
+        style="font-size: 20px;color:#555;margin-bottom:30px;font-family: 'Roboto Mono', monospace; letter-spacing: 0.5px;">
+        https://evidencesynthesis-tools.github.io</div>
+      <div
+        style="border: 4px solid #e6e6e6; border-top: 5px solid #2d6cdf; border-radius: 50%; width: 44px; height: 44px; margin: 0 auto 30px auto; animation: spin 1s linear infinite;">
+      </div>
       <div id="progress-text" style="font-size:19px;color:#333;margin-top:10px;font-weight: 500;">Initializing...</div>
       <hr style="margin:30px 0;border:none;border-top:1px solid #eee;">
     </div>
   </div>
 
   <style>
-    @keyframes spin { 100% { transform: rotate(360deg); } }
+    @keyframes spin {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
   </style>
 
 
 
   <div id="scroll-container">
-  
+
 
 
     <main>
-   
+
 
       <section>
 
         <div class="overview-container">
-            <div class="overview-text content-block" style="margin-bottom: 0;">
-                <p>This directory is designed for:</p>
-                <ul>
-                    <li>Systematic review researchers and students</li>
-                    <li>Meta-analysis practitioners</li>
-                    <li>Medical and public health researchers</li>
-                    <li>Librarians and methodologists</li>
-                    <li>Open science advocates</li>
-                    <li>Research software developers</li>
-                </ul>
-                <p>The directory covers all major stages of evidence synthesis:</p>
-                <ul>
-                    <li>Search strategy development</li>
-                    <li>Citation retrieval and deduplication</li>
-                    <li>AI-assisted screening</li>
-                    <li>Data extraction and PDF processing</li>
-                    <li>Risk of Bias assessment and visualization</li>
-                    <li>Statistical analysis and meta-analysis</li>
-                    <li>Evidence mapping and bibliometrics</li>
-                    <li>Automation, scripting, and machine learning</li>
-                    <li>Qualitative synthesis</li>
-                </ul>
-                <p>Tools range from full platforms to lightweight libraries and utilities.</p>
-                <p>It includes <span class="highlight-strong">277 verified open-source, non-proprietary tools</span> (up to early 2026) covering the full evidence synthesis pipeline.</p>
-            </div>
-            <div class="overview-image">
-                <img src="assets/banner4.png" alt="Evidence Synthesis Pipeline Figure">
-            </div>
+          <div class="overview-text content-block" style="margin-bottom: 0;">
+            <p>This directory is designed for:</p>
+            <ul>
+              <li>Systematic review researchers and students</li>
+              <li>Meta-analysis practitioners</li>
+              <li>Medical and public health researchers</li>
+              <li>Librarians and methodologists</li>
+              <li>Open science advocates</li>
+              <li>Research software developers</li>
+            </ul>
+            <p>The directory covers all major stages of evidence synthesis:</p>
+            <ul>
+              <li>Search strategy development</li>
+              <li>Citation retrieval and deduplication</li>
+              <li>AI-assisted screening</li>
+              <li>Data extraction and PDF processing</li>
+              <li>Risk of Bias assessment and visualization</li>
+              <li>Statistical analysis and meta-analysis</li>
+              <li>Evidence mapping and bibliometrics</li>
+              <li>Automation, scripting, and machine learning</li>
+              <li>Qualitative synthesis</li>
+            </ul>
+            <p>Tools range from full platforms to lightweight libraries and utilities.</p>
+            <p>It includes <span class="highlight-strong">277 verified open-source, non-proprietary tools</span> (up to
+              early 2026) covering the full evidence synthesis pipeline.</p>
+          </div>
+          <div class="overview-image">
+            <img src="assets/banner4.png" alt="Evidence Synthesis Pipeline Figure">
+          </div>
         </div>
       </section>
 
 
       <section>
         <div class="section-header-center">
-            <h2 class="section-title">Why This Matters</h2>
+          <h2 class="section-title">Why This Matters</h2>
         </div>
         <div class="overview-container">
-            <div class="overview-text content-block" style="margin-bottom: 0;">
-              <p>Evidence synthesis supports evidence-based medicine, public health, environmental research, and policy. However, current ecosystem has key limitations:</p>
-              <ul>
-                <li>Many commonly used tools are proprietary or closed-source</li>
-                <li>Existing directories often mix software with checklists or guidance documents</li>
-                <li>Source code availability and licensing are often unclear</li>
-                <li>Limited transparency affects reproducibility</li>
-                <li>Open, reusable implementations are difficult to identify</li>
-              </ul>
-              <p style="margin-top: 1.5rem;">This project provides:</p>
-              <ul>
-                <li>A strict open-source-only directory</li>
-                <li>Verified repositories and licenses</li>
-                <li>Software-only inclusion (no mixed content)</li>
-                <li>A discovery platform for reusable research software</li>
-                <li>Support for Open Science and FAIR principles</li>
-              </ul>
-            </div>
-            <div class="overview-image">
-                <img src="assets/lockfire.png" alt="Lock Icon" style="width: 100%; height: auto;">
-            </div>
+          <div class="overview-text content-block" style="margin-bottom: 0;">
+            <p>Evidence synthesis supports evidence-based medicine, public health, environmental research, and policy.
+              However, current ecosystem has key limitations:</p>
+            <ul>
+              <li>Many commonly used tools are proprietary or closed-source</li>
+              <li>Existing directories often mix software with checklists or guidance documents</li>
+              <li>Source code availability and licensing are often unclear</li>
+              <li>Limited transparency affects reproducibility</li>
+              <li>Open, reusable implementations are difficult to identify</li>
+            </ul>
+            <p style="margin-top: 1.5rem;">This project provides:</p>
+            <ul>
+              <li>A strict open-source-only directory</li>
+              <li>Verified repositories and licenses</li>
+              <li>Software-only inclusion (no mixed content)</li>
+              <li>A discovery platform for reusable research software</li>
+              <li>Support for Open Science and FAIR principles</li>
+            </ul>
+          </div>
+          <div class="overview-image">
+            <img src="assets/lockfire.png" alt="Lock Icon" style="width: 100%; height: auto;">
+          </div>
         </div>
       </section>
 
-      
+
       <div class="grid-row">
 
-          <section>
-            <div class="section-header-center">
-                <h2 class="section-title">Why Open Source?</h2>
-            </div>
-            <div class="content-block">
-              <p>🚀 This project prioritizes open-source tools to ensure:</p>
-              <ul>
-                <li><strong>Transparency</strong> – Inspect algorithms</li>
-                <li><strong>Reproducibility</strong> – Avoid black-box systems</li>
-                <li><strong>Sustainability</strong> – Independence from commercial vendors</li>
-                <li><strong>Innovation</strong> – Modify and build upon tools</li>
-                <li><strong>Equity</strong> – Free global access</li>
-              </ul>
-            </div>
-          </section>
+        <section>
+          <div class="section-header-center">
+            <h2 class="section-title">Why Open Source?</h2>
+          </div>
+          <div class="content-block">
+            <p>🚀 This project prioritizes open-source tools to ensure:</p>
+            <ul>
+              <li><strong>Transparency</strong> – Inspect algorithms</li>
+              <li><strong>Reproducibility</strong> – Avoid black-box systems</li>
+              <li><strong>Sustainability</strong> – Independence from commercial vendors</li>
+              <li><strong>Innovation</strong> – Modify and build upon tools</li>
+              <li><strong>Equity</strong> – Free global access</li>
+            </ul>
+          </div>
+        </section>
 
 
-          <section>
-            <div class="section-header-center">
-                <h2 class="section-title">Technical Design</h2>
-            </div>
-            <div class="content-block">
-              <p>The website is built using <strong>pure HTML</strong> to ensure:</p>
-              <ul>
-                <li>No framework or dependency lock-in</li>
-                <li>Long-term stability and preservation</li>
-                <li>Easy editing with any text editor</li>
-                <li>Low barrier for community contributions</li>
-              </ul>
-              <p>This design prioritizes accessibility, sustainability, and long-term community maintenance.</p>
-            </div>
-          </section>
+        <section>
+          <div class="section-header-center">
+            <h2 class="section-title">Technical Design</h2>
+          </div>
+          <div class="content-block">
+            <p>The website is built using <strong>pure HTML</strong> to ensure:</p>
+            <ul>
+              <li>No framework or dependency lock-in</li>
+              <li>Long-term stability and preservation</li>
+              <li>Easy editing with any text editor</li>
+              <li>Low barrier for community contributions</li>
+            </ul>
+            <p>This design prioritizes accessibility, sustainability, and long-term community maintenance.</p>
+          </div>
+        </section>
       </div>
 
-   
+
       <div class="grid-row">
- 
-          <section>
-            <div class="section-header-center">
-                <h2 class="section-title">Novelty and Rationale</h2>
-            </div>
-            <div class="content-block">
-              <p>Existing directories (e.g., SR Toolbox) often:</p>
-              <ul>
-                <li>Include proprietary tools</li>
-                <li>Mix software with non-software resources</li>
-                <li>Lack clear source code or license verification</li>
-                <li>Provide limited update transparency</li>
-                <li>Do not make platform source code publicly available</li>
-              </ul>
-              <p style="margin-top: 1.5rem;">This project differs by:</p>
-              <ul>
-                <li>Enforcing a strict open-source-only policy</li>
-                <li>Verifying repositories and licenses</li>
-                <li>Maintaining a software-only focus</li>
-                <li>Using pure HTML for transparency and easy maintenance</li>
-                <li>Supporting discovery, reuse, and extension of research software</li>
-              </ul>
-            </div>
-          </section>
 
-   
-          <section>
-            <div class="section-header-center">
-                <h2 class="section-title">For Developers</h2>
-            </div>
-            <div class="content-block">
-              <p>The repository enables developers to:</p>
-              <ul>
-                <li>Discover fully open implementations</li>
-                <li>Inspect real-world evidence synthesis codebases</li>
-                <li>Reuse and extend existing tools</li>
-                <li>Build interoperable and transparent solutions aligned with Open Science principles</li>
-              </ul>
-            </div>
-          </section>
+        <section>
+          <div class="section-header-center">
+            <h2 class="section-title">Novelty and Rationale</h2>
+          </div>
+          <div class="content-block">
+            <p>Existing directories (e.g., SR Toolbox) often:</p>
+            <ul>
+              <li>Include proprietary tools</li>
+              <li>Mix software with non-software resources</li>
+              <li>Lack clear source code or license verification</li>
+              <li>Provide limited update transparency</li>
+              <li>Do not make platform source code publicly available</li>
+            </ul>
+            <p style="margin-top: 1.5rem;">This project differs by:</p>
+            <ul>
+              <li>Enforcing a strict open-source-only policy</li>
+              <li>Verifying repositories and licenses</li>
+              <li>Maintaining a software-only focus</li>
+              <li>Using pure HTML for transparency and easy maintenance</li>
+              <li>Supporting discovery, reuse, and extension of research software</li>
+            </ul>
+          </div>
+        </section>
+
+
+        <section>
+          <div class="section-header-center">
+            <h2 class="section-title">For Developers</h2>
+          </div>
+          <div class="content-block">
+            <p>The repository enables developers to:</p>
+            <ul>
+              <li>Discover fully open implementations</li>
+              <li>Inspect real-world evidence synthesis codebases</li>
+              <li>Reuse and extend existing tools</li>
+              <li>Build interoperable and transparent solutions aligned with Open Science principles</li>
+            </ul>
+          </div>
+        </section>
       </div>
 
-  
+
 
 
       <section>
         <div class="section-header-center">
-            <h2 class="section-title">Support & Contributions</h2>
+          <h2 class="section-title">Support & Contributions</h2>
         </div>
         <div class="content-block">
-          <p>This directory strives to be a comprehensive, transparent resource for research community. Contributions and suggestions are welcome, provided the tools meet the inclusion criteria outlined below.</p>
-          
-          <div style="background: #e4f1ff; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem; border-left: 2px solid var(--primary-color);">
-             <h3 style="font-family:'Host Grotesk'; color:var(--primary-color); margin-bottom:1rem;">Inclusion Criteria</h3>
-             <ol style="margin-left: 1.5rem;">
-                <li><strong>Open Source License:</strong> The tool must be released under a recognized open-source license (e.g., MIT, GPL, Apache).</li>
-                <li><strong>Public Code Repository:</strong> Source code must be publicly accessible (e.g., GitHub, GitLab, Bitbucket).</li>
-                <li><strong>Non-Proprietary:</strong> The software must be free to use, with no closed-source components or mandatory commercial dependencies.</li>
-                <li><strong>Reusable & Extensible:</strong> The repository should contain sufficient documentation to allow reuse, extension, and community-driven development.</li>
-                <li><strong>Research-Focused:</strong> The tool should be relevant to evidence synthesis, systematic reviews, meta-analysis, or closely related workflows.</li>
-             </ol>
+          <p>This directory strives to be a comprehensive, transparent resource for research community. Contributions
+            and suggestions are welcome, provided the tools meet the inclusion criteria outlined below.</p>
+
+          <div
+            style="background: #e4f1ff; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem; border-left: 2px solid var(--primary-color);">
+            <h3 style="font-family:'Host Grotesk'; color:var(--primary-color); margin-bottom:1rem;">Inclusion Criteria
+            </h3>
+            <ol style="margin-left: 1.5rem;">
+              <li><strong>Open Source License:</strong> The tool must be released under a recognized open-source license
+                (e.g., MIT, GPL, Apache).</li>
+              <li><strong>Public Code Repository:</strong> Source code must be publicly accessible (e.g., GitHub,
+                GitLab, Bitbucket).</li>
+              <li><strong>Non-Proprietary:</strong> The software must be free to use, with no closed-source components
+                or mandatory commercial dependencies.</li>
+              <li><strong>Reusable & Extensible:</strong> The repository should contain sufficient documentation to
+                allow reuse, extension, and community-driven development.</li>
+              <li><strong>Research-Focused:</strong> The tool should be relevant to evidence synthesis, systematic
+                reviews, meta-analysis, or closely related workflows.</li>
+            </ol>
           </div>
 
-          
+
           <div class="submit-container">
             <h3>Submit a tool via:</h3>
             <div class="submit-links">
-              <a href="https://github.com/evidencesynthesis-tools/evidencesynthesis-tools.github.io/pulls" target="_blank" class="submit-btn">
+              <a href="https://github.com/evidencesynthesis-tools/evidencesynthesis-tools.github.io/pulls"
+                target="_blank" class="submit-btn">
                 <i class="fab fa-github"></i> Pull Request
               </a>
-              <a href="https://github.com/evidencesynthesis-tools/evidencesynthesis-tools.github.io/issues" target="_blank" class="submit-btn">
+              <a href="https://github.com/evidencesynthesis-tools/evidencesynthesis-tools.github.io/issues"
+                target="_blank" class="submit-btn">
                 <i class="fas fa-exclamation-circle"></i> GitHub Issue
               </a>
               <a href="https://github.com/orgs/evidencesynthesis-tools/discussions" target="_blank" class="submit-btn">
@@ -712,25 +741,30 @@
                 <i class="fas fa-envelope"></i> Email V.S.
               </a>
             </div>
-            
+
             <div style="margin-top: 1.5rem; text-align: left; max-width: 600px; margin-left: auto; margin-right: auto;">
-                <p style="font-size: 0.95rem; color: #555;"><i class="fas fa-info-circle"></i> <strong>Note:</strong> Tools that are free but closed-source, freemium, or require institutional licenses are not considered.</p>
+              <p style="font-size: 0.95rem; color: #555;"><i class="fas fa-info-circle"></i> <strong>Note:</strong>
+                Tools that are free but closed-source, freemium, or require institutional licenses are not considered.
+              </p>
             </div>
           </div>
 
         </div>
       </section>
 
-  
+
       <section>
         <div class="section-header-center">
-            <h2 class="section-title">🌟 Citation</h2>
+          <h2 class="section-title">🌟 Citation</h2>
         </div>
         <div class="citation-wrapper">
-     
-          <div class="citation-text" id="apaCitation">Sahu, V. (2026). Evidence Synthesis Tools: A curated directory of strictly open-source software / tools for Evidence Synthesis. (Version 2.1). Zenodo. https://doi.org/10.5281/zenodo.18681868</div>
-          <p class="citation-note">Note: The complete source code, along with the full software list and detailed metadata, is archived on Zenodo. Individual tools retain their original citations.</p>
-          
+
+          <div class="citation-text" id="apaCitation">Sahu, V. (2026). Evidence Synthesis Tools: A curated directory of
+            strictly open-source software / tools for Evidence Synthesis. (Version 2.1). Zenodo.
+            https://doi.org/10.5281/zenodo.18681868</div>
+          <p class="citation-note">Note: The complete source code, along with the full software list and detailed
+            metadata, is archived on Zenodo. Individual tools retain their original citations.</p>
+
           <div class="citation-actions">
             <button class="action-btn btn-primary" onclick="copyCitation()">
               <i class="fas fa-copy"></i> Copy Citation
@@ -744,16 +778,17 @@
           </div>
         </div>
       </section>
-      
+
       <div style="text-align: center; margin-bottom: 4rem; color: var(--secondary-color);">
-        <p><em>Built for the research community to advance open, transparent, and reproducible evidence synthesis 🌐</em></p>
+        <p><em>Built for the research community to advance open, transparent, and reproducible evidence synthesis
+            🌐</em></p>
       </div>
 
-          <section class="stats-wrapper">
+      <section class="stats-wrapper">
         <div class="stats-content">
-            <div class="stat-item">
-              <span id="visits">Total Visits (All Time): Loading...</span>
-            </div>
+          <div class="stat-item">
+            <span id="visits">Total Visits (All Time): Loading...</span>
+          </div>
 
         </div>
       </section>
@@ -766,7 +801,8 @@
           © 2026 Vihaan Sahu - Apache 2.0 License
         </div>
         <div class="footer-center">
-          <a href="https://github.com/evidencesynthesis-tools/evidencesynthesis-tools.github.io" target="_blank"><i class="fab fa-github"></i> GitHub Repository</a>
+          <a href="https://github.com/evidencesynthesis-tools/evidencesynthesis-tools.github.io" target="_blank"><i
+              class="fab fa-github"></i> GitHub Repository</a>
           <a href="mailto:pteroisvolitans12@gmail.com"><i class="fas fa-envelope"></i> Contact</a>
         </div>
         <div class="footer-right">
@@ -775,12 +811,12 @@
       </div>
     </footer>
 
-  </div> 
+  </div>
 
   <button id="scrollToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 
   <script>
-   
+
     let currentScroll = 0;
     window.targetScroll = 0;
     const scrollContainer = document.getElementById('scroll-container');
@@ -810,9 +846,9 @@
       if (window.targetScroll > maxScroll) window.targetScroll = maxScroll;
     }, { passive: true });
 
-        function animateScroll() {
-      
-  
+    function animateScroll() {
+
+
       if (window.innerWidth <= 768) {
         requestAnimationFrame(animateScroll);
         return;
@@ -820,11 +856,11 @@
 
 
       currentScroll += (window.targetScroll - currentScroll) * ease;
-      
-      if(scrollContainer) {
+
+      if (scrollContainer) {
         scrollContainer.style.transform = `translateY(${-currentScroll}px)`;
       }
-      
+
       requestAnimationFrame(animateScroll);
     }
 
@@ -837,7 +873,7 @@
         scrollBtn.classList.remove('show');
       }
     }
-    
+
     const originalAnimate = animateScroll;
     animateScroll = function () {
       originalAnimate();
@@ -893,7 +929,7 @@
 
     const tabLinks = document.querySelectorAll('.tab-link');
     tabLinks.forEach(link => {
-      link.addEventListener('click', function() {
+      link.addEventListener('click', function () {
         tabLinks.forEach(tab => tab.classList.remove('active'));
         this.classList.add('active');
       });
@@ -973,4 +1009,5 @@
     }
   </script>
 </body>
+
 </html>
