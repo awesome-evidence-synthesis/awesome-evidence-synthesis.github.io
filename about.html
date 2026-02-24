@@ -23,8 +23,6 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
-  <!-- Lottie Web Player -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
 
   <style>
     :root {
@@ -202,22 +200,6 @@
 
     }
 
-
-    #maroonie-lottie {
-      width: 100%;
-   
-      height: 350px; 
-      background-color: #f1f5f9; 
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      color: #64748b;
-      font-family: 'Inter', sans-serif;
-      font-size: 0.9rem;
-      text-align: center;
-      padding: 1rem;
-    }
 
     .grid-row {
       display: grid;
@@ -476,13 +458,13 @@
 
 <body>
 
-  <!-- TABS -->
+
   <div class="tabs-container">
     <a href="index.html" class="tab-link">Directory List</a>
     <a href="about.html" class="tab-link active">About</a>
   </div>
 
-  <!-- SECURITY SCREEN -->
+  
   <div id="security-screen" style="
   position: fixed;
   top: 0;
@@ -509,14 +491,14 @@
   </style>
 
 
-  <!-- SCROLL CONTAINER -->
+
   <div id="scroll-container">
   
-    <!-- BANNER REMOVED -->
+
 
     <main>
    
-      <!-- OVERVIEW (Modified to include image on right) -->
+
       <section>
 
         <div class="overview-container">
@@ -551,7 +533,7 @@
         </div>
       </section>
 
-      <!-- WHY THIS MATTERS (Modified to include Lottie on right) -->
+
       <section>
         <div class="section-header-center">
             <h2 class="section-title">Why This Matters</h2>
@@ -576,19 +558,14 @@
               </ul>
             </div>
             <div class="overview-image">
-                <!-- Lottie Container with placeholder text -->
-                <div id="maroonie-lottie">
-                    <i class="fas fa-spinner fa-spin"></i><br>
-                    <span>Loading Animation...</span><br>
-                    <small style="color:#94a3b8; margin-top:5px; display:block;">(Blank locally due to browser security,<br>will work on GitHub Pages)</small>
-                </div>
+                <img src="assets/lockfire.png" alt="Lock Icon" style="width: 100%; height: auto;">
             </div>
         </div>
       </section>
 
-      <!-- GRID ROW 1: WHY OPEN SOURCE (Left) + TECHNICAL DESIGN (Right) -->
+      
       <div class="grid-row">
-          <!-- WHY OPEN SOURCE -->
+
           <section>
             <div class="section-header-center">
                 <h2 class="section-title">Why Open Source?</h2>
@@ -605,7 +582,7 @@
             </div>
           </section>
 
-          <!-- TECHNICAL DESIGN -->
+
           <section>
             <div class="section-header-center">
                 <h2 class="section-title">Technical Design</h2>
@@ -623,9 +600,9 @@
           </section>
       </div>
 
-      <!-- GRID ROW 2: NOVELTY (Left) + FOR DEVELOPERS (Right) -->
+   
       <div class="grid-row">
-          <!-- NOVELTY -->
+ 
           <section>
             <div class="section-header-center">
                 <h2 class="section-title">Novelty and Rationale</h2>
@@ -650,7 +627,7 @@
             </div>
           </section>
 
-          <!-- FOR DEVELOPERS -->
+   
           <section>
             <div class="section-header-center">
                 <h2 class="section-title">For Developers</h2>
@@ -669,7 +646,7 @@
 
   
 
-      <!-- SUPPORT & CONTRIBUTIONS -->
+
       <section>
         <div class="section-header-center">
             <h2 class="section-title">Support & Contributions</h2>
@@ -688,7 +665,7 @@
              </ol>
           </div>
 
-          <!-- CENTERED SUBMIT SECTION -->
+          
           <div class="submit-container">
             <h3>Submit a tool via:</h3>
             <div class="submit-links">
@@ -714,13 +691,13 @@
         </div>
       </section>
 
-      <!-- CITATION SECTION -->
+  
       <section>
         <div class="section-header-center">
-            <h2 class="section-title">Citation</h2>
+            <h2 class="section-title">🌟 Citation</h2>
         </div>
         <div class="citation-wrapper">
-          <!-- Note text moved outside the ID to prevent copying -->
+     
           <div class="citation-text" id="apaCitation">Sahu, V. (2026). Evidence Synthesis Tools: A curated directory of strictly open-source software / tools for Evidence Synthesis. (Version 2.1). Zenodo. https://doi.org/10.5281/zenodo.18681868</div>
           <p class="citation-note">Note: The complete source code, along with the full software list and detailed metadata, is archived on Zenodo. Individual tools retain their original citations.</p>
           
@@ -902,60 +879,10 @@
       document.getElementById("security-screen").style.display = "none";
     }
 
-   
-    document.addEventListener('DOMContentLoaded', function() {
-        const maroonieContainer = document.getElementById('maroonie-lottie');
-        
-        if (maroonieContainer) {
-            if (typeof lottie === 'undefined') {
-                console.error("Lottie library not loaded.");
-                maroonieContainer.style.background = "#fee2e2";
-                maroonieContainer.innerHTML = "<p style='color:red; padding:10px;'>Lottie Library Missing</p>";
-                return;
-            }
-
-         
-            const anim = lottie.loadAnimation({
-                container: maroonieContainer,
-                renderer: 'svg',
-                loop: true,
-                autoplay: true,
-                path: 'assets/maroonie.json',
-                rendererSettings: {
-                    preserveAspectRatio: 'xMidYMid meet'
-                }
-            });
-
-
-            anim.addEventListener('DOMLoaded', function() {
-                console.log("Animation loaded successfully!");
-             
-                maroonieContainer.innerHTML = '';
-            });
-
- 
-            anim.addEventListener('error', function(e) {
-                console.error('Lottie Error:', e);
-                maroonieContainer.style.background = "#fee2e2";
-                maroonieContainer.innerHTML = `
-                    <div style="text-align:center; padding:10px; font-family:monospace; color:#b91c1c;">
-                        <strong>Error loading animation</strong><br>
-                        <small style="color:#7f1d1d">
-                        This is normal when running locally (file://).<br>
-                        It will work on GitHub Pages.<br>
-                        Check console for details.
-                        </small>
-                    </div>
-                `;
-            });
-        } else {
-            console.error("Lottie container not found.");
-        }
-    });
   </script>
 
 
-  <!-- FIREBASE ANALYTICS (MODULE) -->
+
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-app.js";
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-analytics.js";
