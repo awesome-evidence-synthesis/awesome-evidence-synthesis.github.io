@@ -650,6 +650,161 @@
     }
 
 
+
+.filter-toggle-btn {
+  background: white;
+  border: 1px solid var(--border-color);
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  margin-top: 5px;
+  width: fit-content;
+}
+
+.filter-toggle-btn:hover, .filter-toggle-btn.active {
+  background-color: var(--light-bg);
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.filters-panel {
+  display: none;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  margin-top: 10px;
+  width: 350px;
+  max-height: 500px;
+  overflow-y: auto;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1001;
+  border: 1px solid var(--border-color);
+}
+
+.filters-panel.show {
+  display: block;
+  animation: fadeIn 0.2s ease;
+}
+
+.filter-section {
+  margin-bottom: 1.5rem;
+}
+
+.filter-section h4 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #94a3b8;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 5px;
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-option-btn {
+  background: transparent;
+  border: none;
+  text-align: left;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+.filter-option-btn:hover {
+  background-color: #f8fafc;
+  color: var(--accent-color);
+}
+
+.filter-count {
+  background-color: #f1f5f9;
+  color: var(--secondary-color);
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.clear-filters-btn {
+  width: 100%;
+  padding: 10px;
+  background: #fff0f0;
+  color: var(--accent-color);
+  border: 1px solid rgba(174, 68, 90, 0.2);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: var(--transition);
+}
+
+.clear-filters-btn:hover {
+  background: var(--accent-color);
+  color: white;
+}
+
+
+
+.manual-search-btn {
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.manual-search-btn:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+
+.clear-filters-btn {
+  background: #fff0f0;
+  color: var(--accent-color);
+  border: 1px solid rgba(174, 68, 90, 0.2);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 10px;
+  transition: var(--transition);
+  display: none; 
+  width: 100%;
+}
+
+.clear-filters-btn:hover {
+  background: var(--accent-color);
+  color: white;
+}
+
+
     @media (max-width: 768px) {
       header {
         padding-top: 7rem;
@@ -774,10 +929,11 @@
   </style>
 
   <div class="search-container">
-    <div class="search-box">
-      <input type="text" id="searchInput" placeholder="Search tools, info, citations...">
-      <i class="fas fa-search"></i>
-    </div>
+
+<div class="search-box" style="display: flex; align-items: center; gap: 10px; width: auto;">
+  <input type="text" id="searchInput" placeholder="Search tools, info, citations..." style="width: 250px;">
+  <button id="searchBtn" class="manual-search-btn">Search</button>
+</div>
 
     <div class="search-nav" id="searchNav">
       <span class="match-count" id="matchCount">0/0</span>
@@ -788,6 +944,39 @@
         <i class="fas fa-chevron-down"></i>
       </button>
     </div>
+
+    <div class="filters-wrapper">
+      <button id="toggleFiltersBtn" class="filter-toggle-btn">
+        <i class="fas fa-filter"></i> Filters
+      </button>
+      
+      <div id="filtersPanel" class="filters-panel">
+
+        <div class="filter-section">
+          <h4>Year</h4>
+          <div class="filter-options" id="yearFilters">
+        
+          </div>
+        </div>
+        
+    
+        <div class="filter-section">
+          <h4>Category</h4>
+          <div class="filter-options" id="categoryFilters">
+       
+          </div>
+        </div>
+        
+  
+      </div>
+
+  
+<button id="clearFiltersBtn" class="clear-filters-btn" style="display: none; width: 100%; margin-top: 10px;">
+  <i class="fas fa-times"></i> Reset Filters
+</button>
+
+    </div>
+
   </div>
 
   <div id="scroll-container">
@@ -910,7 +1099,7 @@
 
 
       <section class="tools-category">
-        <h2 class="section-title"><i class="fas fa-search"></i> Search & Strategy Development</h2>
+        <h2 class="section-title"><i class="fas fa-search"></i> Directory List</h2>
         <div class="tools-grid">
 
 
@@ -1133,13 +1322,8 @@
             </div>
           </div>
 
-        </div>
-      </section>
 
 
-      <section class="tools-category">
-        <h2 class="section-title"><i class="fas fa-folder-open"></i> Reference Management & Deduplication</h2>
-        <div class="tools-grid">
           <div class="tool-card">
             <div class="card-image"><span class="badge">Manager</span><img src="softwares/Zotero.png" alt="Zotero">
             </div>
@@ -1331,14 +1515,9 @@
                     class="fas fa-external-link-alt"></i> GitHub Repository</a></div>
             </div>
           </div>
-        </div>
-      </section>
 
 
 
-      <section class="tools-category">
-        <h2 class="section-title"><i class="fas fa-filter"></i> Screening & Selection</h2>
-        <div class="tools-grid">
           <div class="tool-card">
             <div class="card-image"><span class="badge">AI Screening</span><img src="softwares/asreview.jpg"
                 alt="ASReview"></div>
@@ -1444,13 +1623,6 @@
             </div>
           </div>
 
-        </div>
-      </section>
-
-
-      <section class="tools-category">
-        <h2 class="section-title"><i class="fas fa-database"></i> Data Extraction & Utilities</h2>
-        <div class="tools-grid">
           <div class="tool-card">
             <div class="card-image"><span class="badge">Automated Risk-of-Bias</span><img
                 src="softwares/Robotreviewer.png" alt="RobotReviewer"></div>
@@ -1741,14 +1913,7 @@
                     class="fas fa-external-link-alt"></i> GitHub Repository</a></div>
             </div>
           </div>
-        </div>
-      </section>
 
-
-      <section class="tools-category">
-        <section class="tools-category">
-          <h2 class="section-title"><i class="fas fa-balance-scale"></i> Risk of Bias & Visualization Tools</h2>
-          <div class="tools-grid">
             <div class="tool-card">
               <div class="card-image"><span class="badge">Visualization</span><img src="softwares/Critiplot.png"
                   alt="Critiplot"></div>
@@ -1905,13 +2070,7 @@
                     class="tool-link"><i class="fas fa-external-link-alt"></i> GitHub Repository</a></div>
               </div>
             </div>
-          </div>
-        </section>
 
-
-        <section class="tools-category">
-          <h2 class="section-title"><i class="fas fa-chart-line"></i> Statistical Analysis & Meta-Analysis</h2>
-          <div class="tools-grid">
             <div class="tool-card">
               <div class="card-image">
                 <span class="badge">Meta-analysis</span>
@@ -2808,13 +2967,7 @@
                 </div>
               </div>
             </div>
-          </div>
-        </section>
 
-
-        <section class="tools-category">
-          <h2 class="section-title"><i class="fas fa-chart-pie"></i> Visualization & Evidence Mapping</h2>
-          <div class="tools-grid">
             <div class="tool-card">
               <div class="card-image"><span class="badge">Mapping</span><img src="softwares/VOSViewer.png"
                   alt="VOSviewer"></div>
@@ -3124,15 +3277,6 @@
                     class="tool-link"><i class="fas fa-external-link-alt"></i> Gitlab Repository</a></div>
               </div>
             </div>
-
-
-          </div>
-        </section>
-
-
-        <section class="tools-category">
-          <h2 class="section-title"><i class="fas fa-code"></i> Automation, Libraries & Scripting</h2>
-          <div class="tools-grid">
 
 
 
@@ -3751,13 +3895,7 @@
               </div>
             </div>
 
-          </div>
-        </section>
 
-
-        <section class="tools-category">
-          <h2 class="section-title"><i class="fas fa-comment-alt"></i> Qualitative Analysis</h2>
-          <div class="tools-grid">
             <div class="tool-card">
               <div class="card-image">
                 <span class="badge">Data Extraction</span>
@@ -6793,6 +6931,15 @@
 
 
           </div>
+
+        
+          <div id="noResultsMessage" style="display: none; text-align: center; padding: 3rem; color: var(--secondary-color);">
+            <i class="fas fa-exclamation-triangle" style="font-size: 3rem; color: var(--accent-color); margin-bottom: 1rem;"></i>
+            <h3>Not found</h3>
+            <p>No tools match your search criteria.</p>
+          </div>
+
+
         </section>
 
 
@@ -6866,89 +7013,125 @@
     const nextBtn = document.getElementById('nextMatch');
 
 
+
+
+const categories = [
+  "Screening", "Search", "Manager", "Data Extraction", "Meta-analysis", 
+  "Risk of Bias", "Visualization", "Text Mining", "Automation", "Workflow"
+];
+let activeCategoryFilter = null;
+
+// Define DOM elements for the new features
+const toggleFiltersBtn = document.getElementById('toggleFiltersBtn');
+const filtersPanel = document.getElementById('filtersPanel');
+const yearFiltersContainer = document.getElementById('yearFilters');
+const categoryFiltersContainer = document.getElementById('categoryFilters');
+const noResultsMessage = document.getElementById('noResultsMessage');
+const clearFiltersBtn = document.getElementById('clearFiltersBtn');
+
     let matches = [];
     let currentMatchIndex = 0;
     let searchTimeout = null;
 
 
-    searchInput.addEventListener('input', (e) => {
-      const term = e.target.value.trim();
+document.getElementById('searchBtn').addEventListener('click', () => {
+  const term = searchInput.value.trim();
+  
 
+  if (activeCategoryFilter) {
+    activeCategoryFilter = null;
 
-      clearTimeout(searchTimeout);
-      searchTimeout = setTimeout(() => {
-        performSearch(term);
-      }, 100);
-    });
+    document.querySelectorAll('.filter-option-btn').forEach(btn => btn.classList.remove('active'));
+  }
+
+  performSearch(term);
+});
+
 
 
     nextBtn.addEventListener('click', () => navigateMatch(1));
     prevBtn.addEventListener('click', () => navigateMatch(-1));
 
 
-    searchInput.addEventListener('keydown', (e) => {
-      if (matches.length === 0) return;
-      if (e.key === 'Enter') {
-        e.preventDefault();
-        navigateMatch(e.shiftKey ? -1 : 1);
-      }
+// 2. Allow "Enter" key to trigger search as well
+searchInput.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') {
+    document.getElementById('searchBtn').click();
+  }
+});
+
+// Keep your existing next/prev buttons here
+nextBtn.addEventListener('click', () => navigateMatch(1));
+prevBtn.addEventListener('click', () => navigateMatch(-1));
+
+
+
+function performSearch(term) {
+  clearHighlights();
+  matches = [];
+  currentMatchIndex = 0;
+  
+  let visibleCount = 0; 
+
+  if (term === '') {
+    searchNav.classList.remove('active');
+
+    cards.forEach(card => {
+      card.style.display = 'flex'; 
+      visibleCount++;
     });
+  } else {
+    const safeTerm = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(`(${safeTerm})`, 'gi');
 
-    function performSearch(term) {
+    cards.forEach(card => {
+   
+      card.style.display = 'flex'; 
 
-      clearHighlights();
-      matches = [];
-      currentMatchIndex = 0;
+      const fields = [card.querySelector('.card-title'), card.querySelector('.card-desc'), card.querySelector('.citation-text')];
+      let cardHasMatch = false;
 
-      if (term === '') {
-        searchNav.classList.remove('active');
-        return;
-      }
+      fields.forEach(field => {
+        if (!field) return;
+        if (!field.dataset.originalText) field.dataset.originalText = field.innerHTML;
 
+        const originalHTML = field.dataset.originalText;
+     
+        if (regex.test(originalHTML)) {
+          cardHasMatch = true;
+        }
+        
 
-      const safeTerm = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      const regex = new RegExp(`(${safeTerm})`, 'gi');
-
-
-      cards.forEach(card => {
-
-        const fields = [card.querySelector('.card-title'), card.querySelector('.card-desc'), card.querySelector('.citation-text')];
-
-        fields.forEach(field => {
-          if (!field) return;
-
-
-          if (!field.dataset.originalText) {
-            field.dataset.originalText = field.innerHTML;
-          }
-
-          const originalHTML = field.dataset.originalText;
-
-
-          const newHTML = originalHTML.replace(regex, '<span class="search-highlight">$1</span>');
-
-          if (newHTML !== originalHTML) {
-            field.innerHTML = newHTML;
-
-
-            const newHighlights = field.querySelectorAll('.search-highlight');
-            newHighlights.forEach(span => matches.push(span));
-          } else {
-
-            field.innerHTML = originalHTML;
-          }
-        });
+        const newHTML = originalHTML.replace(regex, '<span class="search-highlight">$1</span>');
+        field.innerHTML = newHTML;
+        
+        const newHighlights = field.querySelectorAll('.search-highlight');
+        newHighlights.forEach(span => matches.push(span));
       });
 
-
-      if (matches.length > 0) {
-        searchNav.classList.add('active');
-        updateMatchCounter();
-        scrollToMatch(0);
+      if (!cardHasMatch) {
+        card.style.display = 'none'; 
       } else {
-        searchNav.classList.remove('active');
+        visibleCount++;
       }
+    });
+    
+    if (matches.length > 0) {
+      searchNav.classList.add('active');
+      updateMatchCounter();
+      scrollToMatch(0);
+    } else {
+      searchNav.classList.remove('active');
     }
+  }
+
+
+  if (visibleCount === 0) {
+    noResultsMessage.style.display = 'block';
+  } else {
+    noResultsMessage.style.display = 'none';
+  }
+}
 
     function clearHighlights() {
 
@@ -7156,6 +7339,129 @@ ER  - `;
       });
     });
 
+
+
+
+
+toggleFiltersBtn.addEventListener('click', () => {
+  filtersPanel.classList.toggle('show');
+  toggleFiltersBtn.classList.toggle('active');
+});
+
+
+function initFilters() {
+
+  const currentYear = 2026;
+  const startYear = 2000;
+  
+  for (let y = startYear; y <= currentYear; y++) {
+    const count = countMatches(y.toString());
+    createFilterButton(yearFiltersContainer, y, count, 'year');
+  }
+
+
+  categories.forEach(cat => {
+    const count = countMatches(cat);
+    createFilterButton(categoryFiltersContainer, cat, count, 'category');
+  });
+}
+
+function createFilterButton(container, text, count, type) {
+  const btn = document.createElement('button');
+  btn.className = 'filter-option-btn';
+  btn.innerHTML = `<span>${text}</span> <span class="filter-count">${count}</span>`;
+  
+ btn.addEventListener('click', () => {
+
+  filtersPanel.classList.remove('show');
+  toggleFiltersBtn.classList.remove('active');
+
+
+  document.getElementById('clearFiltersBtn').style.display = 'block';
+
+  if (type === 'year') {
+  
+    searchInput.value = text; 
+    activeCategoryFilter = null; 
+    performSearch(text); 
+  } else {
+   
+    activeCategoryFilter = text;
+    searchInput.value = ''; 
+    searchNav.classList.remove('active');
+    
+ 
+    document.querySelectorAll('.filter-option-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    filterByCategory(text);
+  }
+});
+
+  container.appendChild(btn);
+}
+
+// Helper to count occurrences
+function countMatches(keyword) {
+  let count = 0;
+  const lowerKeyword = keyword.toLowerCase();
+  cards.forEach(card => {
+    if (card.innerText.toLowerCase().includes(lowerKeyword)) {
+      count++;
+    }
+  });
+  return count;
+}
+
+// 3. Category Filtering Logic
+function filterByCategory(category) {
+  clearHighlights(); // Remove any yellow highlights
+  let visibleCount = 0;
+  const lowerCat = category.toLowerCase();
+
+  cards.forEach(card => {
+    if (card.innerText.toLowerCase().includes(lowerCat)) {
+      card.style.display = 'flex';
+      visibleCount++;
+    } else {
+      card.style.display = 'none';
+    }
+  });
+
+
+  if (visibleCount === 0) {
+    noResultsMessage.style.display = 'block';
+  } else {
+    noResultsMessage.style.display = 'none';
+  }
+}
+
+clearFiltersBtn.addEventListener('click', () => {
+  searchInput.value = '';
+  activeCategoryFilter = null;
+  document.querySelectorAll('.filter-option-btn').forEach(b => b.classList.remove('active'));
+  
+
+  document.getElementById('clearFiltersBtn').style.display = 'none';
+  
+  performSearch(''); 
+});
+
+
+const filtersPanelElement = document.getElementById('filtersPanel');
+
+filtersPanelElement.addEventListener('wheel', (e) => {
+
+  e.stopPropagation();
+}, { passive: true });
+
+
+filtersPanelElement.addEventListener('touchmove', (e) => {
+  e.stopPropagation();
+}, { passive: true });
+
+
+initFilters();
 
   </script>
 
