@@ -1,6 +1,6 @@
 {
     "title": "Evidence Synthesis Tools: A curated directory of strictly open-source software / tools for Evidence Synthesis.",
-    "description": "Evidence Synthesis Tools is a curated directory of strictly open-source, non-proprietary software supporting the complete evidence synthesis workflow. Evidence synthesis is the systematic process of identifying, evaluating, and integrating all available evidence relevant to a research question to inform scientific conclusions, policy, and practice. The directory covers major stages including search strategy development, citation retrieval, deduplication, AI-assisted screening, data extraction, risk-of-bias assessment, visualization, statistical synthesis, evidence mapping, bibliometrics, qualitative synthesis, and research workflow automation. Only tools with publicly available source code and recognized open-source licenses are included. Proprietary, closed-source, freemium, or institution-restricted software is strictly excluded. Version 1.0 includes 140 verified open-source tools compiled up to 2026 to support transparency, reproducibility, Open Science, and long-term research software sustainability.",
+    "description": "Evidence Synthesis Tools is a curated directory of strictly open-source, non-proprietary software supporting the complete evidence synthesis workflow.",
     "creators": [
         {
             "name": "Sahu, Vihaan",
@@ -11,7 +11,7 @@
     "upload_type": "software",
     "publication_type": "software",
     "license": "Apache-2.0",
-    "version": "1.0",
+    "version": "2.1",
     "language": "eng",
     "access_right": "open",
     "keywords": [

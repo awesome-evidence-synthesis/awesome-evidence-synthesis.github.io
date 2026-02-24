@@ -5,7 +5,7 @@
   <meta name="google-site-verification" content="TWhFm0SLBwJmrFhQvTEpG0DP7LYbB4RCsrCu6GWOHN4" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Evidence Synthesis Tools / Open Source Directory </title>
+  <title>Directory List / Evidence Synthesis Tools</title>
   <meta name="description"
     content="A comprehensive directory of Open Source tools/ softwares and scripts for Evidence Synthesis. Explore tools for Risk of Bias, Screening, Data Extraction, and Statistical Analysis.">
   <meta name="keywords"
@@ -23,7 +23,7 @@
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://evidencesynthesis-tools.github.io/">
-  <meta property="og:title" content="Evidence Synthesis Tools | Open Source Directory">
+  <meta property="og:title" content="Evidence Synthesis Tools / Open Source Directory">
   <meta property="og:description"
     content="Explore open-source tools for Evidence Synthesis, from risk of bias visualization to AI-assisted screening. Curated for the research community.">
 
@@ -480,11 +480,16 @@
       flex-wrap: wrap;
     }
 
+    .citation-content1 {
+      background: #e7edf6;
+
+    }
+
     .btn-copy,
     .btn-download {
-      padding: 8px 16px;
+      padding: 6px 9px;
       border-radius: 6px;
-      font-size: 0.85rem;
+      font-size: 0.75rem;
       font-weight: 500;
       cursor: pointer;
       border: none;
@@ -554,48 +559,95 @@
       opacity: 0.8;
     }
 
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: rgb(39, 39, 39);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
-    #scrollToTopBtn {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      z-index: 99;
-      border: none;
-      outline: none;
-      background-color: var(--accent-color);
-      color: white;
-      cursor: pointer;
-      padding: 15px;
-      border-radius: 50%;
-      font-size: 1.2rem;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(20px);
-      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      width: 50px;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    #scrollToTopBtn:hover {
-      background-color: var(--accent-hover);
-      transform: translateY(0) scale(1.1);
-    }
+#scrollToTopBtn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(0) scale(1.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
 
-    #scrollToTopBtn.show {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
+#scrollToTopBtn.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
 
     .highlight-strong {
       color: var(--accent-color);
       font-weight: 600;
     }
 
+    
+    .tabs-container {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .tab-link {
+      text-decoration: none;
+      color: var(--primary-color);
+      font-family: 'Host Grotesk', sans-serif;
+      font-weight: 600;
+      font-size: 1.05rem;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 8px 16px;
+      border-radius: 8px;
+      
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .tab-link:hover {
+      color: var(--accent-color);
+      background: #fff;
+    }
+
+    .tab-link.active {
+      color: var(--accent-color);
+      background: #fff;
+    }
+
+    .tab-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 16px;
+      right: 16px;
+      height: 2px;
+      background-color: var(--accent-color);
+    }
 
 
     @media (max-width: 768px) {
@@ -653,6 +705,11 @@
 
 
 <body>
+
+  <div class="tabs-container">
+    <a href="index.html" class="tab-link active">Directory List</a>
+    <a href="about.html" class="tab-link">About</a>
+  </div>
 
   <div id="security-screen" style="
   position: fixed;
@@ -6738,75 +6795,23 @@
           </div>
         </section>
 
-        <section class="tools-category">
-          <h2 class="section-title">🌟 Global Stats</h2>
-          <div class="intro-text">
-            <p id="visits" style=" font-size: 1rem; font-weight: 500; color: var(--text-color);">Total Visits (All
-              Time): Loading...</p>
-            <p style=" font-size: 1rem; font-weight: 500; color: var(--text-color);">Last Updated: 20 February, 2026.
-            </p>
-          </div>
-        </section>
+
 
         <section class="tools-category">
-          <h2 class="section-title">Support & Contributions</h2>
-          <div class="intro-text">
-            <p>
-              This directory strives to be a comprehensive, transparent resource for the research community.
-              Contributions and suggestions are welcome, provided the tools meet the inclusion criteria outlined below.
-            </p>
-            <ol style="
-  margin-top: 1rem;
-  padding-left: 1.5rem;
-  line-height: 1.8;
-  text-align: left;
-">
-              <li>
-                <strong>Open Source License:</strong> The tool must be released under a recognized open-source license
-                (e.g., MIT, GPL, Apache).
-              </li>
-              <li>
-                <strong>Public Code Repository:</strong> Source code must be publicly accessible
-                (e.g., GitHub, GitLab, Bitbucket, SourceForge).
-              </li>
-              <li>
-                <strong>Non-Proprietary:</strong> The software must be free to use, with no closed-source components
-                or mandatory commercial dependencies.
-              </li>
-              <li>
-                <strong>Reusable & Extensible:</strong> The repository should contain sufficient documentation to allow
-                reuse, extension, and community-driven development.
-              </li>
-              <li>
-                <strong>Research-Focused:</strong> The tool should be relevant to evidence synthesis, systematic
-                reviews,
-                meta-analysis, or closely related workflows.
-              </li>
-              <li>
-                <strong>Submissions:</strong> Suggestions can be made via email or by opening an issue or pull request
-                on GitHub.
-              </li>
-            </ol>
-
-
-            <p style="margin-top: 1rem; color: var(--accent-color); font-weight: 500;">
-              <i class="fas fa-exclamation-circle"></i> Tools that are free but closed-source, freemium, or require
-              institutional licenses are not considered.
-            </p>
-
-        </section>
-
-        <section class="tools-category citation-section">
-
-
-
+          <h2 class="section-title">🌟 Citation</h2>
+          
           <div class="citation-content">
             <div class="citation-text-block" id="apaCitation">
-              Sahu, V. (2026). Evidence Synthesis Tools: A curated directory of strictly open-source software / tools
-              for Evidence Synthesis. (v1.0). Zenodo. https://doi.org/10.5281/zenodo.18681868
-              <br><br>
-              <strong>Note:</strong> The complete source code, along with the full software list and detailed metadata,
+                            <strong>Note:</strong> The complete source code, along with the full software list and detailed metadata,
               is archived on Zenodo.
+
+              <div class="citation-content1" id="apaCitation">
+  
+              Sahu, V. (2026). Evidence Synthesis Tools: A curated directory of strictly open-source software / tools
+              for Evidence Synthesis. (v2.1). Zenodo. https://doi.org/10.5281/zenodo.18681868
+
+              </div>
+
             </div>
 
             <div class="citation-actions">
@@ -6820,6 +6825,7 @@
                 <i class="fas fa-book"></i> Download BibTeX
               </a>
             </div>
+            
           </div>
 
         </section>
@@ -6838,7 +6844,7 @@
           <a href="mailto:pteroisvolitans12@gmail.com"><i class="fas fa-envelope"></i> Contact</a>
         </div>
         <div class="footer-right">
-          Version 1.0. Compiled for Research Community.
+          Version 2.1. Compiled for Research Community.
         </div>
       </div>
     </footer>
@@ -7026,7 +7032,7 @@
     document.addEventListener('touchmove', (e) => {
       const touchY = e.touches[0].clientY;
       const deltaY = touchStartY - touchY;
-      window.targetScroll += deltaY * 5.5; // mobile scroll speed
+      window.targetScroll += deltaY * 5; // mobile scroll speed
       touchStartY = touchY;
 
       const maxScroll = document.body.scrollHeight - window.innerHeight;
@@ -7107,7 +7113,7 @@ AU  - Sahu, V.
 PY  - 2026
 TI  - Evidence Synthesis Tools: A curated directory of strictly open-source software / tools for Evidence Synthesis.
 JO  - Zenodo
-VL  - v1.0
+VL  - v2.1
 DO  - 10.5281/zenodo.18681868
 ER  - `;
         extension = ".ris";
@@ -7117,7 +7123,7 @@ ER  - `;
   author={Sahu, V.},
   year={2026},
   publisher={Zenodo},
-  version={v1.0},
+  version={v2.1},
   doi={10.5281/zenodo.18681868}
 }`;
         extension = ".bib";
@@ -7133,14 +7139,29 @@ ER  - `;
       document.body.removeChild(a);
       URL.revokeObjectURL(url);
     }
+
+
+    const tabLinks = document.querySelectorAll('.tab-link');
+
+    tabLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        
+
+        tabLinks.forEach(tab => {
+          tab.classList.remove('active');
+        });
+
+     
+        this.classList.add('active');
+      });
+    });
+
+
   </script>
 
-
   <script type="module">
-
     import { initializeApp } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-app.js";
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-analytics.js";
-
     import { getFirestore, doc, getDoc, setDoc, updateDoc, increment } from "https://www.gstatic.com/firebasejs/12.9.0/firebase-firestore.js";
 
     const firebaseConfig = {
@@ -7153,33 +7174,45 @@ ER  - `;
       measurementId: "G-HGV9X2SCBZ"
     };
 
-
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
-
-
     const db = getFirestore(app);
     const counterRef = doc(db, "stats", "total_visits");
 
+   
+    const currentPath = window.location.pathname;
+    const isIndexPage = currentPath === '/' || currentPath.endsWith('index.html');
+
     try {
-      const snap = await getDoc(counterRef);
+  
+      if (isIndexPage) {
+        const snap = await getDoc(counterRef);
+        if (snap.exists()) {
+          await updateDoc(counterRef, { total_visits: increment(1) });
+        } else {
+          await setDoc(counterRef, { total_visits: 1 });
+        }
+      }
+
+ 
+      const latestSnap = await getDoc(counterRef);
       let count = 0;
-
-      if (snap.exists()) {
-        count = snap.data().total_visits || 0;
-
-        await updateDoc(counterRef, { total_visits: increment(1) });
-      } else {
-
-        await setDoc(counterRef, { total_visits: 1 });
-        count = 0;
+      if (latestSnap.exists()) {
+        count = latestSnap.data().total_visits || 0;
       }
 
 
-      document.getElementById("visits").innerText = "Total Visits: " + (count + 1);
+      const visitsEl = document.getElementById("visits");
+      if (visitsEl) {
+        visitsEl.innerText = "Total Visits: " + count;
+      }
+
     } catch (error) {
       console.error("Error fetching stats: ", error);
-      document.getElementById("visits").innerText = "Stats unavailable";
+      const visitsEl = document.getElementById("visits");
+      if (visitsEl) {
+        visitsEl.innerText = "Stats unavailable";
+      }
     }
   </script>
 
