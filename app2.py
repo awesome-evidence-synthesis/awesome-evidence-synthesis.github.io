@@ -115,7 +115,7 @@ def display_stats_section(title, group_dict, sort_keys=True):
 
 def main():
     st.set_page_config(page_title="Advanced Tool Parser", layout="wide")
-    st.title("HTML Tool Card Parser & Analyzer (Here,just use parsed tools list & year statistics, don't take the rest of the stats if you find 'Not found' in parsed list. For rest, use Another .py file where you fill the 'Not found'as well as check the other content manually.)")
+    st.title("Tool Parser & Analyzer 2")
     st.markdown("""
     Parses HTML tool cards and extracts:
     - **Name**, **Year**
@@ -140,7 +140,7 @@ def main():
              
                 st.header("1. Parsed Tools List")
                 for i, item in enumerate(results, 1):
-                    st.markdown(f"**{i}.** {item['name']} - {item['year']} - {item['technical']} - {item['functional']}")
+                    st.markdown(f"{i}. {item['name']} - {item['year']} - {item['technical']} - {item['functional']}")
 
                 st.markdown("---")
                 
