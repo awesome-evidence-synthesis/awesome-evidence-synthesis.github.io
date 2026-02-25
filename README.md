@@ -118,6 +118,8 @@ Relevant to systematic reviews, evidence synthesis, meta-analysis, or closely re
 **Excluded examples:**
 EndNote, Covidence, DistillerSR, NVivo, Rayyan, Stata, SAS, and similar proprietary or freemium tools.
 
+Software or tools whose source code is hosted exclusively on university or institutional websites are excluded due to concerns regarding limited accessibility, long-term stability, and the lack of sustained public availability.
+
 ---
 
 ## 🔍 Why Open Source?
