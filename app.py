@@ -4,16 +4,9 @@ import re
 from collections import defaultdict
 
 
-# Functional Categories (Must be found in <span class="badge">)
-FUNCTIONAL_CATEGORIES = [
-    "Screening", "Search", "Data Extraction",
-    "Meta-analysis", "Risk of Bias", "Visualization",
-    "Text Mining", "Automation", "Workflow", "Open Catalog", "Data Cleaning", "Extension", "Plugin"
-]
-
-# Technical Categories (Must be found by searching text in Title/Description)
+# Technical Categories (Must be found by searching text in Title/Description) #dummy, everything will be manually checked anyways!
 TECHNICAL_CATEGORIES = [
-    "R", "Python", "Desktop software", "Java", "Manager"
+    "R", "Python", "Desktop software", "Java", "C++", "C#", "JAvascript", "Typescript", "PHP"
 ]
 
 def get_year_from_citation(card):
@@ -26,12 +19,12 @@ def get_year_from_citation(card):
     return "Not found"
 
 def get_functional_categories(card):
-    """Extracts categories strictly from class='badge'."""
+    """Extracts all categories strictly from class='badge' automatically."""
     badges = card.find_all('span', class_='badge')
     found = []
     for badge in badges:
         text = badge.get_text(strip=True)
-        if text in FUNCTIONAL_CATEGORIES:
+        if text:
             found.append(text)
     return ", ".join(found) if found else "Not found"
 
@@ -119,7 +112,7 @@ def main():
     st.markdown("""
     Parses HTML tool cards and extracts:
     - **Name**, **Year**
-    - **Functional Category** (From HTML Badges)
+    - **Functional Category** (Detected automatically from HTML Badges)
     - **Technical Category** (From Keyword Search in Title/Desc)
     
     Also generates **Statistics** by Year and Category.
@@ -170,7 +163,7 @@ def main():
 
             
                 st.header("2. Statistics by Year (2000 - 2026)")
-                # Filter years (range is checked)
+                # Filter years (range is checked) #imp
                 for y in range(2000, 2027):
                     y_str = str(y)
                     if y_str in year_groups:
