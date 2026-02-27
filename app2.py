@@ -3,7 +3,7 @@ import re
 from collections import defaultdict
 
 
-
+#Please make sure it follows sample_for_app2py.rtf explicitly.
 
 def parse_tools(text_content):
     """
