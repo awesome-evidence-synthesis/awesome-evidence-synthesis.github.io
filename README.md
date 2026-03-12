@@ -10,6 +10,8 @@
 
 *We recommend you to use this Directory on **Desktop**.*
 
+**NOTE:** *Each new version is scheduled to release anually or bianually or quaterly as required.*
+
 ---
 
 ##  Overview
@@ -119,6 +121,22 @@ Relevant to systematic reviews, evidence synthesis, meta-analysis, or closely re
 EndNote, Covidence, DistillerSR, NVivo, Rayyan, Stata, SAS, and similar proprietary or freemium tools.
 
 Software or tools whose source code is hosted exclusively on university or institutional websites are excluded due to concerns regarding limited accessibility, long-term stability, and the lack of sustained public availability.
+
+---
+
+### 🔗 External API Dependency Policy
+
+Some open-source tools interact with external databases, platforms, or APIs (e.g., literature databases or screening systems). These tools are eligible for inclusion if the **software itself is fully open source, has a public code repository, and can be reused or extended**.
+
+Tools that rely on external APIs are acceptable if:
+
+* The software uses an **OSI-approved open-source license**.
+* The **full source code is publicly available** (e.g., GitHub, GitLab).
+* The tool’s **core functionality is transparent and reusable**.
+* The external service is used **only for data access or integration**, not hidden proprietary logic.
+
+Such tools are documented in the directory as **open-source integrations with external research infrastructure**.
+
 
 ---
 
