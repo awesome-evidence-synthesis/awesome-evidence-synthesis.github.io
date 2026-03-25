@@ -10,8 +10,6 @@
 
 *We recommend you to use this Directory on **Desktop**.*
 
-**NOTE:** *Each new version is scheduled to release anually or bianually or quaterly as required.*
-
 ---
 
 ##  Overview
