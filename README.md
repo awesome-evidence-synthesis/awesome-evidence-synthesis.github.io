@@ -273,6 +273,10 @@ Individual tools retain their original citations.
 
 ##  License
 
+<a href="https://opensource.org/licenses/Apache-2.0">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Apache_Feather_Logo.svg" alt="Apache 2.0 License" height="120">
+</a>
+
 © 2026 Vihaan Sahu
 Licensed under the **Apache License 2.0**
 
