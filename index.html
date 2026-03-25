@@ -49,7 +49,7 @@
       "@type": "WebSite",
       "name": "Evidence Synthesis Tools",
       "url": "https://evidencesynthesis-tools.github.io/",
-      "description": "A comprehensive directory of 277 Open Source software and scripts for Evidence Synthesis.",
+      "description": "A comprehensive directory of 282 Open Source software and scripts for Evidence Synthesis.",
       "potentialAction": {
         "@type": "SearchAction",
         "target": {
@@ -807,6 +807,117 @@
     }
 
 
+    .pagination-container {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.1sssssrem;
+    }
+
+    .pagination-btn {
+      background: white;
+      border: 1px solid var(--border-color);
+      color: var(--text-color);
+      min-width: 55px;
+      height: 55px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 10px;
+      user-select: none;
+      font-size: 0.9rem; 
+      font-weight: 700;  
+    }
+
+    .pagination-btn:hover:not(:disabled):not(.active) {
+      border-color: var(--accent-color);
+      color: var(--accent-color);
+    }
+
+    .pagination-btn.active {
+      background-color: var(--accent-color);
+      color: white;
+      border-color: var(--accent-color);
+      font-weight: 600;
+    }
+
+    .pagination-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      background: #f1f5f9;
+    }
+
+    .pagination-ellipsis {
+      cursor: pointer;
+      padding: 0 4px;
+      color: var(--secondary-color);
+      position: relative;
+    }
+
+    .pagination-ellipsis:hover {
+      color: var(--accent-color);
+    }
+
+
+    .jump-to-page-container {
+      display: none;
+
+      position: absolute;
+      top: -45px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+      padding: 8px 12px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      z-index: 10;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--border-color);
+      white-space: nowrap;
+    }
+
+    .jump-to-page-container.show {
+      display: flex;
+    }
+
+    .jump-to-page-input {
+      width: 60px;
+      padding: 4px 8px;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      font-family: 'Inter', sans-serif;
+      text-align: center;
+    }
+
+    .jump-go-btn {
+      padding: 4px 12px;
+      background-color: var(--accent-color);
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.8rem;
+    }
+
+    .jump-go-btn:hover {
+      background-color: var(--accent-hover);
+    }
+
+    .pagination-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
     @media (max-width: 768px) {
       header {
         padding-top: 8rem;
@@ -896,6 +1007,13 @@
       img[src="assets/ss.png"] {
         max-width: 100% !important;
         width: 100%;
+      }
+
+      .pagination-btn {
+        min-width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        padding: 0 8px;
       }
     }
   </style>
@@ -1050,7 +1168,7 @@
 
 
 
-        <img src="https://img.shields.io/badge/Tools-277-brightgreen" alt="Tools: 277">
+        <img src="https://img.shields.io/badge/Tools-282-brightgreen" alt="Tools: 282">
 
         <img src="https://img.shields.io/badge/FAIR-Aligned-orange" alt="FAIR Aligned">
 
@@ -1140,7 +1258,7 @@
       <section class="tools-category">
         <div class="intro-text">
           <p>
-            This directory specifically highlights <strong class="highlight-strong">277</strong> open source non
+            This directory specifically highlights <strong class="highlight-strong">282</strong> open source non
             properietary tools / softwares
             till early <strong class="highlight-strong">2026</strong>.
           </p>
@@ -1150,7 +1268,8 @@
 
       <section class="tools-category">
         <h2 class="section-title"><i class="fas fa-search"></i> Directory List</h2>
-        <div class="tools-grid">
+
+        <div class="tools-grid" id="toolsGrid">
 
 
 
@@ -3045,7 +3164,8 @@
                 alt="PRISMAflowchart"></div>
             <div class="card-content">
               <h3 class="card-title">PRISMA 2020 (Flow Diagram)</h3>
-              <p class="card-desc">The official PRISMA 2020 Flow Diagram Generator (Shiny App & R package) automatically creates a
+              <p class="card-desc">The official PRISMA 2020 Flow Diagram Generator (Shiny App & R package) automatically
+                creates a
                 correctly formatted PRISMA flow diagram after you input your study screening numbers.</p>
               <div class="card-footer"><span class="citation-text">Haddaway, N. R., Page, M. J., Pritchard, C. C., &
                   McGuinness, L. A. (2022). PRISMA2020: An R package and Shiny app for producing PRISMA 2020-compliant
@@ -6980,16 +7100,6 @@
             </div>
           </div>
 
-        </div>
-
-      </section>
-
-      <section class="tools-category">
-        <h2 class="section-title"><i class="fas fa-plus"></i> Upcoming Version v3.0.
-        </h2>
-                <p section class="tools-category"> New additions excluding the count of 277 as noted in Version v2.1.
-        <p>
-        <div class="tools-grid">
 
           <div class="tool-card">
             <div class="card-image">
@@ -7064,55 +7174,67 @@
 
 
           <div class="tool-card">
-  <div class="card-image">
-    <span class="badge">Screening</span>
-    <img src="softwares/rayyanr.png" alt="rayyanR">
-  </div>
-  <div class="card-content">
-    <h3 class="card-title">rayyanR</h3>
-    <p class="card-desc">rayyanR is an R package designed to process screening decisions exported from the Rayyan systematic review platform. It retrieves review results through the Rayyan API and structures them into data frames for further analysis, including integration with PRISMA 2020 flow diagrams. The tool supports combining record and full-text screening stages and enables downstream evidence synthesis workflows within R.</p>
-    <div class="card-footer">
-      <span class="citation-text">Jones ML, Murray, L, Grainger MJ & Pritchard, C (2025). rayyanR: An R package to process outputs of the Rayyan screening platform for systematic reviews. https://github.com/befriendabacterium/rayyanR.</span>
-      <a href="https://github.com/befriendabacterium/rayyanR" target="_blank" class="tool-link">
-        <i class="fas fa-external-link-alt"></i> Visit Tool
-      </a>
-    </div>
-    <div class="card-footer">
-      <a href="https://github.com/befriendabacterium/rayyanR" target="_blank" class="tool-link">
-        <i class="fas fa-external-link-alt"></i> GitHub Repository
-      </a>
-    </div>
-  </div>
-</div>
+            <div class="card-image">
+              <span class="badge">Screening</span>
+              <img src="softwares/rayyanr.png" alt="rayyanR">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">rayyanR</h3>
+              <p class="card-desc">rayyanR is an R package designed to process screening decisions exported from the
+                Rayyan systematic review platform. It retrieves review results through the Rayyan API and structures
+                them into data frames for further analysis, including integration with PRISMA 2020 flow diagrams. The
+                tool supports combining record and full-text screening stages and enables downstream evidence synthesis
+                workflows within R.</p>
+              <div class="card-footer">
+                <span class="citation-text">Jones ML, Murray, L, Grainger MJ & Pritchard, C (2025). rayyanR: An R
+                  package to process outputs of the Rayyan screening platform for systematic reviews.
+                  https://github.com/befriendabacterium/rayyanR.</span>
+                <a href="https://github.com/befriendabacterium/rayyanR" target="_blank" class="tool-link">
+                  <i class="fas fa-external-link-alt"></i> Visit Tool
+                </a>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/befriendabacterium/rayyanR" target="_blank" class="tool-link">
+                  <i class="fas fa-external-link-alt"></i> GitHub Repository
+                </a>
+              </div>
+            </div>
+          </div>
 
 
-<div class="tool-card">
-  <div class="card-image">
-    <span class="badge">Data Extraction</span>
-    <img src="softwares/prismaid.png" alt="prismAId">
-  </div>
-  <div class="card-content">
-    <h3 class="card-title">prismAId</h3>
-    <p class="card-desc">prismAId is an open-source toolkit designed to support systematic literature reviews using generative AI for structured information extraction. It enables protocol-based, reproducible data extraction from scientific texts and outputs structured datasets (e.g., CSV/JSON) for downstream analysis. The tool supports multiple programming environments and integrates with external AI providers while maintaining transparent, reusable workflows.</p>
-    <div class="card-footer">
-      <span class="citation-text">Boero, R., (2025). An Introduction to prismAId: Open-Source and Open Science AI for Advancing Information Extraction in Systematic Reviews. Journal of Open Source Software, 10(108), 7616, https://doi.org/10.21105/joss.07616</span>
-      <a href="https://prismaid.review" target="_blank" class="tool-link">
-        <i class="fas fa-external-link-alt"></i> Visit Tool
-      </a>
-    </div>
-    <div class="card-footer">
-      <a href="https://github.com/open-and-sustainable/prismaid" target="_blank" class="tool-link">
-        <i class="fas fa-external-link-alt"></i> GitHub Repository
-      </a>
-    </div>
-  </div>
-</div>
+
+          <div class="tool-card">
+            <div class="card-image">
+              <span class="badge">Data Extraction</span>
+              <img src="softwares/prismaid.png" alt="prismAId">
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">prismAId</h3>
+              <p class="card-desc">prismAId is an open-source toolkit designed to support systematic literature reviews
+                using generative AI for structured information extraction. It enables protocol-based, reproducible data
+                extraction from scientific texts and outputs structured datasets (e.g., CSV/JSON) for downstream
+                analysis. The tool supports multiple programming environments and integrates with external AI providers
+                while maintaining transparent, reusable workflows.</p>
+              <div class="card-footer">
+                <span class="citation-text">Boero, R., (2025). An Introduction to prismAId: Open-Source and Open Science
+                  AI for Advancing Information Extraction in Systematic Reviews. Journal of Open Source Software,
+                  10(108), 7616, https://doi.org/10.21105/joss.07616</span>
+                <a href="https://prismaid.review" target="_blank" class="tool-link">
+                  <i class="fas fa-external-link-alt"></i> Visit Tool
+                </a>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/open-and-sustainable/prismaid" target="_blank" class="tool-link">
+                  <i class="fas fa-external-link-alt"></i> GitHub Repository
+                </a>
+              </div>
+            </div>
+          </div>
 
 
 
 
         </div>
-
 
         <div id="noResultsMessage"
           style="display: none; text-align: center; padding: 3rem; color: var(--secondary-color);">
@@ -7122,6 +7244,20 @@
           <p>No tools match your search criteria.</p>
         </div>
 
+
+        <div class="pagination-wrapper">
+          <div class="jump-to-page-container" id="jumpToPageContainer">
+            <span>Go to page:</span>
+            <input type="number" id="jumpPageInput" class="jump-to-page-input" min="1">
+            <button id="jumpGoBtn" class="jump-go-btn">Go</button>
+            <button id="jumpCloseBtn" style="border:none; background:none; cursor:pointer;"><i
+                class="fas fa-times"></i></button>
+          </div>
+
+          <div class="pagination-container" id="paginationContainer">
+
+          </div>
+        </div>
 
       </section>
 
@@ -7138,7 +7274,7 @@
             <div class="citation-content1" id="apaCitation">
 
               Sahu, V. (2026). Evidence Synthesis Tools: A curated directory of strictly open-source software / tools
-              for Evidence Synthesis. (v2.1). Zenodo. https://doi.org/10.5281/zenodo.18681868
+              for Evidence Synthesis. (v3.0). Zenodo. https://doi.org/10.5281/zenodo.18681868
 
             </div>
 
@@ -7174,7 +7310,7 @@
           <a href="mailto:pteroisvolitans12@gmail.com"><i class="fas fa-envelope"></i> Contact</a>
         </div>
         <div class="footer-right">
-          Version 2.1. Compiled for Research Community.
+          Version 3.0. Compiled for Research Community.
         </div>
       </div>
     </footer>
@@ -7189,14 +7325,30 @@
 
 
     const searchInput = document.getElementById('searchInput');
-    const cards = document.querySelectorAll('.tool-card');
+    const grid = document.getElementById('toolsGrid');
+    const cards = Array.from(document.querySelectorAll('.tool-card')); 
     const searchNav = document.getElementById('searchNav');
     const matchCountEl = document.getElementById('matchCount');
     const prevBtn = document.getElementById('prevMatch');
     const nextBtn = document.getElementById('nextMatch');
+    const noResultsMessage = document.getElementById('noResultsMessage');
 
 
+    const ITEMS_PER_PAGE = 30;
+    let currentPage = 1;
+    let filteredCards = []; 
+    let allCardsData = []; 
 
+
+    cards.forEach(card => {
+      allCardsData.push({
+        element: card,
+        originalHTML: card.innerHTML
+      });
+    });
+
+   
+    filteredCards = [...allCardsData];
 
     const categories = [
       "Screening", "Search", "Manager", "Data Extraction", "Meta-analysis",
@@ -7209,7 +7361,6 @@
     const filtersPanel = document.getElementById('filtersPanel');
     const yearFiltersContainer = document.getElementById('yearFilters');
     const categoryFiltersContainer = document.getElementById('categoryFilters');
-    const noResultsMessage = document.getElementById('noResultsMessage');
     const clearFiltersBtn = document.getElementById('clearFiltersBtn');
 
     let matches = [];
@@ -7217,25 +7368,252 @@
     let searchTimeout = null;
 
 
-    document.getElementById('searchBtn').addEventListener('click', () => {
-      const term = searchInput.value.trim();
 
 
-      if (activeCategoryFilter) {
-        activeCategoryFilter = null;
+    function renderTools(page) {
 
-        document.querySelectorAll('.filter-option-btn').forEach(btn => btn.classList.remove('active'));
+      grid.innerHTML = '';
+
+      if (filteredCards.length === 0) {
+        noResultsMessage.style.display = 'block';
+        renderPagination();
+        return;
+      } else {
+        noResultsMessage.style.display = 'none';
       }
 
-      performSearch(term);
+
+      const start = (page - 1) * ITEMS_PER_PAGE;
+      const end = start + ITEMS_PER_PAGE;
+      const pageItems = filteredCards.slice(start, end);
+
+
+      pageItems.forEach(itemData => {
+
+        const clone = itemData.element.cloneNode(true);
+        grid.appendChild(clone);
+      });
+
+  
+      const term = searchInput.value.trim();
+      if (term) {
+        applyHighlightsToGrid(term);
+      }
+
+      renderPagination();
+    }
+
+    function renderPagination() {
+      const container = document.getElementById('paginationContainer');
+      container.innerHTML = '';
+
+      const totalPages = Math.ceil(filteredCards.length / ITEMS_PER_PAGE);
+
+      if (totalPages <= 1) {
+        return; 
+      }
+
+
+      const prevBtnPag = document.createElement('button');
+      prevBtnPag.className = 'pagination-btn';
+      prevBtnPag.innerHTML = '<i class="fas fa-chevron-left"></i>';
+      prevBtnPag.disabled = currentPage === 1;
+      prevBtnPag.onclick = () => goToPage(currentPage - 1);
+      container.appendChild(prevBtnPag);
+
+      let pagesToShow = [];
+      if (totalPages <= 7) {
+        for (let i = 1; i <= totalPages; i++) pagesToShow.push(i);
+      } else {
+        pagesToShow.push(1);
+        if (currentPage > 3) pagesToShow.push('...');
+
+        let start = Math.max(2, currentPage - 1);
+        let end = Math.min(totalPages - 1, currentPage + 1);
+
+        for (let i = start; i <= end; i++) pagesToShow.push(i);
+
+        if (currentPage < totalPages - 2) pagesToShow.push('...');
+        pagesToShow.push(totalPages);
+      }
+
+      pagesToShow.forEach(p => {
+        if (p === '...') {
+          const ellipsis = document.createElement('span');
+          ellipsis.className = 'pagination-ellipsis';
+          ellipsis.innerText = '...';
+          ellipsis.onclick = () => {
+            document.getElementById('jumpToPageContainer').classList.toggle('show');
+          };
+          container.appendChild(ellipsis);
+        } else {
+          const btn = document.createElement('button');
+          btn.className = `pagination-btn ${p === currentPage ? 'active' : ''}`;
+          btn.innerText = p;
+          btn.onclick = () => goToPage(p);
+          container.appendChild(btn);
+        }
+      });
+
+
+      const nextBtnPag = document.createElement('button');
+      nextBtnPag.className = 'pagination-btn';
+      nextBtnPag.innerHTML = '>';
+      nextBtnPag.disabled = currentPage === totalPages;
+      nextBtnPag.onclick = () => goToPage(currentPage + 1);
+      container.appendChild(nextBtnPag);
+
+
+      const lastBtnPag = document.createElement('button');
+      lastBtnPag.className = 'pagination-btn';
+      lastBtnPag.innerText = 'Last Page';
+      lastBtnPag.disabled = currentPage === totalPages;
+      lastBtnPag.style.marginLeft = "8px";
+      lastBtnPag.onclick = () => goToPage(totalPages);
+      container.appendChild(lastBtnPag);
+    }
+
+    function goToPage(page) {
+      const totalPages = Math.ceil(filteredCards.length / ITEMS_PER_PAGE);
+      if (page < 1 || page > totalPages) return;
+
+      currentPage = page;
+      renderTools(currentPage);
+
+
+      if (window.innerWidth <= 768) {
+  
+        document.getElementById('toolsGrid').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else {
+      
+        const toolsGrid = document.getElementById('toolsGrid');
+        window.targetScroll = toolsGrid.offsetTop - 120; 
+      }
+    }
+
+  
+    document.getElementById('jumpGoBtn').addEventListener('click', () => {
+      const val = parseInt(document.getElementById('jumpPageInput').value);
+      const totalPages = Math.ceil(filteredCards.length / ITEMS_PER_PAGE);
+      if (!isNaN(val) && val >= 1 && val <= totalPages) {
+        goToPage(val);
+        document.getElementById('jumpToPageContainer').classList.remove('show');
+      } else {
+        alert("Please enter a valid page number.");
+      }
+    });
+
+    document.getElementById('jumpCloseBtn').addEventListener('click', () => {
+      document.getElementById('jumpToPageContainer').classList.remove('show');
     });
 
 
+    function applyHighlightsToGrid(term) {
+      const safeTerm = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const regex = new RegExp(`(${safeTerm})`, 'gi');
+      const currentCards = grid.querySelectorAll('.tool-card');
+
+      matches = []; 
+
+      currentCards.forEach(card => {
+        const fields = [card.querySelector('.card-title'), card.querySelector('.card-desc'), card.querySelector('.citation-text')];
+
+        fields.forEach(field => {
+          if (!field) return;
+
+          const masterData = allCardsData.find(d => d.element === card || d.element.isEqualNode(card));
+         
+        });
+      });
+
+      const gridCards = grid.querySelectorAll('.tool-card');
+      gridCards.forEach((card, index) => {
+
+      });
+    }
+
+
+    const originalRenderTools = renderTools;
+    renderTools = function (page) {
+      grid.innerHTML = '';
+      if (filteredCards.length === 0) {
+        noResultsMessage.style.display = 'block';
+        renderPagination();
+        return;
+      } else {
+        noResultsMessage.style.display = 'none';
+      }
+
+      const start = (page - 1) * ITEMS_PER_PAGE;
+      const end = start + ITEMS_PER_PAGE;
+      const pageItems = filteredCards.slice(start, end);
+
+      pageItems.forEach((itemData, index) => {
+        const clone = itemData.element.cloneNode(true);
+       
+        clone.dataset.index = allCardsData.indexOf(itemData);
+        grid.appendChild(clone);
+      });
+
+      const term = searchInput.value.trim();
+      if (term) {
+
+        matches = [];
+        const safeTerm = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const regex = new RegExp(`(${safeTerm})`, 'gi');
+
+        const gridCards = grid.querySelectorAll('.tool-card');
+        gridCards.forEach(card => {
+          const idx = card.dataset.index;
+          const originalObj = allCardsData[idx];
+
+
+          card.innerHTML = originalObj.originalHTML;
+
+
+          const fields = [card.querySelector('.card-title'), card.querySelector('.card-desc'), card.querySelector('.citation-text')];
+          let cardHasMatch = false;
+
+          fields.forEach(field => {
+            if (!field) return;
+            const text = field.innerText; 
+            if (regex.test(text)) {
+              cardHasMatch = true;
+            }
+            const newHTML = field.innerHTML.replace(regex, '<span class="search-highlight">$1</span>');
+            field.innerHTML = newHTML;
+
+            const newHighlights = field.querySelectorAll('.search-highlight');
+            newHighlights.forEach(span => matches.push(span));
+          });
+        });
+
+        if (matches.length > 0) {
+          searchNav.classList.add('active');
+          updateMatchCounter();
+
+        } else {
+          searchNav.classList.remove('active');
+        }
+      } else {
+        searchNav.classList.remove('active');
+      }
+
+      renderPagination();
+    }
+
+
+    document.getElementById('searchBtn').addEventListener('click', () => {
+      const term = searchInput.value.trim();
+      if (activeCategoryFilter) {
+        activeCategoryFilter = null;
+        document.querySelectorAll('.filter-option-btn').forEach(btn => btn.classList.remove('active'));
+      }
+      performSearch(term);
+    });
 
     nextBtn.addEventListener('click', () => navigateMatch(1));
     prevBtn.addEventListener('click', () => navigateMatch(-1));
-
-
 
     searchInput.addEventListener('keypress', (e) => {
       if (e.key === 'Enter') {
@@ -7243,101 +7621,37 @@
       }
     });
 
-
-
-
     function performSearch(term) {
-      clearHighlights();
-      matches = [];
-      currentMatchIndex = 0;
-
-      let visibleCount = 0;
 
       if (term === '') {
-        searchNav.classList.remove('active');
-
-        cards.forEach(card => {
-          card.style.display = 'flex';
-          visibleCount++;
-        });
+        filteredCards = [...allCardsData];
       } else {
-        const safeTerm = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-        const regex = new RegExp(`(${safeTerm})`, 'gi');
+        const lowerTerm = term.toLowerCase();
+        filteredCards = allCardsData.filter(itemData => {
 
-        cards.forEach(card => {
-
-          card.style.display = 'flex';
-
-          const fields = [card.querySelector('.card-title'), card.querySelector('.card-desc'), card.querySelector('.citation-text')];
-          let cardHasMatch = false;
-
-          fields.forEach(field => {
-            if (!field) return;
-            if (!field.dataset.originalText) field.dataset.originalText = field.innerHTML;
-
-            const originalHTML = field.dataset.originalText;
-
-            if (regex.test(originalHTML)) {
-              cardHasMatch = true;
-            }
-
-
-            const newHTML = originalHTML.replace(regex, '<span class="search-highlight">$1</span>');
-            field.innerHTML = newHTML;
-
-            const newHighlights = field.querySelectorAll('.search-highlight');
-            newHighlights.forEach(span => matches.push(span));
-          });
-
-          if (!cardHasMatch) {
-            card.style.display = 'none';
-          } else {
-            visibleCount++;
-          }
+          const div = document.createElement('div');
+          div.innerHTML = itemData.originalHTML;
+          return div.innerText.toLowerCase().includes(lowerTerm);
         });
-
-        if (matches.length > 0) {
-          searchNav.classList.add('active');
-          updateMatchCounter();
-          scrollToMatch(0);
-        } else {
-          searchNav.classList.remove('active');
-        }
       }
 
-
-      if (visibleCount === 0) {
-        noResultsMessage.style.display = 'block';
-      } else {
-        noResultsMessage.style.display = 'none';
-      }
+      currentPage = 1;
+      renderTools(currentPage);
     }
 
     function clearHighlights() {
-
-      document.querySelectorAll('.search-highlight').forEach(el => {
-
-      });
+      
     }
 
     function navigateMatch(direction) {
       if (matches.length === 0) return;
-
-
       if (matches[currentMatchIndex]) {
         matches[currentMatchIndex].classList.remove('active');
       }
-
-
       currentMatchIndex += direction;
-
-
       if (currentMatchIndex >= matches.length) currentMatchIndex = 0;
       if (currentMatchIndex < 0) currentMatchIndex = matches.length - 1;
-
-
       matches[currentMatchIndex].classList.add('active');
-
       updateMatchCounter();
       scrollToMatch(currentMatchIndex);
     }
@@ -7349,17 +7663,21 @@
     function scrollToMatch(index) {
       const targetEl = matches[index];
       if (!targetEl) return;
-
-
       if (window.innerWidth <= 768) {
         targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
         return;
       }
+      const elementTop = targetEl.getBoundingClientRect().top + window.scrollY; 
 
-      const elementTop = targetEl.offsetTop;
-      let targetScroll = elementTop - (window.innerHeight / 2) + (targetEl.offsetHeight / 2);
+      const containerTop = document.getElementById('scroll-container').getBoundingClientRect().top;
+      const relativeTop = targetEl.getBoundingClientRect().top - containerTop;
+
+      let targetScroll = relativeTop - (window.innerHeight / 2) + (targetEl.offsetHeight / 2);
+
 
       const maxScroll = document.body.scrollHeight - window.innerHeight;
+      targetScroll += window.targetScroll; 
+
       if (targetScroll < 0) targetScroll = 0;
       if (targetScroll > maxScroll) targetScroll = maxScroll;
 
@@ -7377,10 +7695,7 @@
 
 
     document.addEventListener('wheel', (e) => {
-
       window.targetScroll += e.deltaY * scrollSpeed;
-
-
       const maxScroll = document.body.scrollHeight - window.innerHeight;
       if (window.targetScroll < 0) window.targetScroll = 0;
       if (window.targetScroll > maxScroll) window.targetScroll = maxScroll;
@@ -7406,55 +7721,38 @@
 
 
     function animateScroll() {
-
-
       if (window.innerWidth <= 768) {
         requestAnimationFrame(animateScroll);
         return;
       }
-
-
       currentScroll += (window.targetScroll - currentScroll) * ease;
-
       scrollContainer.style.transform = `translateY(${-currentScroll}px)`;
-
       requestAnimationFrame(animateScroll);
     }
-
-
     animateScroll();
 
-
-
     const scrollBtn = document.getElementById('scrollToTopBtn');
-
-
     function updateScrollBtnVisibility() {
-
-  const scrollPos = window.innerWidth <= 768 ? window.scrollY : currentScroll;
-
-  if (scrollPos > 300) {
-    scrollBtn.classList.add('show');
-  } else {
-    scrollBtn.classList.remove('show');
-  }
-}
-
-
-
+      const scrollPos = window.innerWidth <= 768 ? window.scrollY : currentScroll;
+      if (scrollPos > 300) {
+        scrollBtn.classList.add('show');
+      } else {
+        scrollBtn.classList.remove('show');
+      }
+    }
     const originalAnimate = animateScroll;
     animateScroll = function () {
       originalAnimate();
       updateScrollBtnVisibility();
     }
 
-   scrollBtn.addEventListener('click', () => {
-  if (window.innerWidth <= 768) {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  } else {
-    window.targetScroll = 0;
-  }
-});
+    scrollBtn.addEventListener('click', () => {
+      if (window.innerWidth <= 768) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        window.targetScroll = 0;
+      }
+    });
 
 
 
@@ -7489,7 +7787,7 @@ AU  - Sahu, V.
 PY  - 2026
 TI  - Evidence Synthesis Tools: A curated directory of strictly open-source software / tools for Evidence Synthesis.
 JO  - Zenodo
-VL  - v2.1
+VL  - v3.0
 DO  - 10.5281/zenodo.18681868
 ER  - `;
         extension = ".ris";
@@ -7499,7 +7797,7 @@ ER  - `;
   author={Sahu, V.},
   year={2026},
   publisher={Zenodo},
-  version={v2.1},
+  version={v3.0},
   doi={10.5281/zenodo.18681868}
 }`;
         extension = ".bib";
@@ -7521,13 +7819,9 @@ ER  - `;
 
     tabLinks.forEach(link => {
       link.addEventListener('click', function () {
-
-
         tabLinks.forEach(tab => {
           tab.classList.remove('active');
         });
-
-
         this.classList.add('active');
       });
     });
@@ -7543,7 +7837,6 @@ ER  - `;
 
 
     function initFilters() {
-
       const currentYear = 2026;
       const startYear = 2000;
 
@@ -7551,7 +7844,6 @@ ER  - `;
         const count = countMatches(y.toString());
         createFilterButton(yearFiltersContainer, y, count, 'year');
       }
-
 
       categories.forEach(cat => {
         const count = countMatches(cat);
@@ -7565,28 +7857,20 @@ ER  - `;
       btn.innerHTML = `<span>${text}</span> <span class="filter-count">${count}</span>`;
 
       btn.addEventListener('click', () => {
-
         filtersPanel.classList.remove('show');
         toggleFiltersBtn.classList.remove('active');
-
-
         document.getElementById('clearFiltersBtn').style.display = 'block';
 
         if (type === 'year') {
-
           searchInput.value = text;
           activeCategoryFilter = null;
           performSearch(text);
         } else {
-
           activeCategoryFilter = text;
           searchInput.value = '';
           searchNav.classList.remove('active');
-
-
           document.querySelectorAll('.filter-option-btn').forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
-
           filterByCategory(text);
         }
       });
@@ -7594,67 +7878,52 @@ ER  - `;
       container.appendChild(btn);
     }
 
-
     function countMatches(keyword) {
       let count = 0;
       const lowerKeyword = keyword.toLowerCase();
-      cards.forEach(card => {
-        if (card.innerText.toLowerCase().includes(lowerKeyword)) {
+     
+      allCardsData.forEach(itemData => {
+        const div = document.createElement('div');
+        div.innerHTML = itemData.originalHTML;
+        if (div.innerText.toLowerCase().includes(lowerKeyword)) {
           count++;
         }
       });
       return count;
     }
 
-
     function filterByCategory(category) {
-      clearHighlights();
-      let visibleCount = 0;
       const lowerCat = category.toLowerCase();
-
-      cards.forEach(card => {
-        if (card.innerText.toLowerCase().includes(lowerCat)) {
-          card.style.display = 'flex';
-          visibleCount++;
-        } else {
-          card.style.display = 'none';
-        }
+      
+      filteredCards = allCardsData.filter(itemData => {
+        const div = document.createElement('div');
+        div.innerHTML = itemData.originalHTML;
+        return div.innerText.toLowerCase().includes(lowerCat);
       });
 
-
-      if (visibleCount === 0) {
-        noResultsMessage.style.display = 'block';
-      } else {
-        noResultsMessage.style.display = 'none';
-      }
+      currentPage = 1;
+      renderTools(currentPage);
     }
 
     clearFiltersBtn.addEventListener('click', () => {
       searchInput.value = '';
       activeCategoryFilter = null;
       document.querySelectorAll('.filter-option-btn').forEach(b => b.classList.remove('active'));
-
-
       document.getElementById('clearFiltersBtn').style.display = 'none';
-
       performSearch('');
     });
 
-
     const filtersPanelElement = document.getElementById('filtersPanel');
-
     filtersPanelElement.addEventListener('wheel', (e) => {
-
       e.stopPropagation();
     }, { passive: true });
-
-
     filtersPanelElement.addEventListener('touchmove', (e) => {
       e.stopPropagation();
     }, { passive: true });
 
 
     initFilters();
+    renderTools(1);
 
   </script>
 

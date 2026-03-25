@@ -25,7 +25,7 @@ This resource is intended for:
 * Open science advocates
 * Research software developers 
 
-The directory includes **277** open source non properietary tools / softwares available **up to early 2026**, covering all stages of the evidence synthesis pipeline.
+The directory includes **282** open source non properietary tools / softwares available **up to early 2026**, covering all stages of the evidence synthesis pipeline.
 
 ---
 
@@ -264,7 +264,7 @@ The author welcomes future contributors and collaborators to support the long-te
 
 If you use this directory or related tools, please cite:
 
-Sahu, V. (2026). *Evidence Synthesis Tools: A curated directory of strictly open-source software / tools for Evidence Synthesis.* (Version 2.1). Zenodo.
+Sahu, V. (2026). *Evidence Synthesis Tools: A curated directory of strictly open-source software / tools for Evidence Synthesis.* (Version 3.0). Zenodo.
 [https://doi.org/10.5281/zenodo.18681868](https://doi.org/10.5281/zenodo.18681868)
 
 Individual tools retain their original citations.
