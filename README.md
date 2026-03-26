@@ -10,7 +10,7 @@
 
 # Awesome Evidence Synthesis
 
-A strictly open-source directory of **282+ tools** for systematic reviews, meta-analysis, and evidence synthesis. 
+A strictly open-source directory of **200+ tools** for systematic reviews, meta-analysis, and evidence synthesis. 
 
 We promote **transparency, reproducibility, and Open Science** by only including non-proprietary software with publicly available source code.
 
@@ -20,11 +20,11 @@ We promote **transparency, reproducibility, and Open Science** by only including
 
 Access the project across all platforms:
 
-*   **Directory Web** (Live Site): [awesome-evidence-synthesis.github.io](https://awesome-evidence-synthesis.github.io)
+*   **Directory Web** (Live Site): [evidencesynthesis-tools.github.io](https://evidencesynthesis-tools.github.io)
 
-*   **Awesome List** (Content Repo): [github.com/evidencesynthesis-tools/awesome-evidence-synthesis](https://github.com/evidencesynthesis-tools/awesome-evidence-synthesis)
+*   **Awesome List** (Content Repo): [evidencesynthesis-tools/awesome-evidence-synthesis](https://github.com/evidencesynthesis-tools/awesome-evidence-synthesis)
 
-*   **Directory Repo** (Website Source): [github.com/evidencesynthesis-tools/awesome-evidence-synthesis.github.io](https://github.com/evidencesynthesis-tools/awesome-evidence-synthesis.github.io)
+*   **Directory Repo** (Website Source): [github.com/evidencesynthesis-tools/evidencesynthesis-tools.github.io](https://github.com/evidencesynthesis-tools/evidencesynthesis-tools.github.io)
 
 *   **Main Organization** (Home): [github.com/evidencesynthesis-tools](https://github.com/evidencesynthesis-tools)
 
