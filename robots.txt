@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://critiplot.vercel.app/sitemap.xml
-Sitemap: https://critiplot.vercel.app/sitemap.txt
